@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>circl3.tech — GRC & vCISO Cybersecurity Advisory in Cyprus | NIS2, DORA, ISO 27001</title>
+<meta name="description" content="circl3.tech turns NIS2, DORA and ISO 27001 obligations into controls, documentation and evidence. Practical GRC and vCISO services for SMEs and regulated organisations in Cyprus and Europe.">
+<meta name="author" content="circl3.tech">
+<meta property="og:title" content="circl3.tech — Cybersecurity that stands up to audits, regulators & customers">
+<meta property="og:description" content="Practical GRC and vCISO services for SMEs and regulated organisations. vCISO · NIS2 · DORA · ISO 27001.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://circl3.tech/">
+<meta name="theme-color" content="#f0820f">
+<link rel="canonical" href="https://circl3.tech/">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="CY">
+<meta name="geo.placename" content="Cyprus">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:site_name" content="circl3.tech">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://circl3.tech/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="circl3.tech — Cybersecurity that stands up to audits, regulators & customers">
+<meta name="twitter:description" content="Practical GRC and vCISO services for SMEs and regulated organisations. vCISO · NIS2 · DORA · ISO 27001.">
+<meta name="twitter:image" content="https://circl3.tech/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16202e;--body:#475067;--muted:#6b7689;
+    --blue:#2e579a;--blue-dark:#244680;--blue-2:#3f6ec4;--blue-soft:#eaf1fb;
+    --orange:#ef7f0f;--orange-dark:#d56f06;--orange-soft:#fff3e6;
+    --line:#e7ecf3;--bg:#ffffff;--soft:#f6f9fd;
+    --radius:16px;--maxw:1140px;--shadow:0 12px 40px rgba(31,60,110,.08);--shadow-sm:0 4px 16px rgba(31,60,110,.06);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--body);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4,.brand{font-family:'Josefin Sans',sans-serif;color:var(--ink);font-weight:600;line-height:1.15}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{font-family:'Josefin Sans',sans-serif;text-transform:uppercase;letter-spacing:.18em;font-size:.8rem;font-weight:600;color:var(--blue)}
+
+  /* NAV */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:10px;font-size:1.5rem;font-weight:700;color:var(--ink)}
+  .brand .dot{color:var(--orange)}
+  .nav-links{display:flex;gap:28px;align-items:center}
+  .nav-links a{font-size:.95rem;font-weight:500;color:var(--body);transition:color .2s}
+  .nav-links a:hover{color:var(--blue)}
+  .nav-cta{background:var(--blue);color:#fff!important;padding:10px 20px;border-radius:999px;font-weight:600;transition:background .2s,transform .15s}
+  .nav-cta:hover{background:var(--blue-dark);transform:translateY(-1px)}
+  .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+  .burger span{width:24px;height:2px;background:var(--ink);display:block}
+
+  /* HERO */
+  .hero{position:relative;background:linear-gradient(180deg,#ffffff 0%,var(--soft) 100%);overflow:hidden}
+  .hero::before{content:"";position:absolute;right:-160px;top:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle at center,rgba(239,127,15,.16),transparent 68%)}
+  .hero::after{content:"";position:absolute;left:-180px;bottom:-160px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle at center,rgba(63,110,196,.14),transparent 68%)}
+  .hero-inner{padding:96px 24px 84px;position:relative;z-index:2;max-width:844px;margin:0 auto}
+  .hero h1{font-size:clamp(2.3rem,5vw,3.6rem);font-weight:700;margin:16px 0 20px;color:var(--ink)}
+  .hero h1 .hl{color:var(--orange)}
+  .hero p.lead{font-size:1.18rem;color:var(--body);max-width:60ch}
+  .badges{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 8px}
+  .badges span{font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:.85rem;letter-spacing:.04em;background:#fff;border:1px solid var(--blue-soft);color:var(--blue);padding:8px 16px;border-radius:999px;box-shadow:var(--shadow-sm)}
+  .hero-actions{display:flex;gap:16px;margin-top:30px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:600;font-size:1rem;transition:transform .15s,background .2s,box-shadow .2s;cursor:pointer;border:0}
+  .btn-primary{background:var(--blue);color:#fff;box-shadow:0 8px 20px rgba(46,87,154,.25)}
+  .btn-primary:hover{background:var(--blue-dark);transform:translateY(-2px)}
+  .btn-ghost{background:#fff;color:var(--blue);border:1px solid var(--blue-soft)}
+  .btn-ghost:hover{border-color:var(--blue);transform:translateY(-2px)}
+  .trust{border-top:1px solid var(--line);margin-top:40px;padding-top:24px;display:flex;flex-wrap:wrap;gap:28px;font-size:.92rem;color:var(--muted)}
+  .trust b{color:var(--ink);font-weight:600}
+
+  /* SECTIONS */
+  section{padding:84px 0}
+  .section-head{max-width:680px;margin-bottom:48px}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .section-head h2{font-size:clamp(1.9rem,3.5vw,2.5rem);margin:10px 0 14px;color:var(--ink)}
+  .section-head p{font-size:1.08rem;color:var(--muted)}
+  .soft{background:var(--soft)}
+
+  /* DIFFERENTIATOR */
+  .diff-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .diff{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:transform .2s,box-shadow .2s}
+  .diff:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .diff .ic{width:48px;height:48px;border-radius:12px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .diff .ic svg{width:24px;height:24px;stroke:var(--blue)}
+  .diff h4{font-size:1.12rem;margin-bottom:8px;color:var(--ink)}
+  .diff p{font-size:.94rem;color:var(--muted)}
+
+  /* URGENCY BAND */
+  .urgency{background:var(--blue-soft)}
+  .urgency .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+  .urgency h2{font-size:clamp(1.6rem,3vw,2.1rem);margin-bottom:14px;color:var(--ink)}
+  .urgency p{color:var(--body)}
+  .urgency .stat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;text-align:center;box-shadow:var(--shadow)}
+  .urgency .stat .big{font-family:'Josefin Sans',sans-serif;font-size:1.9rem;font-weight:700;color:var(--blue);line-height:1.1}
+  .urgency .stat p{color:var(--muted);margin-top:10px;font-size:.95rem}
+
+  /* SERVICES */
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;border-top:3px solid var(--blue);transition:transform .2s,box-shadow .2s}
+  .svc:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .svc .tag{font-family:'Josefin Sans',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+  .svc h4{font-size:1.2rem;margin:8px 0 10px;color:var(--ink)}
+  .svc p{font-size:.96rem;color:var(--body)}
+
+  /* FEATURE ROWS (services) */
+  .feature{display:grid;grid-template-columns:1fr 1.25fr;gap:48px;align-items:center;margin-bottom:44px}
+  .feature:last-of-type{margin-bottom:0}
+  .feature .fimg{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);height:220px;width:100%;max-width:380px;justify-self:start}
+  .feature .fimg img{width:100%;height:100%;object-fit:cover;display:block}
+  .feature.rev{grid-template-columns:1.25fr 1fr}
+  .feature.rev .fimg{order:2;justify-self:end}
+  .ftext h3{font-size:1.5rem;color:var(--ink);margin-bottom:8px}
+  .ftext .flead{color:var(--muted);margin-bottom:20px;font-size:.98rem}
+  .flist{list-style:none;display:grid;gap:15px}
+  .flist b{display:block;color:var(--ink);font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:1.02rem}
+  .flist span{font-size:.92rem;color:var(--muted)}
+
+  /* INTEGRATED CALLOUT */
+  .callout{background:var(--blue-soft);border:1px solid #dce7f7;border-radius:var(--radius);padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .callout h3{font-size:1.7rem;margin-bottom:12px;color:var(--ink)}
+  .callout p{color:var(--body)}
+  .callout ul{list-style:none;display:grid;gap:12px}
+  .callout li{display:flex;gap:12px;align-items:flex-start;font-size:.98rem;color:var(--ink)}
+  .callout li svg{width:22px;height:22px;stroke:var(--blue);flex:none;margin-top:2px}
+
+  /* OUTCOMES */
+  .out-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 36px}
+  .out{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line)}
+  .out svg{width:24px;height:24px;stroke:var(--blue);flex:none;margin-top:3px}
+  .out b{color:var(--ink);font-family:'Josefin Sans',sans-serif}
+
+  /* PROCESS */
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm)}
+  .step .n{font-family:'Josefin Sans',sans-serif;font-weight:700;font-size:1.6rem;color:var(--orange);line-height:1}
+  .step h4{font-size:1.05rem;margin:10px 0 8px;color:var(--ink)}
+  .step p{font-size:.9rem;color:var(--muted)}
+
+  /* OFFER */
+  .offer{background:linear-gradient(135deg,var(--blue),var(--blue-dark));border-radius:var(--radius);padding:46px;color:#fff;text-align:center;box-shadow:0 16px 44px rgba(46,87,154,.22)}
+  .offer .eyebrow{color:rgba(255,255,255,.9)}
+  .offer h3{color:#fff;font-size:1.9rem;margin:8px 0 12px}
+  .offer p{color:rgba(255,255,255,.95);max-width:58ch;margin:0 auto 26px;font-size:1.05rem}
+  .offer .btn-primary{background:#fff;color:var(--blue);box-shadow:none}
+  .offer .btn-primary:hover{background:var(--soft)}
+
+  /* SECTORS */
+  .sectors{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  .sectors span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:11px 22px;font-weight:500;color:var(--blue);font-size:.95rem}
+
+  /* CREDIBILITY */
+  .statband{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-bottom:46px}
+  .statband .s{text-align:center;padding:26px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+  .statband .s .v{font-family:'Josefin Sans',sans-serif;font-size:2rem;font-weight:700;color:var(--blue);line-height:1}
+  .statband .s p{font-size:.9rem;color:var(--muted);margin-top:8px}
+  .marquee{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .mq{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;border-left:3px solid var(--blue)}
+  .mq h4{font-size:1.02rem;color:var(--blue);margin-bottom:6px}
+  .mq p{font-size:.9rem;color:var(--muted)}
+  .sub-head{font-family:'Josefin Sans',sans-serif;font-weight:600;color:var(--ink);font-size:1.3rem;margin:56px 0 22px;text-align:center}
+  .logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:18px;margin-top:8px}
+  .logos a{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 30px;display:flex;align-items:center;justify-content:center;min-width:150px;height:92px;transition:box-shadow .2s,transform .2s}
+  .logos a:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+  .logos img{max-height:58px;max-width:170px;width:auto;object-fit:contain;transition:transform .2s}
+
+  /* GALLERY */
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+  .gallery figure{margin:0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#fff}
+  .gallery img{width:100%;height:190px;object-fit:cover;object-position:center 25%;display:block;transition:transform .3s}
+  .gallery figure:hover img{transform:scale(1.04)}
+  .gallery figcaption{padding:14px 16px;font-size:.92rem;color:var(--body);font-weight:500;background:#fff}
+  .gallery .gvid{position:relative;display:block}
+  .gallery .pbtn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+  .gallery .pbtn>span{width:56px;height:56px;border-radius:50%;background:rgba(20,32,46,.6);display:flex;align-items:center;justify-content:center}
+  .gallery .pbtn svg{width:24px;height:24px;fill:#fff;margin-left:3px}
+
+  /* INSIGHTS */
+  .ins-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .ins{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+  .ins:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .ins .top{height:6px;background:linear-gradient(90deg,var(--blue),var(--blue-2))}
+  .ins .body{padding:26px;display:flex;flex-direction:column;flex:1}
+  .ins .meta{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+  .ins h4{font-size:1.14rem;color:var(--ink);margin-bottom:10px;line-height:1.3}
+  .ins p{font-size:.94rem;color:var(--muted);flex:1}
+  .ins .more{margin-top:16px;font-weight:600;color:var(--blue);font-size:.92rem}
+
+  /* MEDIA */
+  .media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px}
+  .mcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+  .mcard:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .mcard .thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--soft)}
+  .mcard .thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+  .mcard:hover .thumb img{transform:scale(1.04)}
+  .mcard .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+  .mcard .play>span{width:60px;height:60px;border-radius:50%;background:rgba(20,32,46,.6);display:flex;align-items:center;justify-content:center}
+  .mcard .play svg{width:26px;height:26px;fill:#fff;margin-left:3px}
+  .mcard .mbody{padding:24px;display:flex;flex-direction:column;flex:1}
+  .mcard .src{font-family:'Josefin Sans',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:8px}
+  .mcard h3{font-size:1.18rem;color:var(--ink);margin-bottom:10px;line-height:1.3}
+  .mcard p{font-size:.93rem;color:var(--muted);flex:1}
+  .mcard .go{margin-top:16px;font-weight:600;color:var(--blue);font-size:.94rem}
+
+  /* BUSINESS ADVISORY */
+  .person{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:start}
+  .person-photo{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);background:var(--soft)}
+  .person h3{font-size:1.6rem;margin-bottom:6px;color:var(--ink)}
+  .person .role{color:var(--blue);font-weight:600;font-family:'Josefin Sans',sans-serif;margin-bottom:16px;display:block}
+  .person p{margin-bottom:13px;font-size:.97rem;color:var(--body)}
+  .person .quote{border-left:3px solid var(--orange);padding-left:18px;font-style:italic;color:var(--ink)}
+
+  /* CONTACT */
+  .contact{background:var(--soft)}
+  .contact-row{display:flex;flex-wrap:wrap;gap:18px;margin-top:24px}
+  .contact-row a.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 26px;display:flex;align-items:center;gap:14px;font-size:1.05rem;font-weight:500;color:var(--ink);transition:box-shadow .2s,transform .2s}
+  .contact-row a.card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+  .contact-row svg{width:24px;height:24px;stroke:var(--blue);flex:none}
+
+  /* FOOTER */
+  footer{background:#fff;border-top:1px solid var(--line);color:var(--muted);padding:40px 0;text-align:center;font-size:.9rem}
+  footer .brand{justify-content:center;color:var(--ink);font-size:1.3rem;margin-bottom:10px}
+  footer a{color:var(--blue)}
+
+  @media(max-width:880px){
+    .svc-grid,.steps,.statband,.out-grid,.callout,.urgency .wrap,.person,.gallery,.diff-grid,.ins-grid,.feature,.feature.rev{grid-template-columns:1fr}
+    .feature.rev .fimg{order:0}
+    .feature .fimg{max-width:none;justify-self:stretch;height:200px}
+    .marquee{grid-template-columns:1fr}
+    .callout,.offer{padding:32px}
+    .nav-links{position:fixed;inset:72px 0 auto 0;background:#fff;flex-direction:column;gap:0;padding:8px 0;border-bottom:1px solid var(--line);box-shadow:var(--shadow);display:none}
+    .nav-links.open{display:flex}
+    .nav-links a{padding:14px 24px;width:100%}
+    .nav-cta{margin:8px 24px;text-align:center}
+    .burger{display:flex}
+    section{padding:60px 0}
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://circl3.tech/#org",
+      "name": "circl3.tech",
+      "url": "https://circl3.tech/",
+      "logo": "https://circl3.tech/og-image.png",
+      "image": "https://circl3.tech/og-image.png",
+      "description": "Practical GRC and vCISO services for SMEs and regulated organisations — turning NIS2, DORA and ISO 27001 obligations into controls, documentation and evidence.",
+      "email": "panos.panayiotou@circl3.tech",
+      "telephone": "+357-99-465174",
+      "areaServed": ["CY", "EU"],
+      "address": { "@type": "PostalAddress", "addressCountry": "CY" },
+      "founder": { "@id": "https://circl3.tech/#panos" },
+      "knowsAbout": ["Cybersecurity", "NIS2", "DORA", "ISO 27001", "vCISO", "GRC", "Risk management", "ISMS"],
+      "sameAs": ["https://www.linkedin.com/in/panos-panayiotou-56770947/"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://circl3.tech/#panos",
+      "name": "Panos Panayiotou",
+      "jobTitle": "Founder & CEO · vCISO",
+      "worksFor": { "@id": "https://circl3.tech/#org" },
+      "url": "https://circl3.tech/",
+      "sameAs": ["https://www.linkedin.com/in/panos-panayiotou-56770947/"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://circl3.tech/#website",
+      "url": "https://circl3.tech/",
+      "name": "circl3.tech",
+      "publisher": { "@id": "https://circl3.tech/#org" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#home" class="brand">circl3<span class="dot">.</span>tech</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#why">Why circl3</a>
+      <a href="#approach">Approach</a>
+      <a href="#insights">Insights</a>
+      <a href="#media">Media</a>
+      <a href="#advisory">Business Advisory</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home" style="padding:0">
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Cybersecurity Advisory · GRC &amp; vCISO</span>
+    <h1>Cybersecurity that <span class="hl">stands up</span> to audits, regulators &amp; customers.</h1>
+    <p class="lead">Practical GRC and vCISO services for SMEs and regulated organisations. We turn NIS2, DORA and ISO 27001 obligations into controls, documentation and evidence — governance that works in real operations, not just on paper.</p>
+    <div class="badges">
+      <span>vCISO</span><span>NIS2</span><span>DORA</span><span>ISO 27001</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Get in touch</a>
+      <a href="#services" class="btn btn-ghost">Explore our services</a>
+    </div>
+    <div class="trust">
+      <span><b>25 years</b> CISO leadership</span>
+      <span><b>ENISA</b> working groups (EUCS &amp; ECSF)</span>
+      <span><b>Vendor-neutral</b> — no lock-in</span>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENTIATOR -->
+<section id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why circl3.tech</span>
+      <h2>Senior security leadership you work with directly</h2>
+      <p>You engage an experienced principal, not a rotating team — with the judgement that comes from building security functions inside government and banking.</p>
+    </div>
+    <div class="diff-grid">
+      <div class="diff">
+        <div class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h4>Work with the principal</h4>
+        <p>You engage a former CISO of Cyprus' two largest banks and the Government directly — senior judgement and continuity, hands-on from day one.</p>
+      </div>
+      <div class="diff">
+        <div class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 7.7 8 10 4.6-2.3 8-5 8-10V6l-8-4Z"/></svg></div>
+        <h4>Independent &amp; vendor-neutral</h4>
+        <p>No products to sell and no platform to push. Our only goal is the right controls and evidence for your organisation.</p>
+      </div>
+      <div class="diff">
+        <div class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg></div>
+        <h4>Regulator-side experience</h4>
+        <p>Built inside government, banking and ENISA working groups — we understand how regulators and auditors think, because we've sat at their table.</p>
+      </div>
+      <div class="diff">
+        <div class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h4>Selective &amp; hands-on</h4>
+        <p>We take on a focused set of clients, so each receives the time, attention and continuity that real governance demands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY / VALUE -->
+<section class="urgency">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">We turn requirements into operational security</span>
+      <h2>Compliance is now a legal obligation of results.</h2>
+      <p>With the NIS2 and DORA grace periods now closed, it is no longer enough to be protected — you must be able to <em>demonstrate</em> resilience at any moment, to auditors, regulators and customers alike. circl3.tech helps organisations build and run cybersecurity governance with clarity and speed, translating obligations into the controls, documentation and evidence that hold up under scrutiny.</p>
+    </div>
+    <div class="stat">
+      <div class="big">Obligations&nbsp;→ Evidence</div>
+      <p>One backbone that satisfies regulators, auditors and your customers' due-diligence questionnaires.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="soft">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Core Services</span>
+      <h2>What we deliver</h2>
+      <p>A focused set of advisory services — scoped to your obligations, your sector and your risk appetite.</p>
+    </div>
+    <div class="feature">
+      <div class="fimg"><img src="https://images.unsplash.com/photo-1758518730384-be3d205838e8?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Senior security leadership" loading="lazy"></div>
+      <div class="ftext">
+        <h3>Security leadership</h3>
+        <p class="flead">Senior security leadership, on demand — as much or as little as you need.</p>
+        <ul class="flist">
+          <li><b>vCISO / Security Governance</b><span>Strategy, board reporting, programme ownership and continuous assurance — with senior experience from day one.</span></li>
+          <li><b>CISO Mentoring</b><span>A trusted sounding board, structure and practical know-how for a newly appointed or less-experienced CISO.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature rev">
+      <div class="fimg"><img src="https://images.unsplash.com/photo-1759169306784-40fc77c746a6?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="European Parliament building with EU flags" loading="lazy"></div>
+      <div class="ftext">
+        <h3>Regulatory readiness</h3>
+        <p class="flead">Turn NIS2, DORA and ISO 27001 obligations into controls, documentation and evidence.</p>
+        <ul class="flist">
+          <li><b>NIS2 Readiness</b><span>Gap → roadmap → implementation: governance, risk, measures and incident reporting aligned to your duty of care.</span></li>
+          <li><b>DORA Alignment</b><span>ICT risk management, operational-resilience testing and third-party / supplier assurance for financial entities.</span></li>
+          <li><b>ISO 27001 ISMS</b><span>Scoping → controls → certification support — one backbone that satisfies many frameworks at once.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="fimg"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Analytics and metrics dashboard" loading="lazy"></div>
+      <div class="ftext">
+        <h3>Risk &amp; assurance</h3>
+        <p class="flead">Know your risks — and prove your controls actually work.</p>
+        <ul class="flist">
+          <li><b>Risk Management</b><span>A framework aligned to ISO 27005, Cyprus ΚΔΠ 389 and NIST CSF, with a register and treatment plan management can act on.</span></li>
+          <li><b>Controls Maturity Scoring</b><span>Maturity assessment and testing that show where your controls stand and where to improve.</span></li>
+          <li><b>Incident Readiness</b><span>Incident-response planning and tabletop exercises to detect, respond to and recover from the real thing.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature rev">
+      <div class="fimg"><img src="https://images.unsplash.com/photo-1758691736067-b309ee3ef7b9?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Training presentation in a meeting room" loading="lazy"></div>
+      <div class="ftext">
+        <h3>People &amp; influence</h3>
+        <p class="flead">Build a security culture, satisfy independent scrutiny, and represent your interests.</p>
+        <ul class="flist">
+          <li><b>Awareness &amp; Training</b><span>Role-based training for executives and staff, plus phishing simulations that build everyday security habits.</span></li>
+          <li><b>DSA Audit — Critical Entities</b><span>Independent audits for critical entities — objective assessment of compliance, controls and resilience, with findings reported against your requirements.</span></li>
+          <li><b>Advocacy &amp; Public Speaking</b><span>Keynotes, panels and engagement with fora and regulators on your behalf.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- INTEGRATED CALLOUT -->
+    <div class="callout" style="margin-top:40px">
+      <div>
+        <h3>One ISMS, many regulations</h3>
+        <p>Treating NIS2, DORA and ISO 27001 in silos multiplies audits, documentation and cost. We build a single compliance backbone — so you assess risk once, produce one set of evidence, and satisfy every framework and customer at the same time.</p>
+      </div>
+      <ul>
+        <li><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Risk analysed once, reused across frameworks</li>
+        <li><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Harmonised policies and one evidence set</li>
+        <li><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Fewer redundant audits, lower cost</li>
+        <li><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Clarity for authorities, partners and customers</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What you walk away with</span>
+      <h2>A stronger security posture — that you can prove</h2>
+    </div>
+    <div class="out-grid">
+      <div class="out"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span><b>A clear roadmap</b> — what to do first, next and later, with owners and timelines.</span></div>
+      <div class="out"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg><span><b>Policies &amp; procedures</b> aligned to your obligations — practical, not shelfware.</span></div>
+      <div class="out"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg><span><b>A risk register &amp; treatment plan</b> that management can actually act on.</span></div>
+      <div class="out"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 7.7 8 10 4.6-2.3 8-5 8-10V6l-8-4Z"/></svg><span><b>Control mapping &amp; evidence tracking</b> for audits and customer due diligence.</span></div>
+      <div class="out"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Governance that works in real operations</b> — not just on paper.</span></div>
+      <div class="out"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg><span><b>Product-agnostic guidance</b> — no vendor lock-in, ever.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="approach" class="soft">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">How we work</span>
+      <h2>From obligations to assurance, in five steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h4>Discover</h4><p>Scope, services and the obligations that apply to you.</p></div>
+      <div class="step"><div class="n">2</div><h4>Assess</h4><p>Gaps, priorities and the real risk drivers.</p></div>
+      <div class="step"><div class="n">3</div><h4>Prioritise</h4><p>An actionable plan with clear owners and timelines.</p></div>
+      <div class="step"><div class="n">4</div><h4>Implement</h4><p>Governance, policies, controls, training and toolkits.</p></div>
+      <div class="step"><div class="n">5</div><h4>Assure</h4><p>Testing, metrics, reporting and continuous improvement.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section>
+  <div class="wrap">
+    <div class="offer">
+      <span class="eyebrow">Fast-start offer</span>
+      <h3>NIS2 / DORA Readiness Sprint</h3>
+      <p>A gap assessment, a prioritised roadmap and a practical checklist — so you can begin execution immediately, with no long lead time and no guesswork.</p>
+      <a href="#contact" class="btn btn-primary">Book a 20-minute discovery call</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTORS -->
+<section id="sectors" class="soft">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">Who we serve</span>
+      <h2>Built for regulated and growing organisations</h2>
+    </div>
+    <div class="sectors">
+      <span>SMEs</span><span>NIS2 entities</span><span>ICT providers</span><span>Financial ecosystems</span>
+      <span>Healthcare</span><span>Manufacturing &amp; Food</span><span>Public administration</span>
+      <span>Data-driven businesses</span><span>Foreign embassies</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRACK RECORD / CREDIBILITY -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Track record &amp; recognition</span>
+      <h2>25 years building security where the stakes are highest</h2>
+      <p>Led by founder and CEO <a href="https://www.linkedin.com/in/panos-panayiotou-56770947/" style="color:var(--blue);font-weight:600">Panos Panayiotou</a>, circl3.tech brings CISO leadership built inside government, banking and European policy — applied directly to your obligations.</p>
+    </div>
+    <div class="statband">
+      <div class="s"><div class="v">25 yrs</div><p>CISO leadership across government &amp; banking</p></div>
+      <div class="s"><div class="v">2</div><p>Largest Cyprus banks' security functions built from the ground up</p></div>
+      <div class="s"><div class="v">ENISA</div><p>Contributor to EUCS &amp; EU Cybersecurity Skills Framework working groups</p></div>
+      <div class="s"><div class="v">15+ yrs</div><p>Reporting to Board Risk Committees &amp; senior stakeholders</p></div>
+    </div>
+    <div class="marquee">
+      <div class="mq"><h4>CISOaaS — Cyprus Government</h4><p>Built the Cybersecurity Directorate from the ground up and led a multimillion-euro programme protecting public-administration infrastructure.</p></div>
+      <div class="mq"><h4>Banking security offices</h4><p>Established and matured the Information Security Offices of the two leading banks in Cyprus.</p></div>
+      <div class="mq"><h4>European policy</h4><p>ENISA EUCS &amp; ECSF working groups; engagement with the European Banking Federation and ACB.</p></div>
+      <div class="mq"><h4>Multi-country reach</h4><p>Banking exposure across Cyprus, Greece, Serbia, Romania and the UK, plus foreign embassies and leading private groups.</p></div>
+      <div class="mq"><h4>ISO 27001 &amp; frameworks</h4><p>ISMS implementations and control programmes aligned to ISO 27002, NIS2, GDPR, EBA Guidelines, PCI DSS and PSD2.</p></div>
+      <div class="mq"><h4>Board-level assurance</h4><p>Security strategies agreed with boards and regulators, with metrics and reporting that executives can act on.</p></div>
+    </div>
+
+    <div class="sub-head">Trusted across Government, banking, embassies &amp; leading private groups</div>
+    <div class="logos">
+      <a href="https://dmrid.gov.cy/" target="_blank" rel="noopener" title="Deputy Ministry of Research, Innovation and Digital Policy"><img src="images/logos/cyprus-government.png" alt="Deputy Ministry of Research, Innovation and Digital Policy, Republic of Cyprus" loading="lazy"></a>
+      <a href="https://gcc.com.cy/" target="_blank" rel="noopener" title="GCC"><img src="images/logos/gcc.png" alt="GCC" loading="lazy"></a>
+      <a href="https://www.enisa.europa.eu/" target="_blank" rel="noopener" title="ENISA"><img src="images/logos/enisa.png" alt="ENISA" loading="lazy"></a>
+      <a href="https://www.yianischristodouloufoundation.com/" target="_blank" rel="noopener" title="Yianis Christodoulou Foundation"><img src="images/logos/yianis-foundation.png" alt="Yianis Christodoulou Foundation" loading="lazy"></a>
+      <a href="https://www.yianisgroup.com/" target="_blank" rel="noopener" title="Yianis Group"><img src="images/logos/yianis-group.png" alt="Yianis Group" loading="lazy"></a>
+      <a href="https://www.ebf.eu/" target="_blank" rel="noopener" title="European Banking Federation"><img src="images/logos/ebf.png" alt="European Banking Federation" loading="lazy"></a>
+      <a href="https://acb.com.cy/" target="_blank" rel="noopener" title="Association of Cyprus Banks"><img src="images/logos/acb.png" alt="Association of Cyprus Banks" loading="lazy"></a>
+      <a href="https://www.cyta.com.cy/" target="_blank" rel="noopener" title="Cyta"><img src="images/logos/cyta.png" alt="Cyta" loading="lazy"></a>
+    </div>
+
+    <div class="sub-head">On stage &amp; in the room</div>
+    <div class="gallery">
+      <figure>
+        <a class="gvid" href="https://youtu.be/-tZ5DrcMMbI" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/-tZ5DrcMMbI/hqdefault.jpg" alt="iFX EXPO talk — Cybersecurity Principle &amp; Practice" loading="lazy">
+          <span class="pbtn"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
+        </a>
+        <figcaption>iFX EXPO — "Cybersecurity Principle &amp; Practice: The Golden Shield to Safeguard You".</figcaption>
+      </figure>
+      <figure>
+        <img src="images/events/global-cybersecurity-forum.jpg" alt="Panos Panayiotou representing Cyprus at the Global Cybersecurity Forum, Riyadh" loading="lazy">
+        <figcaption>Global Cybersecurity Forum 2024 — Riyadh, representing Cyprus.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/events/polcyber-2025.jpg" alt="Panos Panayiotou moderating at POLCYBER 2025" loading="lazy">
+        <figcaption>POLCYBER 2025 — Polish-Cypriot Business Forum on Defence &amp; Cybersecurity.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/events/cyber-security-conference.jpg" alt="Panos Panayiotou keynoting at the 4th Cyber Security Conference" loading="lazy">
+        <figcaption>4th Cyber Security Conference — "Safeguarding the Digital Fortress", Cyprus.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/events/democracy-ai-ucy.jpg" alt="Panos Panayiotou speaking at the University of Cyprus" loading="lazy">
+        <figcaption>"Cybersecuring Democracy in the Age of AI" — University of Cyprus, October 2024.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/events/cybersecurity-panel.jpg" alt="Panos Panayiotou on a cybersecurity panel" loading="lazy">
+        <figcaption>Panel discussion with cybersecurity and industry leaders.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/events/cyberthreats-panel.jpg" alt="Panos Panayiotou on a panel about cyber threats and collaboration" loading="lazy">
+        <figcaption>Panel on cyber threats and the need for collaboration.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/events/conference-panel.jpg" alt="Panos Panayiotou speaking on a conference panel" loading="lazy">
+        <figcaption>Conference panel on cybersecurity fundamentals.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section id="insights" class="soft">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Insights</span>
+      <h2>Practical perspectives on the regulations shaping European cybersecurity</h2>
+      <p>Short, pragmatic reads on NIS2, DORA and ISO 27001 — written for boards and operators, not just specialists.</p>
+    </div>
+    <div class="ins-grid">
+      <a class="ins" href="insights/one-ism-not-three-regulatory-programmes.html">
+        <div class="top"></div>
+        <div class="body">
+          <div class="meta">NIS2 · DORA · ISO 27001</div>
+          <h4>One ISMS, not three audits</h4>
+          <p>How ISO 27001 can serve as the backbone that satisfies NIS2 and DORA from a single set of evidence — and spares your team the cost of stacking frameworks.</p>
+          <div class="more">Read the article →</div>
+        </div>
+      </a>
+      <a class="ins" href="insights/dora-is-a-business-issue.html">
+        <div class="top"></div>
+        <div class="body">
+          <div class="meta">DORA · Governance</div>
+          <h4>DORA is a business issue, not just an ICT one</h4>
+          <p>Why operational resilience and ICT third-party assurance need board ownership and clear accountability — not delegation to IT alone.</p>
+          <div class="more">Read the article →</div>
+        </div>
+      </a>
+      <a class="ins" href="insights/nis2-from-gap-to-roadmap.html">
+        <div class="top"></div>
+        <div class="body">
+          <div class="meta">NIS2 · Getting started</div>
+          <h4>From gap to roadmap without the overwhelm</h4>
+          <p>A pragmatic first-90-days view for entities newly in scope of NIS2: what to assess, what to prioritise, and where to begin.</p>
+          <div class="more">Read the article →</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- IN THE MEDIA -->
+<section id="media">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">In the media</span>
+      <h2>circl3.tech in the conversation</h2>
+    </div>
+    <div class="media-grid">
+      <a class="mcard" href="https://youtu.be/8oK6hutMYBI" target="_blank" rel="noopener">
+        <div class="thumb"><img src="https://i.ytimg.com/vi/8oK6hutMYBI/hqdefault.jpg" alt="CISO Guide podcast — building a cybersecurity office from scratch" loading="lazy"><span class="play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span></div>
+        <div class="mbody">
+          <div class="src">CyberSecTV · Podcast</div>
+          <h3>How to Build a Cybersecurity Office from Scratch</h3>
+          <p>Panos Panayiotou on building and running a cybersecurity function from the ground up — a practical CISO guide.</p>
+          <div class="go">Watch on YouTube →</div>
+        </div>
+      </a>
+      <a class="mcard" href="https://youtu.be/ezl5x5DZEqE" target="_blank" rel="noopener">
+        <div class="thumb"><img src="https://i.ytimg.com/vi/ezl5x5DZEqE/hqdefault.jpg" alt="The role of the CISO after NIS2 and DORA" loading="lazy"><span class="play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span></div>
+        <div class="mbody">
+          <div class="src">CYEN · Panel</div>
+          <h3>The role of the CISO after NIS2 and DORA</h3>
+          <p>Panos Panayiotou on how the CISO's role evolves as NIS2 and DORA take effect.</p>
+          <div class="go">Watch on YouTube →</div>
+        </div>
+      </a>
+      <a class="mcard" href="https://inbusinessnews.reporter.com.cy/article/458853/panos-panayiotou-on-founding-circl3-tech-to-me-cybersecurity-was-never-just-an-it-issue" target="_blank" rel="noopener">
+        <div class="thumb"><img src="https://inbusinessnews.reporter.com.cy/images/1300x500/cache_1300x500_Analog_medium_458852_222349_26_03_27_142907.jpg" alt="Panos Panayiotou interview in GOLD Magazine" loading="lazy"></div>
+        <div class="mbody">
+          <div class="src">GOLD Magazine · Interview</div>
+          <h3>"To me, cybersecurity was never 'just an IT issue'"</h3>
+          <p>Why cybersecurity must move beyond compliance to become a continuous, business-critical capability.</p>
+          <div class="go">Read the interview →</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS & STARTUP ADVISORY (secondary) -->
+<section id="advisory" class="soft">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Also from circl3.tech · Business &amp; Startup Advisory</span>
+      <h2>Turning ideas into sustainable ventures</h2>
+      <p>Alongside our cybersecurity practice, circl3.tech offers business and startup advisory led by Angela Panayiotou.</p>
+    </div>
+    <div class="person">
+      <img class="person-photo" src="https://img1.wsimg.com/isteam/ip/ff324313-bbec-4b35-a1b0-308c565b7618/Angela%20Inspire%202025.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:500,cg:true" alt="Angela Panayiotou" loading="lazy">
+      <div>
+        <h3>Angela Panayiotou</h3>
+        <span class="role">Business &amp; Startup Advisor</span>
+        <p>Angela advises startups, SMEs and high-net-worth individuals on business development, transformation and profitability across Europe and the Middle East. Former <strong>Manager of the Bank of Cyprus Innovation &amp; Entrepreneurship Centre</strong>, she oversaw the IDEA Innovation Centre, the Business Academy for SMEs and the ARIS Incubator.</p>
+        <p>Today she is <strong>Advisor to Monaco-UK entrepreneur John Christodoulou and the Yianis Christodoulou Foundation</strong> and a <strong>Member of the Board of Invest Cyprus</strong>. Her focus areas include startup acceleration, digital transformation, strategic communication and investment facilitation. An international speaker and mentor, she has been honoured with the Madame Figaro Woman of the Year Award and the European Commission's Enterprise Promotion Award (EEPA).</p>
+        <p class="quote">"I transform my love for people into purpose — guiding them to shape their vision, build their business, and grow with confidence and meaning."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Contact</span>
+      <h2>Let's start working together</h2>
+      <p>Every organisation's needs are unique. Tell us where you are with NIS2, DORA or ISO 27001 — or book a short discovery call — and we'll map the fastest practical path forward.</p>
+    </div>
+    <div class="contact-row">
+      <a class="card" href="mailto:panos.panayiotou@circl3.tech?subject=Discovery%20call%20%E2%80%94%20circl3.tech">
+        <svg fill="none" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <span>panos.panayiotou@circl3.tech</span>
+      </a>
+      <a class="card" href="tel:+35799465174">
+        <svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21a14 14 0 0 1-13-13 2 2 0 0 1 2-2.2h3l1.5 4-2 1.4a11 11 0 0 0 5 5l1.4-2 4 1.5v3A2 2 0 0 1 16 21Z"/></svg>
+        <span>+357 99 465174</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">circl3<span class="dot" style="color:var(--orange)">.</span>tech</div>
+    <p>Practical GRC &amp; vCISO services · vCISO · NIS2 · DORA · ISO 27001</p>
+    <p style="margin-top:10px"><a href="tel:+35799465174">+357 99 465174</a> &nbsp;|&nbsp; <a href="mailto:panos.panayiotou@circl3.tech">panos.panayiotou@circl3.tech</a></p>
+    <p style="margin-top:14px;color:var(--muted)">Copyright © 2026 circl3.tech ltd — All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const burger=document.getElementById('burger'),links=document.getElementById('navLinks');
+  burger.addEventListener('click',()=>links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+</script>
+</body>
+</html>

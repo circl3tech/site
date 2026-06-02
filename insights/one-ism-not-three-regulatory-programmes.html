@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One ISMS, not three regulatory programmes | circl3.tech Insights</title>
+<meta name="description" content="How to use ISO 27001 as the backbone that satisfies NIS2 and DORA from a single set of evidence — with practical tips to avoid audit fatigue, duplicated documentation and runaway cost.">
+<link rel="canonical" href="https://circl3.tech/insights/one-ism-not-three-regulatory-programmes.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="One ISMS, not three regulatory programmes">
+<meta property="og:description" content="Use ISO 27001 as the backbone that satisfies NIS2 and DORA from a single evidence set — practical tips from circl3.tech.">
+<meta property="og:url" content="https://circl3.tech/insights/one-ism-not-three-regulatory-programmes.html">
+<meta property="og:image" content="https://circl3.tech/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://circl3.tech/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#16202e;--body:#3f4a5c;--muted:#6b7689;--blue:#2e579a;--blue-dark:#244680;--blue-soft:#eaf1fb;--orange:#ef7f0f;--line:#e7ecf3;--bg:#fff;--soft:#f6f9fd;--radius:16px;--maxw:760px}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--body);background:var(--bg);line-height:1.72;-webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  h1,h2,h3,.brand{font-family:'Josefin Sans',sans-serif;color:var(--ink);line-height:1.18;font-weight:600}
+  header.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-in{max-width:var(--maxw);margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-size:1.4rem;font-weight:700;color:var(--ink)}
+  .brand .dot{color:var(--orange)}
+  .nav-in a.back{font-size:.92rem;font-weight:600;color:var(--blue)}
+  .hero{background:linear-gradient(180deg,#fff,var(--soft));border-bottom:1px solid var(--line)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .hero .wrap{padding:60px 24px 46px}
+  .eyebrow{font-family:'Josefin Sans',sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;font-weight:600;color:var(--blue)}
+  h1{font-size:clamp(2rem,4.5vw,2.8rem);margin:14px 0 16px}
+  .dek{font-size:1.18rem;color:var(--muted)}
+  .byline{margin-top:22px;font-size:.92rem;color:var(--muted)}
+  .byline b{color:var(--ink);font-family:'Josefin Sans',sans-serif}
+  article{padding:48px 0 8px}
+  article h2{font-size:1.5rem;margin:40px 0 12px}
+  article h3{font-size:1.18rem;margin:28px 0 8px;color:var(--blue-dark)}
+  article p{margin:0 0 18px;font-size:1.06rem}
+  article ul,article ol{margin:0 0 20px;padding-left:1.25em}
+  article li{margin-bottom:10px;font-size:1.05rem}
+  article strong{color:var(--ink)}
+  .lead{font-size:1.16rem;color:var(--ink)}
+  blockquote{margin:26px 0;padding:6px 0 6px 22px;border-left:4px solid var(--orange);font-style:italic;color:var(--ink);font-size:1.12rem}
+  .tipbox{background:var(--blue-soft);border:1px solid #dce7f7;border-radius:var(--radius);padding:26px 28px;margin:28px 0}
+  .tipbox h3{margin-top:0;color:var(--ink)}
+  .cta{background:linear-gradient(135deg,var(--blue),var(--blue-dark));border-radius:var(--radius);padding:38px;color:#fff;text-align:center;margin:46px 0 10px}
+  .cta h3{color:#fff;font-size:1.5rem;margin-bottom:10px}
+  .cta p{color:rgba(255,255,255,.92);margin-bottom:22px}
+  .btn{display:inline-block;background:#fff;color:var(--blue);font-weight:600;padding:13px 26px;border-radius:999px}
+  .btn:hover{text-decoration:none;background:var(--soft)}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:30px 0;text-align:center;color:var(--muted);font-size:.9rem}
+  footer a{color:var(--blue)}
+  .disclaimer{font-size:.86rem;color:var(--muted);font-style:italic;border-top:1px solid var(--line);margin-top:30px;padding-top:20px}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"One ISMS, not three regulatory programmes",
+  "description":"How to use ISO 27001 as the backbone that satisfies NIS2 and DORA from a single set of evidence — with practical tips.",
+  "image":"https://circl3.tech/og-image.png",
+  "author":{"@type":"Person","name":"Panos Panayiotou","url":"https://www.linkedin.com/in/panos-panayiotou-56770947/"},
+  "publisher":{"@type":"Organization","name":"circl3.tech","logo":{"@type":"ImageObject","url":"https://circl3.tech/og-image.png"}},
+  "mainEntityOfPage":"https://circl3.tech/insights/one-ism-not-three-regulatory-programmes.html"
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="brand">circl3<span class="dot">.</span>tech</a>
+    <a class="back" href="../index.html#insights">← All insights</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Insight · NIS2 · DORA · ISO 27001</span>
+    <h1>One ISMS, not three regulatory programmes</h1>
+    <p class="dek">Use ISO 27001 as the backbone that satisfies NIS2 and DORA from a single set of evidence — and stop paying three times for the same control.</p>
+    <p class="byline">By <b>Panos Panayiotou</b> — Founder &amp; CEO, circl3.tech · former CISO across government and banking</p>
+  </div>
+</section>
+
+<div class="wrap">
+<article>
+  <p class="lead">Walk into many organisations today and you will find three parallel universes: a NIS2 project run by IT, a DORA workstream owned by the resilience team, and an ISO 27001 effort that the quality department revived. Three plans, three sets of policies, three evidence binders — and three audits that ask substantially the same questions in slightly different words. It is exhausting, expensive, and entirely avoidable.</p>
+
+  <p>After building and running security functions inside government and the banking sector, I have learned one thing the hard way: regulation rewards organisations that treat security as a single, well-governed capability, and punishes those that treat each new obligation as a fresh fire drill. The good news is that NIS2, DORA and ISO 27001 are not three different problems. They are three views of the same problem — and ISO 27001 gives you the management system to hold them all.</p>
+
+  <h2>Why the silos form</h2>
+  <p>Silos rarely form by design; they form by deadline. A regulation lands, a date looms, someone is told to "get us compliant," and the fastest path appears to be a standalone project. Each project then builds its own risk assessment, its own policy pack and its own reporting line. The result is duplication, contradictory documents, and a control environment that nobody owns end to end. Auditors notice. So do attackers.</p>
+
+  <h2>The principle: govern once, evidence once, report many times</h2>
+  <p>The mature approach inverts the model. You build <strong>one</strong> Information Security Management System (ISMS) — the discipline ISO 27001 describes — and you treat NIS2 and DORA as additional sets of requirements mapped onto it. You analyse risk once. You write each policy once. You collect each piece of evidence once. Then you report against whichever framework is asking, drawing from the same source of truth.</p>
+  <blockquote>Treating NIS2, DORA and ISO 27001 in silos is the most expensive mistake of the year. An integrated ISMS turns three programmes into one operating model.</blockquote>
+
+  <h2>Where the frameworks genuinely overlap</h2>
+  <p>The overlap is larger than most teams assume. All three demand the same foundations:</p>
+  <ul>
+    <li><strong>Governance and accountability</strong> — defined roles, management involvement, and a security function that does not report into the team it is meant to challenge.</li>
+    <li><strong>Risk management</strong> — a documented, repeatable method for identifying, treating and accepting risk.</li>
+    <li><strong>Technical and organisational measures</strong> — access control, cryptography, logging, vulnerability and patch management, secure configuration.</li>
+    <li><strong>Incident management</strong> — detection, response, and notification within tight regulatory clocks.</li>
+    <li><strong>Third-party / ICT supply-chain assurance</strong> — knowing who your critical providers are and holding them to account.</li>
+    <li><strong>Business continuity and testing</strong> — proving, not assuming, that you can withstand disruption.</li>
+  </ul>
+  <p>An organisation that runs a real ISO 27001 ISMS has already built roughly 70–80% of what NIS2 and DORA ask for. The remaining work is targeting the specifics — not rebuilding the foundations.</p>
+
+  <h2>Where they diverge — and you must add, not duplicate</h2>
+  <p>Integration does not mean pretending the frameworks are identical. A few requirements are genuinely framework-specific, and you bolt these onto the ISMS rather than spin up a separate programme:</p>
+  <ul>
+    <li><strong>DORA</strong> goes further on operational-resilience testing (including threat-led penetration testing for significant entities), a formal register of ICT third-party arrangements, and contractual provisions for critical providers.</li>
+    <li><strong>NIS2</strong> sharpens incident-reporting timelines (an early warning typically within 24 hours, a fuller notification within 72), and makes management bodies personally accountable for approving and overseeing measures.</li>
+    <li><strong>ISO 27001</strong> brings the certification discipline — Statement of Applicability, internal audit, management review — that gives the whole system its rhythm and external credibility.</li>
+  </ul>
+
+  <div class="tipbox">
+    <h3>Practical tips: building one backbone</h3>
+    <ol>
+      <li><strong>Anchor on ISO 27001 as the management system.</strong> Make it the spine; map everything else to it. The PDCA rhythm (plan-do-check-act) is what keeps compliance alive between audits.</li>
+      <li><strong>Build one control set with a crosswalk.</strong> Maintain a single control library and tag each control with the obligations it satisfies (ISO Annex A, NIS2 Article 21 measures, DORA chapters). One control, many references.</li>
+      <li><strong>Keep one risk register, viewed through multiple lenses.</strong> Don't run separate registers; add framework tags and filters so the same risk can be reported to a board, a regulator or an auditor.</li>
+      <li><strong>Collect evidence once, reuse everywhere.</strong> Establish a single evidence repository organised by control. When an auditor or a customer's due-diligence questionnaire arrives, you retrieve — you don't recreate.</li>
+      <li><strong>Set your incident process to the strictest clock.</strong> Design notification workflows around the tightest deadline you face (NIS2's 24-hour early warning), and the looser ones take care of themselves.</li>
+      <li><strong>Maintain one third-party register.</strong> A single inventory of providers, criticality and contractual controls feeds both DORA's ICT third-party oversight and NIS2's supply-chain expectations.</li>
+      <li><strong>Align continuity and testing — then add what's unique.</strong> Run one continuity and exercise programme; schedule DORA's advanced resilience testing as a specific, planned addition where it applies to you.</li>
+      <li><strong>Give it one accountable owner and a board cadence.</strong> Regulation now expects named accountability and management oversight. One owner, one quarterly report to the board, covering all frameworks.</li>
+      <li><strong>Calendar your audits together.</strong> Align internal audits, certification surveillance and regulatory reporting into a single annual rhythm so teams prepare once.</li>
+    </ol>
+  </div>
+
+  <h2>What "good" looks like</h2>
+  <p>In a mature organisation, you can ask a single question — "show me how we manage access control" — and receive one policy, one set of evidence, and a clear line to the ISO control, the NIS2 measure and the DORA requirement it satisfies. Risk is discussed in one forum. The board sees one dashboard. When a new regulation arrives — and the Cyber Resilience Act is already on its way — it is absorbed as an extension of the system, not as another emergency.</p>
+
+  <h2>The pitfalls to avoid</h2>
+  <p>Three mistakes sink integration efforts. First, treating compliance as a document-production exercise rather than an operating discipline — auditors and attackers both find the gap between paper and practice. Second, letting each framework keep its own owner, which quietly rebuilds the silos. Third, chasing certificates while neglecting the basics: identity, patching, backups and logging. No amount of mapping compensates for weak fundamentals.</p>
+
+  <p>Regulation did not make cybersecurity harder. It made it real — structured, documented, measured and continuously improved. Organisations that build a single backbone don't just spend less on audits; they demonstrate genuine control of their risk, and that is what earns the trust of regulators, partners and customers alike.</p>
+
+  <div class="cta">
+    <h3>Facing NIS2, DORA and ISO 27001 at once?</h3>
+    <p>We help organisations build a single compliance backbone — assess risk once, evidence once, satisfy every framework.</p>
+    <a class="btn" href="../index.html#contact">Book a 20-minute discovery call</a>
+  </div>
+
+  <p class="disclaimer">This article is general information from circl3.tech, not legal advice. Specific obligations under NIS2, DORA and ISO/IEC 27001 depend on your sector, size and national transposition — we recommend a scoped assessment for your organisation.</p>
+</article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="brand" style="margin-bottom:8px">circl3<span class="dot" style="color:var(--orange)">.</span>tech</div>
+    <a href="../index.html">Home</a> &nbsp;·&nbsp; <a href="../index.html#services">Services</a> &nbsp;·&nbsp; <a href="../index.html#contact">Contact</a>
+    <p style="margin-top:12px;color:#9aa3b2">Copyright © 2026 circl3.tech ltd — All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

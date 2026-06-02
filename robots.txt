@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://circl3.tech/sitemap.xml

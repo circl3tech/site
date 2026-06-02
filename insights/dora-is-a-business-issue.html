@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DORA is a business issue, not just an ICT one | circl3.tech Insights</title>
+<meta name="description" content="Why the Digital Operational Resilience Act belongs in the boardroom — and how to run DORA as a business capability, not an IT project. Practical tips from circl3.tech.">
+<link rel="canonical" href="https://circl3.tech/insights/dora-is-a-business-issue.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DORA is a business issue, not just an ICT one">
+<meta property="og:description" content="Why digital operational resilience belongs in the boardroom — and how to run DORA as a business capability. Practical tips from circl3.tech.">
+<meta property="og:url" content="https://circl3.tech/insights/dora-is-a-business-issue.html">
+<meta property="og:image" content="https://circl3.tech/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://circl3.tech/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#16202e;--body:#3f4a5c;--muted:#6b7689;--blue:#2e579a;--blue-dark:#244680;--blue-soft:#eaf1fb;--orange:#ef7f0f;--line:#e7ecf3;--bg:#fff;--soft:#f6f9fd;--radius:16px;--maxw:760px}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--body);background:var(--bg);line-height:1.72;-webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  h1,h2,h3,.brand{font-family:'Josefin Sans',sans-serif;color:var(--ink);line-height:1.18;font-weight:600}
+  header.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-in{max-width:var(--maxw);margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-size:1.4rem;font-weight:700;color:var(--ink)}
+  .brand .dot{color:var(--orange)}
+  .nav-in a.back{font-size:.92rem;font-weight:600;color:var(--blue)}
+  .hero{background:linear-gradient(180deg,#fff,var(--soft));border-bottom:1px solid var(--line)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .hero .wrap{padding:60px 24px 46px}
+  .eyebrow{font-family:'Josefin Sans',sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;font-weight:600;color:var(--blue)}
+  h1{font-size:clamp(2rem,4.5vw,2.8rem);margin:14px 0 16px}
+  .dek{font-size:1.18rem;color:var(--muted)}
+  .byline{margin-top:22px;font-size:.92rem;color:var(--muted)}
+  .byline b{color:var(--ink);font-family:'Josefin Sans',sans-serif}
+  article{padding:48px 0 8px}
+  article h2{font-size:1.5rem;margin:40px 0 12px}
+  article h3{font-size:1.18rem;margin:28px 0 8px;color:var(--blue-dark)}
+  article p{margin:0 0 18px;font-size:1.06rem}
+  article ul,article ol{margin:0 0 20px;padding-left:1.25em}
+  article li{margin-bottom:10px;font-size:1.05rem}
+  article strong{color:var(--ink)}
+  .lead{font-size:1.16rem;color:var(--ink)}
+  blockquote{margin:26px 0;padding:6px 0 6px 22px;border-left:4px solid var(--orange);font-style:italic;color:var(--ink);font-size:1.12rem}
+  .tipbox{background:var(--blue-soft);border:1px solid #dce7f7;border-radius:var(--radius);padding:26px 28px;margin:28px 0}
+  .tipbox h3{margin-top:0;color:var(--ink)}
+  .cta{background:linear-gradient(135deg,var(--blue),var(--blue-dark));border-radius:var(--radius);padding:38px;color:#fff;text-align:center;margin:46px 0 10px}
+  .cta h3{color:#fff;font-size:1.5rem;margin-bottom:10px}
+  .cta p{color:rgba(255,255,255,.92);margin-bottom:22px}
+  .btn{display:inline-block;background:#fff;color:var(--blue);font-weight:600;padding:13px 26px;border-radius:999px}
+  .btn:hover{text-decoration:none;background:var(--soft)}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:30px 0;text-align:center;color:var(--muted);font-size:.9rem}
+  footer a{color:var(--blue)}
+  .disclaimer{font-size:.86rem;color:var(--muted);font-style:italic;border-top:1px solid var(--line);margin-top:30px;padding-top:20px}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"DORA is a business issue, not just an ICT one",
+  "description":"Why the Digital Operational Resilience Act belongs in the boardroom — and how to run DORA as a business capability, not an IT project.",
+  "image":"https://circl3.tech/og-image.png",
+  "author":{"@type":"Person","name":"Panos Panayiotou","url":"https://www.linkedin.com/in/panos-panayiotou-56770947/"},
+  "publisher":{"@type":"Organization","name":"circl3.tech","logo":{"@type":"ImageObject","url":"https://circl3.tech/og-image.png"}},
+  "mainEntityOfPage":"https://circl3.tech/insights/dora-is-a-business-issue.html"
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="brand">circl3<span class="dot">.</span>tech</a>
+    <a class="back" href="../index.html#insights">← All insights</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Insight · DORA · Governance</span>
+    <h1>DORA is a business issue, not just an ICT one</h1>
+    <p class="dek">Digital operational resilience belongs in the boardroom. Treat DORA as an IT project and you will pass the documentation test but fail the real one — staying open when something breaks.</p>
+    <p class="byline">By <b>Panos Panayiotou</b> — Founder &amp; CEO, circl3.tech · former CISO across government and banking</p>
+  </div>
+</section>
+
+<div class="wrap">
+<article>
+  <p class="lead">When DORA lands on a desk, it is usually handed to the IT or security team with the words "this one's for you." That instinct is understandable — the Digital Operational Resilience Act is full of ICT language. It is also the single biggest reason organisations get DORA wrong. DORA is not really about technology. It is about whether the <strong>business</strong> can keep delivering its critical functions when technology fails — and that is a question only leadership can own.</p>
+
+  <p>Having sat on both sides — building security inside banks and advising boards — I can tell you the regulators are not asking "is your IT secure?" They are asking "if your most important service goes down, how badly are your customers, the market and the system harmed, and how quickly can you recover?" That is a business resilience question wearing a technical costume.</p>
+
+  <h2>What DORA actually demands</h2>
+  <p>DORA rests on five pillars, and only one of them is purely technical:</p>
+  <ul>
+    <li><strong>ICT risk management</strong> — a governance framework, owned and overseen by the management body, not delegated away.</li>
+    <li><strong>ICT incident management and reporting</strong> — classifying major incidents and notifying authorities within defined timelines.</li>
+    <li><strong>Digital operational resilience testing</strong> — from basic testing to threat-led penetration testing (TLPT) for significant entities.</li>
+    <li><strong>ICT third-party risk</strong> — a register of arrangements, due diligence, contractual rights, concentration analysis and exit strategies for critical providers.</li>
+    <li><strong>Information sharing</strong> — voluntary exchange of cyber-threat intelligence among financial entities.</li>
+  </ul>
+  <p>Read that list again as a CEO, not a CIO. Every pillar lands on the business: accountability, customer harm, supplier dependence, market trust. The technology is the means; resilience of the business is the end.</p>
+
+  <blockquote>DORA's real test is not "did you document it?" but "can you still serve customers when your critical provider goes dark?"</blockquote>
+
+  <h2>Why it is a board issue, by design</h2>
+  <p>DORA deliberately puts the <strong>management body</strong> on the hook. The board must approve the ICT risk framework, understand the firm's exposure, allocate budget, and stay informed — and members can be held accountable. This is not a formality. It mirrors what happened with financial risk after 2008: resilience is now a governance duty, not an operational afterthought.</p>
+  <p>There are three reasons it cannot live in IT alone:</p>
+  <ul>
+    <li><strong>Only the business can rank what matters.</strong> Deciding which services are "critical or important" — and how much downtime is tolerable — is a commercial and customer judgement, not a server inventory.</li>
+    <li><strong>Concentration risk is a strategic exposure.</strong> If three of your critical functions all depend on one cloud provider, that is a board-level bet on a single point of failure.</li>
+    <li><strong>Recovery is a whole-organisation effort.</strong> Communications, legal, operations and customer service all act in an incident. None of them report to IT.</li>
+  </ul>
+
+  <h2>The shift in the question</h2>
+  <p>The most useful thing a leadership team can do is change the question it asks. Move from "Is our IT secure?" to "Which business services must never stop, what do they depend on, and can we prove we'd survive a severe-but-plausible disruption?" Once that question is owned at the top, the technical work has direction and the spending has meaning.</p>
+
+  <div class="tipbox">
+    <h3>Practical tips: running DORA as a business capability</h3>
+    <ol>
+      <li><strong>Start with critical business services, not systems.</strong> Map your important functions, then trace the people, processes and ICT they depend on. This "service view" is the spine of everything DORA asks.</li>
+      <li><strong>Put it on the board agenda — with a real owner.</strong> Name an accountable executive, brief the board in plain language, and record approval of the ICT risk framework. Train directors so oversight is genuine, not a signature.</li>
+      <li><strong>Build the ICT third-party register early.</strong> It takes longer than anyone expects. Capture every arrangement, flag the critical ones, and assess concentration — where many services lean on one provider.</li>
+      <li><strong>Fix your contracts and exit strategies.</strong> Critical-provider contracts need audit rights, incident cooperation, sub-outsourcing transparency and a workable exit plan. "We could never leave them" is a finding, not a strategy.</li>
+      <li><strong>Set impact-based incident classification.</strong> Decide in advance what makes an incident "major" in business terms (customers affected, downtime, data, reputation), so reporting clocks start correctly under pressure.</li>
+      <li><strong>Test severe-but-plausible scenarios, together.</strong> Run exercises that include business, legal and communications — not just technical recovery. For significant entities, plan threat-led penetration testing (TLPT) as a distinct, scheduled programme.</li>
+      <li><strong>Reuse your ISO 27001 backbone.</strong> Most ICT-risk and incident requirements already live in a working ISMS — map DORA onto it rather than building a parallel programme.</li>
+      <li><strong>Report resilience to the board like a KPI.</strong> Tolerances, test results, top supplier dependencies and open actions — a single quarterly view the board can actually act on.</li>
+    </ol>
+  </div>
+
+  <h2>The pitfalls to avoid</h2>
+  <p>The classic failure is "compliance theatre": polished policies, an untested recovery plan, and a third-party register that nobody maintains. The second is treating resilience testing as a box-tick rather than a genuine attempt to break things and learn. The third — and most dangerous — is leaving the whole effort inside IT, so the board is surprised on the worst possible day. DORA was written precisely to prevent that surprise.</p>
+
+  <p>Digital operational resilience is, at heart, a promise to your customers and the market that you can keep going when things go wrong. That promise is made by the business and kept by the whole organisation. Technology is how you deliver it — but it was never "just an IT issue."</p>
+
+  <div class="cta">
+    <h3>Preparing for DORA?</h3>
+    <p>We help financial entities and their providers turn DORA from an IT project into a board-owned resilience capability — practical, testable, proven.</p>
+    <a class="btn" href="../index.html#contact">Book a 20-minute discovery call</a>
+  </div>
+
+  <p class="disclaimer">This article is general information from circl3.tech, not legal advice. DORA obligations depend on your classification, size and role in the financial ecosystem — we recommend a scoped assessment for your organisation.</p>
+</article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="brand" style="margin-bottom:8px">circl3<span class="dot" style="color:var(--orange)">.</span>tech</div>
+    <a href="../index.html">Home</a> &nbsp;·&nbsp; <a href="../index.html#services">Services</a> &nbsp;·&nbsp; <a href="../index.html#contact">Contact</a>
+    <p style="margin-top:12px;color:#9aa3b2">Copyright © 2026 circl3.tech ltd — All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
