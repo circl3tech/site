@@ -43,7 +43,7 @@
   a{color:inherit;text-decoration:none}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
   .eyebrow{font-family:'Josefin Sans',sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.84rem;font-weight:700;color:var(--blue);display:inline-flex;align-items:center;gap:10px}
-  .eyebrow::before{content:"";width:26px;height:3px;border-radius:2px;background:var(--orange)}
+  .eyebrow::before{content:"";width:26px;height:3px;border-radius:2px;background:var(--blue-2)}
   .section-head.center .eyebrow{justify-content:center}
 
   /* NAV */
@@ -61,11 +61,11 @@
 
   /* HERO */
   .hero{position:relative;background:linear-gradient(140deg,var(--blue-dark),var(--blue));overflow:hidden}
-  .hero::before{content:"";position:absolute;right:-160px;top:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle at center,rgba(239,127,15,.16),transparent 68%)}
+  .hero::before{content:"";position:absolute;right:-160px;top:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle at center,rgba(255,255,255,.10),transparent 68%)}
   .hero::after{content:"";position:absolute;left:-180px;bottom:-160px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle at center,rgba(63,110,196,.14),transparent 68%)}
   .hero-inner{padding:96px 24px 84px;position:relative;z-index:2;max-width:844px;margin:0 auto}
   .hero h1{font-size:clamp(2.3rem,5vw,3.6rem);font-weight:700;margin:16px 0 20px;color:#fff}
-  .hero h1 .hl{color:#ffb86b}
+  .hero h1 .hl{color:#9ec3f0}
   .hero p.lead{font-size:1.18rem;color:rgba(255,255,255,.92);max-width:60ch}
   .badges{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 8px}
   .badges span{font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:.85rem;letter-spacing:.04em;background:#fff;border:1px solid var(--blue-soft);color:var(--blue);padding:8px 16px;border-radius:999px;box-shadow:var(--shadow-sm)}
@@ -77,6 +77,12 @@
   .btn-ghost:hover{border-color:var(--blue);transform:translateY(-2px)}
   .trust{border-top:1px solid var(--line);margin-top:40px;padding-top:24px;display:flex;flex-wrap:wrap;gap:28px;font-size:.92rem;color:var(--muted)}
   .trust b{color:var(--ink);font-weight:600}
+  .hero .eyebrow{color:#cfe0fb}
+  .hero .eyebrow::before{background:#cfe0fb}
+  .hero .trust{color:rgba(255,255,255,.85);border-top-color:rgba(255,255,255,.22)}
+  .hero .trust b{color:#fff}
+  .hero .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+  .hero .btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
 
   /* SECTIONS */
   section{padding:84px 0}
