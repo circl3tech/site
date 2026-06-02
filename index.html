@@ -42,7 +42,9 @@
   h1,h2,h3,h4,.brand{font-family:'Josefin Sans',sans-serif;color:var(--ink);font-weight:600;line-height:1.15}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  .eyebrow{font-family:'Josefin Sans',sans-serif;text-transform:uppercase;letter-spacing:.18em;font-size:.8rem;font-weight:600;color:var(--blue)}
+  .eyebrow{font-family:'Josefin Sans',sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.84rem;font-weight:700;color:var(--blue);display:inline-flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:26px;height:3px;border-radius:2px;background:var(--orange)}
+  .section-head.center .eyebrow{justify-content:center}
 
   /* NAV */
   header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
@@ -58,13 +60,13 @@
   .burger span{width:24px;height:2px;background:var(--ink);display:block}
 
   /* HERO */
-  .hero{position:relative;background:linear-gradient(180deg,#ffffff 0%,var(--soft) 100%);overflow:hidden}
+  .hero{position:relative;background:linear-gradient(140deg,var(--blue-dark),var(--blue));overflow:hidden}
   .hero::before{content:"";position:absolute;right:-160px;top:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle at center,rgba(239,127,15,.16),transparent 68%)}
   .hero::after{content:"";position:absolute;left:-180px;bottom:-160px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle at center,rgba(63,110,196,.14),transparent 68%)}
   .hero-inner{padding:96px 24px 84px;position:relative;z-index:2;max-width:844px;margin:0 auto}
-  .hero h1{font-size:clamp(2.3rem,5vw,3.6rem);font-weight:700;margin:16px 0 20px;color:var(--ink)}
-  .hero h1 .hl{color:var(--orange)}
-  .hero p.lead{font-size:1.18rem;color:var(--body);max-width:60ch}
+  .hero h1{font-size:clamp(2.3rem,5vw,3.6rem);font-weight:700;margin:16px 0 20px;color:#fff}
+  .hero h1 .hl{color:#ffb86b}
+  .hero p.lead{font-size:1.18rem;color:rgba(255,255,255,.92);max-width:60ch}
   .badges{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 8px}
   .badges span{font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:.85rem;letter-spacing:.04em;background:#fff;border:1px solid var(--blue-soft);color:var(--blue);padding:8px 16px;border-radius:999px;box-shadow:var(--shadow-sm)}
   .hero-actions{display:flex;gap:16px;margin-top:30px;flex-wrap:wrap}
