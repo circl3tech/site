@@ -170,7 +170,8 @@
   .statband .s .v{font-family:'Josefin Sans',sans-serif;font-size:2rem;font-weight:700;color:var(--blue);line-height:1}
   .statband .s p{font-size:.9rem;color:var(--muted);margin-top:8px}
   .marquee{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-  .mq{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;border-left:3px solid var(--blue)}
+  .mq{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 22px 26px;position:relative}
+  .mq::before{content:"";position:absolute;left:0;top:16px;bottom:16px;width:4px;background:var(--blue)}
   .mq h4{font-size:1.02rem;color:var(--blue);margin-bottom:6px}
   .mq p{font-size:.9rem;color:var(--muted)}
   .sub-head{font-family:'Josefin Sans',sans-serif;font-weight:600;color:var(--ink);font-size:1.3rem;margin:56px 0 22px;text-align:center}
