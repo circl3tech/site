@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIS2 incident reporting: what to report, and when | circl3.tech Insights</title>
+<meta name="description" content="The NIS2 incident reporting timeline explained: the 24-hour early warning, 72-hour notification and one-month final report, plus what counts as a significant incident. From circl3.tech.">
+<link rel="canonical" href="https://circl3.tech/insights/nis2-incident-reporting.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NIS2 incident reporting: what to report, and when">
+<meta property="og:description" content="The NIS2 reporting timeline: 24-hour early warning, 72-hour notification, one-month final report, and what counts as significant.">
+<meta property="og:url" content="https://circl3.tech/insights/nis2-incident-reporting.html">
+<meta property="og:image" content="https://circl3.tech/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://circl3.tech/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#16202e;--body:#3f4a5c;--muted:#6b7689;--blue:#2e579a;--blue-dark:#244680;--blue-soft:#eaf1fb;--orange:#ef7f0f;--line:#e7ecf3;--bg:#fff;--soft:#f6f9fd;--radius:16px;--maxw:760px}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--body);background:var(--bg);line-height:1.72;-webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  h1,h2,h3,.brand{font-family:'Josefin Sans',sans-serif;color:var(--ink);line-height:1.18;font-weight:600}
+  header.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-in{max-width:var(--maxw);margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-size:1.4rem;font-weight:700;color:var(--ink)}
+  .brand .dot{color:var(--orange)}
+  .nav-in a.back{font-size:.92rem;font-weight:600;color:var(--blue)}
+  .hero{background:linear-gradient(180deg,#fff,var(--soft));border-bottom:1px solid var(--line)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .hero .wrap{padding:60px 24px 46px}
+  .eyebrow{font-family:'Josefin Sans',sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;font-weight:600;color:var(--blue)}
+  h1{font-size:clamp(2rem,4.5vw,2.8rem);margin:14px 0 16px}
+  .dek{font-size:1.18rem;color:var(--muted)}
+  .byline{margin-top:22px;font-size:.92rem;color:var(--muted)}
+  .byline b{color:var(--ink);font-family:'Josefin Sans',sans-serif}
+  article{padding:48px 0 8px}
+  article h2{font-size:1.5rem;margin:40px 0 12px}
+  article h3{font-size:1.18rem;margin:28px 0 8px;color:var(--blue-dark)}
+  article p{margin:0 0 18px;font-size:1.06rem}
+  article ul,article ol{margin:0 0 20px;padding-left:1.25em}
+  article li{margin-bottom:10px;font-size:1.05rem}
+  article strong{color:var(--ink)}
+  .lead{font-size:1.16rem;color:var(--ink)}
+  blockquote{margin:26px 0;padding:6px 0 6px 22px;border-left:4px solid var(--orange);font-style:italic;color:var(--ink);font-size:1.12rem}
+  .tipbox{background:var(--blue-soft);border:1px solid #dce7f7;border-radius:var(--radius);padding:26px 28px;margin:28px 0}
+  .tipbox h3{margin-top:0;color:var(--ink)}
+  .cta{background:linear-gradient(135deg,var(--blue),var(--blue-dark));border-radius:var(--radius);padding:38px;color:#fff;text-align:center;margin:46px 0 10px}
+  .cta h3{color:#fff;font-size:1.5rem;margin-bottom:10px}
+  .cta p{color:rgba(255,255,255,.92);margin-bottom:22px}
+  .btn{display:inline-block;background:var(--orange);color:#fff;font-weight:600;padding:13px 26px;border-radius:999px}
+  .btn:hover{text-decoration:none;background:#d56f06}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:30px 0;text-align:center;color:var(--muted);font-size:.9rem}
+  footer a{color:var(--blue)}
+  .disclaimer{font-size:.86rem;color:var(--muted);font-style:italic;border-top:1px solid var(--line);margin-top:30px;padding-top:20px}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"NIS2 incident reporting: what to report, and when",
+  "description":"The NIS2 reporting timeline: 24-hour early warning, 72-hour notification, one-month final report, and what counts as a significant incident.",
+  "image":"https://circl3.tech/og-image.png",
+  "author":{"@type":"Person","name":"Panos Panayiotou","url":"https://www.linkedin.com/in/panos-panayiotou-56770947/"},
+  "publisher":{"@type":"Organization","name":"circl3.tech","logo":{"@type":"ImageObject","url":"https://circl3.tech/og-image.png"}},
+  "mainEntityOfPage":"https://circl3.tech/insights/nis2-incident-reporting.html"
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="brand">circl3<span class="dot">.</span>tech</a>
+    <a class="back" href="index.html">← All guides</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Guide · NIS2 · Incident reporting</span>
+    <h1>NIS2 incident reporting: what to report, and when</h1>
+    <p class="dek">Under NIS2 the clock starts the moment you become aware of a significant incident. Knowing the timeline, and being ready to act on it, is the difference between a controlled response and a compliance failure.</p>
+    <p class="byline">By <b>Panos Panayiotou</b>, Founder &amp; CEO, circl3.tech, former CISO across government and banking</p>
+  </div>
+</section>
+
+<div class="wrap">
+<article>
+  <p class="lead">One of the sharpest changes NIS2 brings is a strict, staged incident reporting regime. It is not enough to handle an incident well technically; in-scope entities must also notify the authorities, in a defined sequence, against tight deadlines. Get the timeline wrong and a well-managed incident can still become a regulatory problem.</p>
+
+  <p>The reporting flows to your national CSIRT or competent authority, and it happens in three stages. The trigger for all of them is the same: becoming aware of a <strong>significant incident</strong>.</p>
+
+  <h2>The three-stage timeline</h2>
+  <ul>
+    <li><strong>Early warning, within 24 hours.</strong> Without undue delay, and in any event within 24 hours of becoming aware, you submit a brief early warning. It need only indicate whether the incident is suspected to be caused by unlawful or malicious acts, or could have cross-border impact. It is an alert, not a full report.</li>
+    <li><strong>Incident notification, within 72 hours.</strong> Within 72 hours of awareness, you provide an update: an initial assessment of the incident, including its severity and impact, and indicators of compromise where available.</li>
+    <li><strong>Final report, within one month.</strong> No later than one month after the incident notification, you submit a detailed final report: a full description, the type of threat or root cause, the mitigation applied, and any cross-border impact. If the incident is still ongoing at that point, you provide a progress report and the final report within one month of handling it.</li>
+  </ul>
+  <p>An intermediate update may also be requested by the authority along the way. The structure rewards organisations that are prepared and punishes those improvising under pressure.</p>
+
+  <blockquote>The 24-hour clock starts when you become aware, not when you finish investigating. Readiness is what makes that deadline survivable.</blockquote>
+
+  <h2>What counts as a "significant" incident</h2>
+  <p>You do not report everything. NIS2 sets a threshold: an incident is significant if it has caused or is capable of causing <strong>severe operational disruption of services or financial loss</strong> for your entity, or if it has affected or is capable of affecting other people by causing <strong>considerable material or non-material damage</strong>. The practical problem is that this judgement must be made fast, often with incomplete information, which is exactly why it should be decided in advance, not in the heat of the moment.</p>
+
+  <h2>Why this is hard in practice</h2>
+  <p>The deadlines look simple on paper. The difficulty is everything around them: detecting the incident quickly enough that 24 hours is realistic, classifying it correctly under stress, knowing exactly who submits the report and how, and coordinating technical, legal and communications responses in parallel. Organisations that have not rehearsed this discover the gaps at the worst possible moment.</p>
+
+  <div class="tipbox">
+    <h3>Practical tips: be ready before the clock starts</h3>
+    <ol>
+      <li><strong>Pre-decide your significance criteria.</strong> Write down, in business terms, what makes an incident "significant" for you, so the call can be made in minutes.</li>
+      <li><strong>Know your authority and channel.</strong> Identify your national CSIRT or competent authority and the exact submission method now, not during an incident.</li>
+      <li><strong>Name the reporter and a backup.</strong> Someone must own submission, with authority to act at 3am on a weekend.</li>
+      <li><strong>Template the three reports.</strong> Pre-built early-warning, notification and final-report templates save hours when minutes matter.</li>
+      <li><strong>Detect faster.</strong> The 24-hour deadline is only realistic if monitoring surfaces incidents quickly, invest in detection, not just prevention.</li>
+      <li><strong>Rehearse with a tabletop.</strong> Run a severe-but-plausible scenario that includes the reporting clock, with business, legal and communications in the room.</li>
+      <li><strong>Log everything.</strong> A clean timeline of what you knew and when is your best evidence that you met your obligations.</li>
+    </ol>
+  </div>
+
+  <h2>The takeaway</h2>
+  <p>NIS2 incident reporting is a test of readiness, not paperwork. The entities that handle it well are the ones that decided their criteria, channels, owners and templates long before anything went wrong, and practised. Build that readiness once, and the deadlines become manageable rather than frightening.</p>
+
+  <div class="cta">
+    <h3>Ready for the NIS2 reporting clock?</h3>
+    <p>We help in-scope entities build incident readiness, classification criteria, reporting playbooks and tabletop exercises, so you can meet the deadlines under real pressure.</p>
+    <a class="btn" href="../index.html#contact">Book a 20-minute discovery call</a>
+  </div>
+
+  <p class="disclaimer">This article is general information from circl3.tech, not legal advice. NIS2 is transposed into national law, and exact obligations, authorities and thresholds vary by country, we recommend a scoped assessment for your organisation.</p>
+</article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="brand" style="margin-bottom:8px">circl3<span class="dot" style="color:var(--orange)">.</span>tech</div>
+    <a href="../index.html">Home</a> &nbsp;·&nbsp; <a href="../index.html#services">Services</a> &nbsp;·&nbsp; <a href="../index.html#contact">Contact</a>
+    <p style="margin-top:12px;color:#9aa3b2">Copyright © 2026 circl3.tech ltd, All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

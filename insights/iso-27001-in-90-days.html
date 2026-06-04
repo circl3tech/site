@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISO 27001 in 90 days: a realistic first quarter | circl3.tech Insights</title>
+<meta name="description" content="You will not be certified in 90 days, but you can have a working ISMS skeleton standing. A realistic first-quarter plan for ISO 27001, from circl3.tech.">
+<link rel="canonical" href="https://circl3.tech/insights/iso-27001-in-90-days.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ISO 27001 in 90 days: a realistic first quarter">
+<meta property="og:description" content="A realistic first-quarter plan for ISO 27001: what you can actually achieve in 90 days, and the order to do it in.">
+<meta property="og:url" content="https://circl3.tech/insights/iso-27001-in-90-days.html">
+<meta property="og:image" content="https://circl3.tech/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://circl3.tech/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#16202e;--body:#3f4a5c;--muted:#6b7689;--blue:#2e579a;--blue-dark:#244680;--blue-soft:#eaf1fb;--orange:#ef7f0f;--line:#e7ecf3;--bg:#fff;--soft:#f6f9fd;--radius:16px;--maxw:760px}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--body);background:var(--bg);line-height:1.72;-webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  h1,h2,h3,.brand{font-family:'Josefin Sans',sans-serif;color:var(--ink);line-height:1.18;font-weight:600}
+  header.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-in{max-width:var(--maxw);margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-size:1.4rem;font-weight:700;color:var(--ink)}
+  .brand .dot{color:var(--orange)}
+  .nav-in a.back{font-size:.92rem;font-weight:600;color:var(--blue)}
+  .hero{background:linear-gradient(180deg,#fff,var(--soft));border-bottom:1px solid var(--line)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .hero .wrap{padding:60px 24px 46px}
+  .eyebrow{font-family:'Josefin Sans',sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;font-weight:600;color:var(--blue)}
+  h1{font-size:clamp(2rem,4.5vw,2.8rem);margin:14px 0 16px}
+  .dek{font-size:1.18rem;color:var(--muted)}
+  .byline{margin-top:22px;font-size:.92rem;color:var(--muted)}
+  .byline b{color:var(--ink);font-family:'Josefin Sans',sans-serif}
+  article{padding:48px 0 8px}
+  article h2{font-size:1.5rem;margin:40px 0 12px}
+  article h3{font-size:1.18rem;margin:28px 0 8px;color:var(--blue-dark)}
+  article p{margin:0 0 18px;font-size:1.06rem}
+  article ul,article ol{margin:0 0 20px;padding-left:1.25em}
+  article li{margin-bottom:10px;font-size:1.05rem}
+  article strong{color:var(--ink)}
+  .lead{font-size:1.16rem;color:var(--ink)}
+  blockquote{margin:26px 0;padding:6px 0 6px 22px;border-left:4px solid var(--orange);font-style:italic;color:var(--ink);font-size:1.12rem}
+  .tipbox{background:var(--blue-soft);border:1px solid #dce7f7;border-radius:var(--radius);padding:26px 28px;margin:28px 0}
+  .tipbox h3{margin-top:0;color:var(--ink)}
+  .cta{background:linear-gradient(135deg,var(--blue),var(--blue-dark));border-radius:var(--radius);padding:38px;color:#fff;text-align:center;margin:46px 0 10px}
+  .cta h3{color:#fff;font-size:1.5rem;margin-bottom:10px}
+  .cta p{color:rgba(255,255,255,.92);margin-bottom:22px}
+  .btn{display:inline-block;background:var(--orange);color:#fff;font-weight:600;padding:13px 26px;border-radius:999px}
+  .btn:hover{text-decoration:none;background:#d56f06}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:30px 0;text-align:center;color:var(--muted);font-size:.9rem}
+  footer a{color:var(--blue)}
+  .disclaimer{font-size:.86rem;color:var(--muted);font-style:italic;border-top:1px solid var(--line);margin-top:30px;padding-top:20px}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"ISO 27001 in 90 days: a realistic first quarter",
+  "description":"What you can actually achieve toward ISO 27001 in 90 days, and the order to do it in.",
+  "image":"https://circl3.tech/og-image.png",
+  "author":{"@type":"Person","name":"Panos Panayiotou","url":"https://www.linkedin.com/in/panos-panayiotou-56770947/"},
+  "publisher":{"@type":"Organization","name":"circl3.tech","logo":{"@type":"ImageObject","url":"https://circl3.tech/og-image.png"}},
+  "mainEntityOfPage":"https://circl3.tech/insights/iso-27001-in-90-days.html"
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="brand">circl3<span class="dot">.</span>tech</a>
+    <a class="back" href="index.html">← All guides</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Guide · ISO 27001 · Getting started</span>
+    <h1>ISO 27001 in 90 days: a realistic first quarter</h1>
+    <p class="dek">No, you will not hold a certificate in 90 days. But you can have a working ISMS skeleton standing, the scope set, the risks understood and the programme moving, which is what actually matters.</p>
+    <p class="byline">By <b>Panos Panayiotou</b>, Founder &amp; CEO, circl3.tech, former CISO across government and banking</p>
+  </div>
+</section>
+
+<div class="wrap">
+<article>
+  <p class="lead">Let us be honest about timelines. A typical ISO 27001 certification takes six to twelve months, because the standard requires your Information Security Management System (ISMS) to operate for a period before an external auditor can certify it. What you absolutely can do in 90 days is build the foundation properly, so the rest of the journey is execution, not firefighting.</p>
+
+  <p>The mistake I see most often is teams buying a pile of policy templates on day one and calling it progress. Documents are not an ISMS. An ISMS is a working system of decisions: what you are protecting, what could go wrong, what you are doing about it, and how you keep improving. Here is how to stand that up in a quarter.</p>
+
+  <h2>Days 1 to 30: scope, context and buy-in</h2>
+  <ul>
+    <li><strong>Define the scope precisely.</strong> Which products, services, locations and teams are in? A tight, honest scope is the single biggest lever on cost and timeline. Overscoping is the classic way to stall.</li>
+    <li><strong>Understand context and interested parties.</strong> Customers, regulators, partners, what do they require of you? This shapes everything.</li>
+    <li><strong>Secure leadership commitment.</strong> ISO 27001 demands top-management involvement. Name an owner, agree the budget, and put the ISMS on the leadership agenda.</li>
+    <li><strong>Run an honest gap assessment.</strong> Where are you today against the clauses and the Annex A controls? This becomes your roadmap.</li>
+  </ul>
+
+  <blockquote>A tight, honest scope is the single biggest lever you have on the cost and the timeline of certification.</blockquote>
+
+  <h2>Days 31 to 60: risk and the core of the system</h2>
+  <ul>
+    <li><strong>Run a risk assessment.</strong> Identify your information risks, assess them consistently, and decide how to treat each one. The risk assessment, not the policy pack, is the engine of the ISMS.</li>
+    <li><strong>Build the Statement of Applicability (SoA).</strong> Decide which Annex A controls apply, and justify any exclusions. This is a mandatory, audit-central document.</li>
+    <li><strong>Write the policies you will actually follow.</strong> Start with the mandatory ones and the high-risk areas. Practical and used beats comprehensive and ignored.</li>
+    <li><strong>Define your risk treatment plan.</strong> Owners, actions and timelines, the bridge from "we know our risks" to "we are doing something about them."</li>
+  </ul>
+
+  <h2>Days 61 to 90: operate, evidence and plan the audit</h2>
+  <ul>
+    <li><strong>Start operating the controls and capturing evidence.</strong> Access reviews, logs, training records, supplier checks, certification depends on showing the system runs, not just that it exists on paper.</li>
+    <li><strong>Roll out awareness training.</strong> People are in scope; a simple, well-run awareness programme is quick to start and visible to auditors.</li>
+    <li><strong>Schedule your internal audit and management review.</strong> Both are mandatory before certification. Booking them now sets the rhythm for the months ahead.</li>
+    <li><strong>Engage a certification body.</strong> Lead times can be long, so start the conversation in the first quarter, not when you think you are ready.</li>
+  </ul>
+
+  <div class="tipbox">
+    <h3>Practical tips for a fast, sane start</h3>
+    <ol>
+      <li><strong>Scope narrow, expand later.</strong> Certify the part of the business that needs it first; widen the scope at the next surveillance audit.</li>
+      <li><strong>Reuse one backbone.</strong> The same ISMS satisfies much of NIS2 and DORA too. Build once, map to many, rather than running parallel programmes.</li>
+      <li><strong>Evidence as you go.</strong> Retrofitting six months of records the week before an audit is painful and obvious. Capture from day one.</li>
+      <li><strong>Avoid template overload.</strong> A lean set of documents you follow beats a 200-file library nobody reads.</li>
+      <li><strong>Treat it as a management system, not a project.</strong> The "continual improvement" loop is the point; certification is a milestone, not the finish line.</li>
+    </ol>
+  </div>
+
+  <h2>What "done in 90 days" really means</h2>
+  <p>At the end of a focused quarter you should have: a defined scope, leadership commitment, a completed risk assessment, a Statement of Applicability, the core policies, a risk treatment plan in motion, controls beginning to operate, and a certification body engaged. That is not a certificate, but it is the hard part finished. Everything after it is steady execution toward the audit, with no nasty surprises.</p>
+
+  <div class="cta">
+    <h3>Starting your ISO 27001 journey?</h3>
+    <p>We scope, assess and lead ISO 27001 implementations, building one backbone that also serves your NIS2 and DORA obligations, with certification support along the way.</p>
+    <a class="btn" href="../index.html#contact">Book a 20-minute discovery call</a>
+  </div>
+
+  <p class="disclaimer">This article is general information from circl3.tech, not a guarantee of certification timelines. Actual effort depends on your scope, maturity and the certification body, we recommend a scoped assessment for your organisation.</p>
+</article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="brand" style="margin-bottom:8px">circl3<span class="dot" style="color:var(--orange)">.</span>tech</div>
+    <a href="../index.html">Home</a> &nbsp;·&nbsp; <a href="../index.html#services">Services</a> &nbsp;·&nbsp; <a href="../index.html#contact">Contact</a>
+    <p style="margin-top:12px;color:#9aa3b2">Copyright © 2026 circl3.tech ltd, All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

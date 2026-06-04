@@ -25,4 +25,24 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://circl3.tech/insights/secure-controls-framework.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://circl3.tech/insights/vciso-when-you-need-one.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://circl3.tech/insights/iso-27001-in-90-days.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://circl3.tech/insights/nis2-incident-reporting.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
