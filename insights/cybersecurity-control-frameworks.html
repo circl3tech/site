@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A practical map of cybersecurity control frameworks | circl3.tech Insights</title>
+<meta name="description" content="A genuinely useful guide to ISO 27001, NIST CSF 2.0, CIS Controls v8, SOC 2, PCI DSS, COBIT, the SCF and more. Structure, size, who each is for and how they fit together, with tables and graphics. From circl3.tech.">
+<link rel="canonical" href="https://circl3.tech/insights/cybersecurity-control-frameworks.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A practical map of cybersecurity control frameworks">
+<meta property="og:description" content="ISO 27001, NIST CSF 2.0, CIS Controls, SOC 2, the SCF and more, plus maturity models, explained in depth with tables and graphics.">
+<meta property="og:url" content="https://circl3.tech/insights/cybersecurity-control-frameworks.html">
+<meta property="og:image" content="https://circl3.tech/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://circl3.tech/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#16202e;--body:#3f4a5c;--muted:#6b7689;--blue:#2e579a;--blue-dark:#244680;--blue-soft:#eaf1fb;--orange:#ef7f0f;--line:#e7ecf3;--bg:#fff;--soft:#f6f9fd;--radius:16px;--maxw:860px}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--body);background:var(--bg);line-height:1.72;-webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  h1,h2,h3,.brand{font-family:'Josefin Sans',sans-serif;color:var(--ink);line-height:1.18;font-weight:600}
+  header.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-in{max-width:var(--maxw);margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-size:1.4rem;font-weight:700;color:var(--ink)}
+  .brand .dot{color:var(--orange)}
+  .nav-in a.back{font-size:.92rem;font-weight:600;color:var(--blue)}
+  .hero{background:linear-gradient(180deg,#fff,var(--soft));border-bottom:1px solid var(--line)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .hero .wrap{padding:60px 24px 46px}
+  .eyebrow{font-family:'Josefin Sans',sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;font-weight:600;color:var(--blue)}
+  h1{font-size:clamp(2rem,4.5vw,2.8rem);margin:14px 0 16px}
+  .dek{font-size:1.18rem;color:var(--muted)}
+  .byline{margin-top:22px;font-size:.92rem;color:var(--muted)}
+  .byline b{color:var(--ink);font-family:'Josefin Sans',sans-serif}
+  article{padding:48px 0 8px}
+  article h2{font-size:1.55rem;margin:46px 0 14px;padding-left:14px;border-left:5px solid var(--orange)}
+  .kpis{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 16px}
+  .kpi{flex:1 1 110px;background:linear-gradient(140deg,var(--blue),var(--blue-dark));color:#fff;border-radius:12px;padding:16px 12px;text-align:center}
+  .kpi .num{font-family:'Josefin Sans',sans-serif;font-weight:700;font-size:1.9rem;line-height:1}
+  .kpi span{display:block;font-size:.76rem;color:#dbe6fa;margin-top:5px}
+  .kpi.alt{background:linear-gradient(140deg,var(--orange),#d56f06)}
+  .kpi.alt span{color:#ffe7cf}
+  .flow{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+  .flow .step{flex:1 1 150px;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .flow .step .s{font-family:'Josefin Sans',sans-serif;font-weight:700;color:var(--orange);font-size:.8rem}
+  .flow .step b{display:block;font-family:'Josefin Sans',sans-serif;color:var(--ink);margin:4px 0 4px}
+  .flow .step small{color:var(--muted);font-size:.85rem}
+  article h3{font-size:1.18rem;margin:26px 0 6px;color:var(--blue-dark)}
+  article p{margin:0 0 18px;font-size:1.06rem}
+  article ul,article ol{margin:0 0 20px;padding-left:1.25em}
+  article li{margin-bottom:10px;font-size:1.05rem}
+  article strong{color:var(--ink)}
+  .lead{font-size:1.16rem;color:var(--ink)}
+  blockquote{margin:26px 0;padding:6px 0 6px 22px;border-left:4px solid var(--orange);font-style:italic;color:var(--ink);font-size:1.12rem}
+  .tipbox{background:var(--blue-soft);border:1px solid #dce7f7;border-radius:var(--radius);padding:26px 28px;margin:28px 0}
+  .tipbox h3{margin-top:0;color:var(--ink)}
+  .cta{background:linear-gradient(135deg,var(--blue),var(--blue-dark));border-radius:var(--radius);padding:38px;color:#fff;text-align:center;margin:46px 0 10px}
+  .cta h3{color:#fff;font-size:1.5rem;margin-bottom:10px}
+  .cta p{color:rgba(255,255,255,.92);margin-bottom:22px}
+  .btn{display:inline-block;background:var(--orange);color:#fff;font-weight:600;padding:13px 26px;border-radius:999px}
+  .btn:hover{text-decoration:none;background:#d56f06}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:30px 0;text-align:center;color:var(--muted);font-size:.9rem}
+  footer a{color:var(--blue)}
+  .disclaimer{font-size:.86rem;color:var(--muted);font-style:italic;border-top:1px solid var(--line);margin-top:30px;padding-top:20px}
+  .figttl{font-family:'Josefin Sans',sans-serif;font-weight:600;color:var(--ink);font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin:30px 0 10px}
+  .tiers{display:flex;flex-direction:column;gap:10px;margin:6px 0 8px}
+  .tier{border-radius:12px;padding:15px 18px;border:1px solid var(--line)}
+  .tier .tlabel{font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:.96rem;color:var(--ink)}
+  .tier .tsub{color:var(--muted);font-size:.82rem;font-weight:400}
+  .tier .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:9px}
+  .tier .chip{background:#fff;border:1px solid rgba(0,0,0,.10);border-radius:999px;padding:5px 12px;font-size:.84rem;font-weight:600;color:var(--ink)}
+  .t-law{background:#fdeede;border-color:#f6d3a6}
+  .t-cert{background:#e9f1fc;border-color:#cfe0f7}
+  .t-cat{background:#f4f7fb;border-color:#e2eaf3}
+  .t-meta{background:#efe9fb;border-color:#ddd0f3}
+  .csf-gov{background:var(--blue);color:#fff;border-radius:10px;padding:12px 16px;text-align:center;font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:.95rem;margin-bottom:8px}
+  .csf{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+  .csf .fn{flex:1 1 110px;text-align:center;border-radius:10px;padding:12px 8px;background:var(--blue-soft);border:1px solid #cfe0f7}
+  .csf .fn b{display:block;font-family:'Josefin Sans',sans-serif;color:var(--blue-dark);font-size:.96rem}
+  .csf .fn small{color:var(--muted);font-size:.74rem;display:block;margin-top:2px}
+  .ladder{display:flex;align-items:flex-end;gap:8px;margin:8px 0}
+  .ladder .rung{flex:1;background:var(--blue-soft);border:1px solid #cfe0f7;border-bottom:3px solid var(--blue);border-radius:8px 8px 0 0;padding:8px 5px;text-align:center;display:flex;flex-direction:column;justify-content:flex-end}
+  .ladder .rung b{font-family:'Josefin Sans',sans-serif;font-size:.78rem;color:var(--blue-dark)}
+  .ladder .rung small{font-size:.66rem;color:var(--muted);display:block;margin-top:2px}
+  figure.diagram{margin:14px 0 8px;text-align:center}
+  figure.diagram svg{width:100%;height:auto;max-width:540px}
+  figure.diagram figcaption{color:var(--muted);font-size:.85rem;margin-top:8px}
+  .annex{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:10px 0}
+  .annex .a{border-radius:10px;border:1px solid #cfe0f7;background:var(--blue-soft);padding:14px}
+  .annex .a .n{font-family:'Josefin Sans',sans-serif;font-weight:700;color:var(--blue);font-size:1.5rem;line-height:1}
+  .annex .a b{display:block;font-family:'Josefin Sans',sans-serif;color:var(--ink);margin:4px 0 2px}
+  .annex .a small{color:var(--muted);font-size:.8rem}
+  .cmp-scroll{overflow-x:auto;margin:10px 0 6px}
+  .cmp{width:100%;border-collapse:collapse;font-size:.92rem;min-width:580px}
+  .cmp th,.cmp td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+  .cmp th{background:var(--soft);font-family:'Josefin Sans',sans-serif;color:var(--ink);font-weight:600}
+  .cmp tr:nth-child(even) td{background:#fcfdff}
+  .cmp td:first-child{font-weight:600;color:var(--ink);white-space:nowrap}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"A practical map of cybersecurity frameworks and maturity models",
+  "description":"In-depth, practical guide to ISO 27001, NIST CSF 2.0, CIS Controls v8, SOC 2, the SCF and more, plus maturity models, with tables and graphics.",
+  "image":"https://circl3.tech/og-image.png",
+  "author":{"@type":"Person","name":"Panos Panayiotou","url":"https://www.linkedin.com/in/panos-panayiotou-56770947/"},
+  "publisher":{"@type":"Organization","name":"circl3.tech","logo":{"@type":"ImageObject","url":"https://circl3.tech/og-image.png"}},
+  "mainEntityOfPage":"https://circl3.tech/insights/cybersecurity-control-frameworks.html"
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="brand">circl3<span class="dot">.</span>tech</a>
+    <a class="back" href="index.html">← All guides</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Guide · Frameworks · Overview</span>
+    <h1>A practical map of cybersecurity control frameworks</h1>
+    <p class="dek">A genuinely useful tour of the major frameworks, what each one is, how it is structured, how big it is, who it is for, and how they fit together. With tables and graphics, not marketing.</p>
+    <p class="byline">By <b>Panos Panayiotou</b>, Founder &amp; CEO, circl3.tech, former CISO across government and banking</p>
+  </div>
+</section>
+
+<div class="wrap">
+<article>
+  <p class="lead">"Which cybersecurity framework should we use?" is one of the most common questions I hear, and it is the wrong one. Frameworks are not rival teams you pick between. They do different jobs, at different layers, and the skill is in combining them deliberately. This guide gives you enough real detail on each to make that decision well.</p>
+
+  <h2>Four kinds of framework</h2>
+  <p>Most of the confusion disappears once you sort the landscape into four kinds of thing.</p>
+  <p class="figttl">The control landscape, by layer</p>
+  <div class="tiers">
+    <div class="tier t-law">
+      <div class="tlabel">1 · Laws &amp; regulations <span class="tsub">— you must comply (legal obligation)</span></div>
+      <div class="chips"><span class="chip">NIS2</span><span class="chip">DORA</span><span class="chip">GDPR</span><span class="chip">Cyber Resilience Act</span></div>
+    </div>
+    <div class="tier t-cert">
+      <div class="tlabel">2 · Certifiable standards <span class="tsub">— you prove it with a certificate or report</span></div>
+      <div class="chips"><span class="chip">ISO 27001</span><span class="chip">SOC 2</span><span class="chip">PCI DSS</span><span class="chip">Cyber Hygiene for SMEs (DSA)</span></div>
+    </div>
+    <div class="tier t-cat">
+      <div class="tlabel">3 · Control catalogues &amp; best practice <span class="tsub">— how to actually implement security</span></div>
+      <div class="chips"><span class="chip">NIST CSF 2.0</span><span class="chip">NIST 800-53</span><span class="chip">CIS Controls v8</span><span class="chip">NIST 800-171 / CMMC</span><span class="chip">COBIT</span><span class="chip">CSA CCM</span></div>
+    </div>
+    <div class="tier t-meta">
+      <div class="tlabel">4 · Metaframework <span class="tsub">— map one control set to all of the above</span></div>
+      <div class="chips"><span class="chip">Secure Controls Framework (SCF)</span></div>
+    </div>
+  </div>
+  <p>The layers build on each other. <strong>Laws</strong> say <em>what outcome</em> is required. <strong>Standards</strong> let you <em>demonstrate</em> you have a system. <strong>Control catalogues</strong> tell you <em>how</em> to build it. A <strong>metaframework</strong> lets you do the work once and point it at everything else.</p>
+  <blockquote>You do not choose one framework. You choose a law you must meet, a standard to prove it, and a control set to build it, and you make them work together.</blockquote>
+
+  <p class="figttl">How comprehensive is each framework?</p>
+  <figure class="diagram">
+    <svg viewBox="0 0 700 230" role="img" aria-label="Frameworks placed on a scale from a lightweight baseline to a comprehensive control catalogue">
+      <defs><linearGradient id="grad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9db8e0"/><stop offset="1" stop-color="#244680"/></linearGradient></defs>
+      <rect x="55" y="135" width="560" height="10" rx="5" fill="url(#grad)"/>
+      <path d="M615 130 l24 10 -24 10 z" fill="#244680"/>
+      <text x="55" y="172" font-family="'Inter',sans-serif" font-size="12" fill="#6b7689">Lighter · faster to adopt</text>
+      <text x="639" y="172" text-anchor="end" font-family="'Inter',sans-serif" font-size="12" fill="#6b7689">More comprehensive</text>
+      <g font-family="'Josefin Sans',sans-serif" font-size="12" font-weight="600" fill="#16202e">
+        <g><line x1="90" y1="135" x2="90" y2="112" stroke="#cdd8e8" stroke-width="1.5"/><circle cx="90" cy="140" r="5" fill="#2e579a"/><text x="90" y="104" text-anchor="middle">Cyber Hygiene (DSA)</text></g>
+        <g><line x1="185" y1="145" x2="185" y2="178" stroke="#cdd8e8" stroke-width="1.5"/><circle cx="185" cy="140" r="5" fill="#2e579a"/><text x="185" y="194" text-anchor="middle">CIS Controls v8</text></g>
+        <g><line x1="285" y1="135" x2="285" y2="112" stroke="#cdd8e8" stroke-width="1.5"/><circle cx="285" cy="140" r="5" fill="#2e579a"/><text x="285" y="104" text-anchor="middle">NIST CSF 2.0</text></g>
+        <g><line x1="385" y1="145" x2="385" y2="178" stroke="#cdd8e8" stroke-width="1.5"/><circle cx="385" cy="140" r="5" fill="#2e579a"/><text x="385" y="194" text-anchor="middle">ISO 27001</text></g>
+        <g><line x1="475" y1="135" x2="475" y2="112" stroke="#cdd8e8" stroke-width="1.5"/><circle cx="475" cy="140" r="5" fill="#2e579a"/><text x="475" y="104" text-anchor="middle">CSA CCM</text></g>
+        <g><line x1="545" y1="145" x2="545" y2="178" stroke="#cdd8e8" stroke-width="1.5"/><circle cx="545" cy="140" r="5" fill="#2e579a"/><text x="545" y="194" text-anchor="middle">NIST 800-53</text></g>
+        <g><line x1="605" y1="135" x2="605" y2="112" stroke="#cdd8e8" stroke-width="1.5"/><circle cx="605" cy="140" r="5" fill="#ef7f0f"/><text x="605" y="104" text-anchor="middle">SCF</text></g>
+      </g>
+    </svg>
+    <figcaption>Roughly how broad each one is, from a lightweight baseline to a full control catalogue. Broader is not automatically "better": the right choice depends on your risk and obligations.</figcaption>
+  </figure>
+
+  <h2>ISO/IEC 27001:2022 — the certifiable ISMS standard</h2>
+  <p>ISO 27001 is the international standard for an <strong>Information Security Management System (ISMS)</strong>: a documented, risk-driven system for managing security, that an accredited body can <em>certify</em>. That certificate is the global currency of "we take security seriously," which is why customers and tenders ask for it. The standard itself has two parts: the management-system <strong>clauses 4 to 10</strong> (context, leadership, planning, support, operation, performance evaluation, improvement), which are mandatory, and <strong>Annex A</strong>, a reference set of <strong>93 controls</strong> grouped into four themes in the 2022 version.</p>
+  <p class="figttl">ISO 27001:2022 Annex A, 93 controls in four themes</p>
+  <div class="annex">
+    <div class="a"><div class="n">37</div><b>Organizational</b><small>policies, supplier &amp; cloud security, incident management, threat intelligence</small></div>
+    <div class="a"><div class="n">8</div><b>People</b><small>screening, awareness, responsibilities, remote &amp; secure working</small></div>
+    <div class="a"><div class="n">14</div><b>Physical</b><small>secure areas, equipment, clear desk, media handling</small></div>
+    <div class="a"><div class="n">34</div><b>Technological</b><small>access control, cryptography, logging, secure development, malware</small></div>
+  </div>
+  <p><strong>Best for:</strong> almost any organisation that needs to prove its security to customers or regulators. It is framework-agnostic about <em>how</em> you implement controls, which is why it pairs so well with the catalogues below.</p>
+
+  <h2>NIST CSF 2.0 — the common language for risk</h2>
+  <p>The NIST Cybersecurity Framework, updated to <strong>version 2.0 in 2024</strong>, is voluntary, outcome-based and vendor-neutral. It is the best shared language between a security team and a board, because it organises everything into <strong>six functions</strong>, expanded across <strong>22 categories and 106 subcategories</strong>. The newest function, <em>Govern</em>, now wraps the other five, putting strategy, roles, policy and supply-chain risk at the centre.</p>
+  <p class="figttl">NIST CSF 2.0, the six functions</p>
+  <div class="csf-gov">GOVERN — strategy, roles, policy, oversight &amp; supply-chain risk (wraps everything)</div>
+  <div class="csf">
+    <div class="fn"><b>Identify</b><small>know assets &amp; risk</small></div>
+    <div class="fn"><b>Protect</b><small>safeguards</small></div>
+    <div class="fn"><b>Detect</b><small>spot events</small></div>
+    <div class="fn"><b>Respond</b><small>act on incidents</small></div>
+    <div class="fn"><b>Recover</b><small>restore service</small></div>
+  </div>
+  <div class="kpis">
+    <div class="kpi"><div class="num">6</div><span>Functions</span></div>
+    <div class="kpi"><div class="num">22</div><span>Categories</span></div>
+    <div class="kpi"><div class="num">106</div><span>Subcategories</span></div>
+  </div>
+  <p><strong>Best for:</strong> structuring a programme and reporting posture upward. It tells you <em>what outcomes</em> to achieve, but not the specific controls, for that, most teams pair it with CIS Controls or ISO 27002.</p>
+
+  <h2>CIS Controls v8 — the prioritised place to start</h2>
+  <p>If NIST CSF is the map, the CIS Controls are the turn-by-turn directions. Version 8 distills security into <strong>18 controls and 153 safeguards</strong>, ordered by impact, and groups them into three <strong>Implementation Groups</strong> so you know what to do first:</p>
+  <ul>
+    <li><strong>IG1 (essential cyber hygiene)</strong> — the 56 foundational safeguards every organisation should implement.</li>
+    <li><strong>IG2</strong> — adds safeguards for organisations managing more sensitive data or complexity.</li>
+    <li><strong>IG3</strong> — the full set, for high-risk organisations facing sophisticated attackers.</li>
+  </ul>
+  <div class="kpis">
+    <div class="kpi alt"><div class="num">18</div><span>Controls</span></div>
+    <div class="kpi alt"><div class="num">153</div><span>Safeguards</span></div>
+    <div class="kpi alt"><div class="num">3</div><span>Implementation groups</span></div>
+  </div>
+  <div class="cmp-scroll">
+  <table class="cmp">
+    <thead><tr><th>#</th><th>CIS Control v8</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Inventory of enterprise assets</td><td>Know every device connected to your network</td></tr>
+      <tr><td>2</td><td>Inventory of software assets</td><td>Know and manage all installed software</td></tr>
+      <tr><td>3</td><td>Data protection</td><td>Identify, classify and protect your data</td></tr>
+      <tr><td>4</td><td>Secure configuration</td><td>Harden assets and software away from insecure defaults</td></tr>
+      <tr><td>5</td><td>Account management</td><td>Control the lifecycle of accounts and credentials</td></tr>
+      <tr><td>6</td><td>Access control management</td><td>Least privilege and multi-factor authentication</td></tr>
+      <tr><td>7</td><td>Continuous vulnerability management</td><td>Find and fix weaknesses on a cycle</td></tr>
+      <tr><td>8</td><td>Audit log management</td><td>Collect, retain and review logs</td></tr>
+      <tr><td>9</td><td>Email &amp; web browser protections</td><td>Reduce the most common attack surface</td></tr>
+      <tr><td>10</td><td>Malware defenses</td><td>Prevent and detect malicious code</td></tr>
+      <tr><td>11</td><td>Data recovery</td><td>Reliable, tested backups you can restore</td></tr>
+      <tr><td>12</td><td>Network infrastructure management</td><td>Securely configure network devices</td></tr>
+      <tr><td>13</td><td>Network monitoring &amp; defense</td><td>Detect and respond to threats on the network</td></tr>
+      <tr><td>14</td><td>Security awareness &amp; skills training</td><td>Build a security-conscious workforce</td></tr>
+      <tr><td>15</td><td>Service provider management</td><td>Manage third-party and supplier risk</td></tr>
+      <tr><td>16</td><td>Application software security</td><td>Build and buy software securely</td></tr>
+      <tr><td>17</td><td>Incident response management</td><td>Plan, staff and run incident response</td></tr>
+      <tr><td>18</td><td>Penetration testing</td><td>Test your defenses by simulating attacks</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Best for:</strong> any team that wants action over theory, especially SMEs. Start at IG1 and grow.</p>
+
+  <h2>The other frameworks you will meet</h2>
+  <p>These appear constantly in contracts, audits and questionnaires. You rarely implement all of them, but you should know what each is for.</p>
+  <div class="cmp-scroll">
+  <table class="cmp">
+    <thead><tr><th>Framework</th><th>Owner</th><th>Structure / size</th><th>Best for</th><th>Certifiable?</th></tr></thead>
+    <tbody>
+      <tr><td>NIST SP 800-53</td><td>NIST (US)</td><td>~1,000 controls, 20 families</td><td>Deep control catalogue, US federal &amp; high-assurance</td><td>No</td></tr>
+      <tr><td>NIST 800-171 / CMMC</td><td>NIST / US DoD</td><td>110 requirements; CMMC Levels 1–3</td><td>US defense supply chain (CUI)</td><td>CMMC: yes</td></tr>
+      <tr><td>SOC 2</td><td>AICPA (US)</td><td>5 Trust Services Criteria</td><td>Proving controls to US customers</td><td>Attestation report</td></tr>
+      <tr><td>PCI DSS v4.0</td><td>PCI SSC</td><td>12 requirements, 6 goals</td><td>Storing or processing card data</td><td>Yes, validation</td></tr>
+      <tr><td>COBIT 2019</td><td>ISACA</td><td>40 governance &amp; management objectives</td><td>IT &amp; security governance alignment</td><td>No</td></tr>
+      <tr><td>CSA CCM</td><td>Cloud Security Alliance</td><td>197 controls, 17 domains</td><td>Cloud-specific assurance (CSA STAR)</td><td>Via STAR</td></tr>
+      <tr><td>Cyber Hygiene for SMEs (DSA)</td><td>Cyprus DSA / NCC-CY</td><td>Baseline control set for SMEs</td><td>Cypriot SMEs establishing basic cyber hygiene (funding available)</td><td>Yes, certification</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>The laws that drive it all</h2>
+  <p>In Europe especially, the frameworks above are increasingly chosen to satisfy <strong>legal</strong> obligations. These are not "frameworks you adopt", they are obligations you meet, usually by implementing a control catalogue and proving it with a standard.</p>
+  <div class="cmp-scroll">
+  <table class="cmp">
+    <thead><tr><th>Law</th><th>Region</th><th>Applies to</th><th>Core demand</th></tr></thead>
+    <tbody>
+      <tr><td>NIS2</td><td>EU</td><td>Essential &amp; important entities in critical sectors</td><td>Risk-management measures, governance &amp; incident reporting</td></tr>
+      <tr><td>DORA</td><td>EU</td><td>Financial entities &amp; their ICT providers</td><td>ICT risk management, resilience testing, third-party oversight</td></tr>
+      <tr><td>GDPR</td><td>EU</td><td>Anyone processing EU personal data</td><td>Lawful processing, security of data, breach notification</td></tr>
+      <tr><td>Cyber Resilience Act</td><td>EU</td><td>Manufacturers of products with digital elements</td><td>Security by design, vulnerability handling &amp; reporting, CE marking (main obligations from Dec 2027)</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>How they fit together: do it once, map to many</h2>
+  <p>Here is the payoff. Because these frameworks overlap heavily, by most estimates <strong>70 to 80 percent</strong> of controls map across NIST CSF, ISO 27001 and CIS, you do not implement them separately. You build and operate one control set, then <strong>map</strong> the same evidence outward to every law, standard and framework that asks for it. That mapping job is exactly what a metaframework like the <a href="secure-controls-framework.html">Secure Controls Framework (SCF)</a> does.</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 540 360" role="img" aria-label="One control set in the centre, mapped out to ISO 27001, NIST CSF 2.0, NIS2, DORA, SOC 2 and PCI DSS">
+      <g stroke="#cdd8e8" stroke-width="2">
+        <line x1="270" y1="180" x2="270" y2="64"/>
+        <line x1="270" y1="180" x2="430" y2="120"/>
+        <line x1="270" y1="180" x2="430" y2="240"/>
+        <line x1="270" y1="180" x2="270" y2="296"/>
+        <line x1="270" y1="180" x2="110" y2="240"/>
+        <line x1="270" y1="180" x2="110" y2="120"/>
+      </g>
+      <g font-family="'Josefin Sans',sans-serif" font-size="14" font-weight="600" text-anchor="middle">
+        <g><rect x="215" y="46" width="110" height="36" rx="8" fill="#fff" stroke="#cdd8e8"/><text x="270" y="69" fill="#16202e">ISO 27001</text></g>
+        <g><rect x="375" y="102" width="120" height="36" rx="8" fill="#fff" stroke="#cdd8e8"/><text x="435" y="125" fill="#16202e">NIST CSF 2.0</text></g>
+        <g><rect x="375" y="222" width="120" height="36" rx="8" fill="#fff" stroke="#cdd8e8"/><text x="435" y="245" fill="#16202e">SOC 2</text></g>
+        <g><rect x="215" y="278" width="110" height="36" rx="8" fill="#fff" stroke="#cdd8e8"/><text x="270" y="301" fill="#16202e">PCI DSS</text></g>
+        <g><rect x="45" y="222" width="120" height="36" rx="8" fill="#fff" stroke="#cdd8e8"/><text x="105" y="245" fill="#16202e">DORA</text></g>
+        <g><rect x="45" y="102" width="120" height="36" rx="8" fill="#fff" stroke="#cdd8e8"/><text x="105" y="125" fill="#16202e">NIS2</text></g>
+      </g>
+      <circle cx="270" cy="180" r="58" fill="#2e579a"/>
+      <text x="270" y="174" text-anchor="middle" font-family="'Josefin Sans',sans-serif" font-size="22" font-weight="700" fill="#fff">SCF</text>
+      <text x="270" y="196" text-anchor="middle" font-family="'Inter',sans-serif" font-size="11" fill="#dbe6fa">one control set</text>
+    </svg>
+    <figcaption>Build your controls once in the centre, then map the same evidence outward to each obligation.</figcaption>
+  </figure>
+
+  <p class="figttl">The approach in three steps</p>
+  <div class="flow">
+    <div class="step"><div class="s">STEP 1</div><b>Start from obligations</b><small>List the laws and customer demands you must satisfy.</small></div>
+    <div class="step"><div class="s">STEP 2</div><b>Build one control backbone</b><small>Pick a single control set (CIS v8, or the SCF to scale) and implement it once.</small></div>
+    <div class="step"><div class="s">STEP 3</div><b>Map &amp; prove</b><small>Reuse the same evidence across every framework and standard you need.</small></div>
+  </div>
+
+  <div class="tipbox">
+    <h3>Practical tips: choosing your frameworks</h3>
+    <ol>
+      <li><strong>Start from obligations, not acronyms.</strong> List the laws and customer demands you must satisfy first, then work backwards to the controls.</li>
+      <li><strong>Pick one control backbone.</strong> Choose a single control set (CIS v8 to start, or an SCF-based catalogue to scale) and make everything map to it.</li>
+      <li><strong>Use NIST CSF 2.0 as your board language.</strong> Its six functions are the cleanest way to report posture upward.</li>
+      <li><strong>Certify only where it pays.</strong> ISO 27001 or SOC 2 should be driven by a real commercial or regulatory need, not collected for display.</li>
+      <li><strong>Map once, reuse forever.</strong> The same evidence should serve ISO, NIS2, DORA and customer questionnaires.</li>
+      <li><strong>Right-size to your maturity.</strong> 800-53 is overkill for most SMEs; CIS v8 IG1 is a far more honest starting point.</li>
+    </ol>
+  </div>
+
+  <p>The organisations that handle this well are not the ones with the most certificates on the wall. They understood the layers, chose deliberately, built one strong control backbone, measured their maturity honestly, and mapped it all outward. That is how a confusing landscape becomes a single, defensible programme.</p>
+
+  <div class="cta">
+    <h3>Not sure which frameworks you actually need?</h3>
+    <p>We help organisations cut through the landscape, pick the right standards for their obligations, and build one control backbone that maps to all of them.</p>
+    <a class="btn" href="../index.html#contact">Book a 20-minute discovery call</a>
+  </div>
+
+  <p class="disclaimer">This article is general information from circl3.tech, not legal advice. Frameworks and their versions evolve; figures cited (ISO 27001:2022, NIST CSF 2.0, CIS Controls v8, and others) reflect the landscape at the time of writing. We recommend a scoped assessment for your organisation.</p>
+</article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="brand" style="margin-bottom:8px">circl3<span class="dot" style="color:var(--orange)">.</span>tech</div>
+    <a href="../index.html">Home</a> &nbsp;·&nbsp; <a href="../index.html#services">Services</a> &nbsp;·&nbsp; <a href="../index.html#contact">Contact</a>
+    <p style="margin-top:12px;color:#9aa3b2">Copyright © 2026 circl3.tech ltd, All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
