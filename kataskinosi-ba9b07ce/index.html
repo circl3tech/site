@@ -85,6 +85,12 @@ const NM=[
 [/Γιάννης(?! Χαραλάμπους)/g,'Ιωάννης Χαραλάμπους']
 ];
 function full(s){for(const[a,b]of NM)s=s.replace(a,b);return s;}
+function stripPref(s){
+  s=s.replace(/^Υπεύθυνος πυρογράφου\s*:?\s*/,'Πυρογράφος: ');
+  s=s.replace(/^Υπεύθ\.\s*:?\s*/,'');
+  s=s.replace(/^Υπεύθυνος\s*:?\s*/,'');
+  return s;
+}
 function esc(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
 function isGrp(s){return /^\[.*\]$/.test(s.trim());}
 function isKeno(s){return /^ΚΕΝΟ/.test(s.trim());}
@@ -102,7 +108,7 @@ function evHTML(ev){
   for(let de of ev.details){
     if(isKeno(de))continue;
     if(isGrp(de)){groups+='<span class="de grp">'+esc(de.replace(/^\[|\]$/g,''))+'</span>';continue;}
-    const parts=full(de).split(/\s*\/\s*/);
+    const parts=stripPref(full(de)).split(/\s*\/\s*/);
     h+='<div class="de">'+esc(parts[0])+'</div>';
     for(let i=1;i<parts.length;i++) h+='<div class="de cont">'+esc(parts[i])+'</div>';
   }
@@ -113,8 +119,7 @@ function renderDay(idx){
   CUR=idx; const day=DAYS[idx];
   const m=day.header.match(/ΜΕΡΑ\s+(\d+)\s*—\s*(.*)/);
   let out='<div class="dayhead"><div class="mera">Μέρα '+(m?m[1]:'')+'</div><div class="meta">'+esc(m?m[2].trim():'')+'</div></div>';
-  const ni=nowInfo(); const isToday=ni&&ni.idx===idx;
-  let placed=false;
+  const ni=nowInfo(); const isToday=ni&&ni.idx===idx; let placed=false;
   const nowLine=()=>{const now=new Date();const hh=String(now.getHours()).padStart(2,'0'),mm=String(now.getMinutes()).padStart(2,'0');return '<div class="nowline"><span class="dot"></span><span class="pill">τώρα '+hh+':'+mm+'</span><span class="ln"></span></div>';};
   for(const ev of day.events){
     if(isToday&&!placed&&mins(ev.time)>ni.mins){out+=nowLine();placed=true;}
