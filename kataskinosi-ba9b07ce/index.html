@@ -101,16 +101,14 @@ function nowInfo(){const now=new Date();for(let i=0;i<8;i++){const d=dateFor(i);
 function setActive(k){[...document.querySelectorAll('.tab')].forEach(t=>t.classList.toggle('active',t.dataset.k===String(k)));}
 function evHTML(ev){
   const meal=MEALS[ev.title.trim()];
-  const keno=ev.details.some(isKeno);
-  let h='<div class="ev'+(meal?' meal':'')+(keno?' keno':'')+'"><div class="t">'+esc(ev.time)+'</div><div class="b">';
+  let h='<div class="ev'+(meal?' meal':'')+'"><div class="t">'+esc(ev.time)+'</div><div class="b">';
   h+='<div class="ti">'+(meal?'<span class="ic">'+meal+'</span>':'')+esc(ev.title)+'</div>';
   let groups='';
   for(let de of ev.details){
     if(isKeno(de))continue;
     if(isGrp(de)){groups+='<span class="de grp">'+esc(de.replace(/^\[|\]$/g,''))+'</span>';continue;}
     const parts=stripPref(full(de)).split(/\s*\/\s*/);
-    h+='<div class="de">'+esc(parts[0])+'</div>';
-    for(let i=1;i<parts.length;i++) h+='<div class="de cont">'+esc(parts[i])+'</div>';
+    for(const pp of parts) h+='<div class="de">'+esc(pp)+'</div>';
   }
   if(groups)h+='<div style="margin-top:2px">'+groups+'</div>';
   return h+'</div></div>';
