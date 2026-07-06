@@ -9,62 +9,62 @@ REFRESH-INTERVAL;VALUE=DURATION:PT4H
 X-PUBLISHED-TTL:PT4H
 BEGIN:VEVENT
 UID:20260714T0800-00@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T050000Z
 DTEND:20260714T060000Z
 SUMMARY:Παρουσίαση παιδιών στον Ναό
-DESCRIPTION:Πάνος
+DESCRIPTION:Πάνος Παναγιώτου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T0900-01@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T060000Z
 DTEND:20260714T070000Z
 SUMMARY:Αναχώρηση Λεωφορείων
-DESCRIPTION:Κ.Μερτζανίδης / Γ. Χαραλάμπους / Παναγιώτης Χατζήκυριακού
+DESCRIPTION:Κωνσταντίνος Μερτζανίδης\nΙωάννης Χαραλάμπους\nΠαναγιώτης Χατζηκυριάκου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T1000-02@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T070000Z
 DTEND:20260714T073000Z
 SUMMARY:Καλωσόρισμα – Οδηγίες
-DESCRIPTION:Υπεύθ.: Κώστας / Χρυσόστομος
+DESCRIPTION:Κώστας Κωνσταντίνου / Χρυσόστομος Παπαδόπουλος
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T1030-03@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T073000Z
 DTEND:20260714T083000Z
 SUMMARY:Στρώσιμο κρεβατιών – πρώτη γνωριμία με την ομάδα και ελεύθερο παιχνίδι
-DESCRIPTION:Υπεύθ.: Ομαδάρχες
+DESCRIPTION:Ομαδάρχες
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T1130-04@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T083000Z
 DTEND:20260714T091500Z
 SUMMARY:Δραστηριότητα 1.1 Αγιασμός
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T1215-05@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T091500Z
 DTEND:20260714T101500Z
 SUMMARY:Δραστηριότητα 1.2
-DESCRIPTION:Παραδοσιακά παιχνίδια: 1-10 / υπ. Πάρης Παναγή / Παναγιώτης Χ. Κυριάκου / Γ. Χαραλάμπους / Α. Βασιλείου / Θεμιστοκλής
+DESCRIPTION:Παραδοσιακά παιχνίδια: 1-10\nΠάρης Παναγή\nΠαναγιώτης Χατζηκυριάκου\nΙωάννης Χαραλάμπους\nΑνδρέας Βασιλείου\nΘεμιστοκλής Σταύρου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T1315-06@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T101500Z
 DTEND:20260714T103000Z
 SUMMARY:Σύναξη Ομαδαρχών
-DESCRIPTION:Υπεύθ.: Αρχηγείο
+DESCRIPTION:Αρχηγείο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T1330-07@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T103000Z
 DTEND:20260714T113000Z
 SUMMARY:Γεύμα
@@ -72,46 +72,46 @@ DESCRIPTION:Ομάδα 3
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T1430-08@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T113000Z
 DTEND:20260714T134500Z
 SUMMARY:Ανάπαυση
-DESCRIPTION:Υπεύθυνος πυρογράφου: Κ. Μερτζανίδης
+DESCRIPTION:Πυρογράφος: Κωνσταντίνος Μερτζανίδης
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T1645-09@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T134500Z
 DTEND:20260714T140000Z
 SUMMARY:Πρόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T1700-10@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T140000Z
 DTEND:20260714T150000Z
 SUMMARY:Δραστηριότητα 1.3
-DESCRIPTION:Ποδόσφαιρο: 5\,6 — διαιτ. Ανδρέας Βασιλείου / Φούτσαλ: 7\,8 — διαιτ. Άγγελος Καραγιώργης / Καλαθόσφαιρα: 9\,10 — διαιτ. Π. Δημήτρης / Τοξοβολία: 4 — υπ. Παναγιώτης Χ. Κυριάκου / Μουσική–Χορός: 2 — υπ. Νικόλας Καραγιώργης / Δ. Μωραίτης / Αδαμάντιος / Παιχνίδι με τον Γιώργο: 1\,3 — υπ. Γ. Νεάρχου
+DESCRIPTION:Ποδόσφαιρο: 5\,6 — διαιτ. Ανδρέας Βασιλείου\nΦούτσαλ: 7\,8 — διαιτ. Άγγελος Καραγιώργης\nΚαλαθόσφαιρα: 9\,10 — διαιτ. π. Δημήτριος Χατζηγαβριήλ\nΤοξοβολία: 4 — Παναγιώτης Χατζηκυριάκου\nΜουσική–Χορός: 2 — Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου\nΠαιχνίδι με τον Γιώργο: 1\,3 — Γιώργος Νεάρχου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T1800-11@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T150000Z
 DTEND:20260714T160000Z
 SUMMARY:Δραστηριότητα 1.4
-DESCRIPTION:Ποδόσφαιρο: 1\,2 — διαιτ. Γιάννης Χαραλάμπους / Φούτσαλ: 3\,4 — διαιτ. Κ. Μερτζανίδης / Καλαθόσφαιρα: 5\,6 — διαιτ. Αρσένιος / Τοξοβολία: 7 — υπ. Ανδρέας Βασιλείου / Μουσική–Χορός: 8 — υπ. Νικόλας Καραγιώργης / Δ. Μωραίτης / Αδαμάντιος / Παιχνίδι με τον Γιώργο: 9\,10 — υπ. Γ. Νεάρχου
+DESCRIPTION:Ποδόσφαιρο: 1\,2 — διαιτ. Ιωάννης Χαραλάμπους\nΦούτσαλ: 3\,4 — διαιτ. Κωνσταντίνος Μερτζανίδης\nΚαλαθόσφαιρα: 5\,6 — διαιτ. Αρσένιος Σαμούτης\nΤοξοβολία: 7 — Ανδρέας Βασιλείου\nΜουσική–Χορός: 8 — Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου\nΠαιχνίδι με τον Γιώργο: 9\,10 — Γιώργος Νεάρχου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T1900-12@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T160000Z
 DTEND:20260714T170000Z
 SUMMARY:Μπάνια
-DESCRIPTION:Υπεύθ.: Τάσος / Γιάννης / Ανδρέας
+DESCRIPTION:Τάσος Ιεροδιακόνου / Ιωάννης Χαραλάμπους / Ανδρέας Βασιλείου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T2000-13@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T170000Z
 DTEND:20260714T173000Z
 SUMMARY:Υποστολή σημαίας
@@ -119,7 +119,7 @@ DESCRIPTION:Ομάδα 1
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T2030-14@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T173000Z
 DTEND:20260714T183000Z
 SUMMARY:Δείπνο
@@ -127,52 +127,52 @@ DESCRIPTION:Ομάδα 5
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T2130-15@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T183000Z
 DTEND:20260714T190000Z
 SUMMARY:Ψυχαγωγία από ομαδάρχες
-DESCRIPTION:Υπεύθ.: Κ. Μερτζανίδης / Αρσένιος / Δ. Μωραίτης / Αδαμάντιος / Νικόλας Καραγιώργης / Τάσος / Φίλιππος / Θεμιστοκλής
+DESCRIPTION:Κωνσταντίνος Μερτζανίδης / Αρσένιος Σαμούτης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου / Νικόλας Καραγιώργης / Τάσος Ιεροδιακόνου / Φίλιππος Κινδύνης / Θεμιστοκλής Σταύρου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T2200-16@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T190000Z
 DTEND:20260714T193000Z
 SUMMARY:Απόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T2230-17@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T193000Z
 DTEND:20260714T203000Z
 SUMMARY:1.5 Παιχνίδι του Δάσους (Ομάδες 1-10)
-DESCRIPTION:Υπεύθ.: Άγγελος Καραγιώργης
+DESCRIPTION:Άγγελος Καραγιώργης
 END:VEVENT
 BEGIN:VEVENT
 UID:20260714T2330-18@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260714T203000Z
 DTEND:20260714T210000Z
 SUMMARY:Σιωπητήριο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T0730-00@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T043000Z
 DTEND:20260715T050000Z
 SUMMARY:Εγερτήριο
-DESCRIPTION:Υπεύθ.: Αρχηγείο
+DESCRIPTION:Αρχηγείο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T0800-01@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T050000Z
 DTEND:20260715T052000Z
 SUMMARY:Εκκλησιασμός
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T0820-02@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T052000Z
 DTEND:20260715T053000Z
 SUMMARY:Έπαρση σημαίας
@@ -180,7 +180,7 @@ DESCRIPTION:Ομάδα 1
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T0830-03@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T053000Z
 DTEND:20260715T062000Z
 SUMMARY:Πρόγευμα
@@ -188,46 +188,46 @@ DESCRIPTION:Ομάδα 2
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T0920-04@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T062000Z
 DTEND:20260715T064500Z
 SUMMARY:Αγιογραφικό
-DESCRIPTION:Υπεύθ.: Π. Δημήτρης
+DESCRIPTION:π. Δημήτριος Χατζηγαβριήλ
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T0945-05@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T064500Z
 DTEND:20260715T071500Z
 SUMMARY:Συγύρισμα σκηνών – καθαριότητες
-DESCRIPTION:Εκκλησία: Ομάδα 7 / Παρεκκλήσι: Ομάδα 8 / Πλακόστρωτο: Ομάδα 9 / Κιόσκι: Ομάδα 10 / Επιθεώρηση / Υπεύθ.: Πέτρος
+DESCRIPTION:Εκκλησία: Ομάδα 7\nΠαρεκκλήσι: Ομάδα 8\nΠλακόστρωτο: Ομάδα 9\nΚιόσκι: Ομάδα 10\nΕπιθεώρηση\nΠέτρος Μιχαήλ
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T1015-06@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T071500Z
 DTEND:20260715T081500Z
 SUMMARY:Δραστηριότητα 2.1
-DESCRIPTION:Ποδόσφαιρο: 4\,5 — διαιτ. Θεμιστοκλής / Φούτσαλ: 6\,7 — διαιτ. Ανδρέας Βασιλείου / Καλαθόσφαιρα: 8\,9 — διαιτ. Π. Δημήτρης / Μουσική–Χορός: 10 — υπ. Νικόλας Καραγιώργης / Δ. Μωραίτης / Αδαμάντιος / Αγία Σκέπη: 1\,2\,3 (10:00)
+DESCRIPTION:Ποδόσφαιρο: 4\,5 — διαιτ. Θεμιστοκλής Σταύρου\nΦούτσαλ: 6\,7 — διαιτ. Ανδρέας Βασιλείου\nΚαλαθόσφαιρα: 8\,9 — διαιτ. π. Δημήτριος Χατζηγαβριήλ\nΜουσική–Χορός: 10 — Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου\nΑγία Σκέπη: 1\,2\,3 (10:00)
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T1115-07@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T081500Z
 DTEND:20260715T084500Z
 SUMMARY:Δεκατιανό
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T1145-08@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T084500Z
 DTEND:20260715T103000Z
 SUMMARY:Δραστηριότητα 2.2
-DESCRIPTION:Ποδόσφαιρο: 7\,9 — διαιτ. Άγγελος Καραγιώργης / Φούτσαλ: 4\,10 — διαιτ. Γιάννης Χαραλάμπους / Γερμανικό: 5\,8 — διαιτ. Κ. Μερτζανίδης / Καλαθόσφαιρα: 2\,3 — διαιτ. Αρσένιος / Μουσική–Χορός: 6 — υπ. Νικόλας Καραγιώργης / Δ. Μωραίτης / Αδαμάντιος / Εξομολόγηση: 1 — υπ. Κώστας
+DESCRIPTION:Ποδόσφαιρο: 7\,9 — διαιτ. Άγγελος Καραγιώργης\nΦούτσαλ: 4\,10 — διαιτ. Ιωάννης Χαραλάμπους\nΓερμανικό: 5\,8 — διαιτ. Κωνσταντίνος Μερτζανίδης\nΚαλαθόσφαιρα: 2\,3 — διαιτ. Αρσένιος Σαμούτης\nΜουσική–Χορός: 6 — Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου\nΕξομολόγηση: 1 — Κώστας Κωνσταντίνου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T1330-09@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T103000Z
 DTEND:20260715T113000Z
 SUMMARY:Γεύμα
@@ -235,46 +235,46 @@ DESCRIPTION:Ομάδα 4
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T1430-10@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T113000Z
 DTEND:20260715T134500Z
 SUMMARY:Ανάπαυση
-DESCRIPTION:Υπεύθυνος πυρογράφου: Παναγιώτης Χ. Κυριάκου
+DESCRIPTION:Πυρογράφος: Παναγιώτης Χατζηκυριάκου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T1645-11@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T134500Z
 DTEND:20260715T140000Z
 SUMMARY:Πρόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T1700-12@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T140000Z
 DTEND:20260715T150000Z
 SUMMARY:Δραστηριοτητα 2.3 Ομιλία Α: Αγιασμός (Ομάδες 1-10)
-DESCRIPTION:Υπεύθ.: Π. Μιχαήλ / Π. Δημήτρης
+DESCRIPTION:Πέτρος Μιχαήλ / π. Δημήτριος Χατζηγαβριήλ
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T1800-13@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T150000Z
 DTEND:20260715T160000Z
 SUMMARY:Δραστηριοτητα 2.4
-DESCRIPTION:Ποδόσφαιρο: 8\,10 — διαιτ. Θεμιστοκλής / Φούτσαλ: 1\,3 — διαιτ. Ανδρέας Βασιλείου / Καλαθόσφαιρα: 4\,6 — διαιτ. Π. Δημήτρης / Πυρογράφος/Καπνιστήρι: 9 — υπ. Πάρης / Τοξοβολία: 7 — υπ. Παναγιώτης Χ. Κυριάκου / Μουσική–Χορός: 5 — υπ. Νικόλας Καραγιώργης / Δ. Μωραίτης / Αδαμάντιος / Εξομολόγηση: 2 — υπ. Κώστας
+DESCRIPTION:Ποδόσφαιρο: 8\,10 — διαιτ. Θεμιστοκλής Σταύρου\nΦούτσαλ: 1\,3 — διαιτ. Ανδρέας Βασιλείου\nΚαλαθόσφαιρα: 4\,6 — διαιτ. π. Δημήτριος Χατζηγαβριήλ\nΠυρογράφος/Καπνιστήρι: 9 — Πάρης Παναγή\nΤοξοβολία: 7 — Παναγιώτης Χατζηκυριάκου\nΜουσική–Χορός: 5 — Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου\nΕξομολόγηση: 2 — Κώστας Κωνσταντίνου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T1900-14@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T160000Z
 DTEND:20260715T170000Z
 SUMMARY:Μπάνια
-DESCRIPTION:Υπεύθ.: Τάσος / Γιάννης / Ανδρέας
+DESCRIPTION:Τάσος Ιεροδιακόνου / Ιωάννης Χαραλάμπους / Ανδρέας Βασιλείου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T2000-15@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T170000Z
 DTEND:20260715T173000Z
 SUMMARY:Υποστολή σημαίας
@@ -282,7 +282,7 @@ DESCRIPTION:Ομάδα 2
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T2030-16@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T173000Z
 DTEND:20260715T183000Z
 SUMMARY:Δείπνο
@@ -290,44 +290,44 @@ DESCRIPTION:Ομάδα 6
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T2130-17@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T183000Z
 DTEND:20260715T193000Z
 SUMMARY:Μουσική
-DESCRIPTION:Υπεύθ.: Νικόλας Καραγιώργης / Αδαμάντιος / Δ. Μωραίτης
+DESCRIPTION:Νικόλας Καραγιώργης / Αδαμάντιος Χριστοφόρου / Δημήτρης Μωραΐτης
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T2230-18@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T193000Z
 DTEND:20260715T200000Z
 SUMMARY:Απόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260715T2300-19@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260715T200000Z
 DTEND:20260715T203000Z
 SUMMARY:Σιωπητήριο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T0730-00@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T043000Z
 DTEND:20260716T050000Z
 SUMMARY:Εγερτήριο
-DESCRIPTION:Υπεύθ.: Αρχηγείο
+DESCRIPTION:Αρχηγείο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T0800-01@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T050000Z
 DTEND:20260716T063000Z
 SUMMARY:Εκκλησιασμός
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T0930-02@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T063000Z
 DTEND:20260716T064500Z
 SUMMARY:Έπαρση σημαίας
@@ -335,7 +335,7 @@ DESCRIPTION:Ομάδα 2
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T0945-03@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T064500Z
 DTEND:20260716T071500Z
 SUMMARY:Πρόγευμα
@@ -343,46 +343,46 @@ DESCRIPTION:Ομάδα 3
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T1015-04@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T071500Z
 DTEND:20260716T074000Z
 SUMMARY:Συγύρισμα σκηνών – καθαριότητες
-DESCRIPTION:Εκκλησία: Ομάδα 8 / Παρεκκλήσι: Ομάδα 9 / Πλακόστρωτο: Ομάδα 10 / Κιόσκι: Ομάδα 1 / Επιθεώρηση / Υπεύθ.: Πέτρος
+DESCRIPTION:Εκκλησία: Ομάδα 8\nΠαρεκκλήσι: Ομάδα 9\nΠλακόστρωτο: Ομάδα 10\nΚιόσκι: Ομάδα 1\nΕπιθεώρηση\nΠέτρος Μιχαήλ
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T1040-05@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T074000Z
 DTEND:20260716T083000Z
 SUMMARY:Δραστηριότητα 3.1
-DESCRIPTION:Ποδόσφαιρο: 5\,6 — διαιτ. Άγγελος Καραγιώργης / Φούτσαλ: 7\,8 — διαιτ. Γιάννης Χαραλάμπους / Καλαθόσφαιρα: 1\,2 — διαιτ. Κ. Μερτζανίδης / Πυρογράφος/Καπνιστήρι: 10 — υπ. Φ. Κινδύνης / Τοξοβολία: 9 — υπ. Παναγιώτης Χ. Κυριάκου / Εξομολόγηση: 3\,4 — υπ. Κώστας
+DESCRIPTION:Ποδόσφαιρο: 5\,6 — διαιτ. Άγγελος Καραγιώργης\nΦούτσαλ: 7\,8 — διαιτ. Ιωάννης Χαραλάμπους\nΚαλαθόσφαιρα: 1\,2 — διαιτ. Κωνσταντίνος Μερτζανίδης\nΠυρογράφος/Καπνιστήρι: 10 — Φίλιππος Κινδύνης\nΤοξοβολία: 9 — Παναγιώτης Χατζηκυριάκου\nΕξομολόγηση: 3\,4 — Κώστας Κωνσταντίνου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T1130-06@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T083000Z
 DTEND:20260716T090000Z
 SUMMARY:Δεκατιανό
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T1200-07@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T090000Z
 DTEND:20260716T101500Z
 SUMMARY:Δραστηριότητα 3.2
-DESCRIPTION:Ποδόσφαιρο: 1\,3 — διαιτ. Θεμιστοκλής / Φούτσαλ: 2\,4 — διαιτ. Άγγελος Καραγιώργης / Καλαθόσφαιρα: 5\,8 — διαιτ. Αρσένιος / Τοξοβολία: 6 — υπ. Ανδρέας Βασιλείου / Μουσική–Χορός: 7 — υπ. Νικόλας Καραγιώργης / Δ. Μωραίτης / Αδαμάντιος / Εξομολόγηση: 9\,10 — υπ. Κώστας
+DESCRIPTION:Ποδόσφαιρο: 1\,3 — διαιτ. Θεμιστοκλής Σταύρου\nΦούτσαλ: 2\,4 — διαιτ. Άγγελος Καραγιώργης\nΚαλαθόσφαιρα: 5\,8 — διαιτ. Αρσένιος Σαμούτης\nΤοξοβολία: 6 — Ανδρέας Βασιλείου\nΜουσική–Χορός: 7 — Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου\nΕξομολόγηση: 9\,10 — Κώστας Κωνσταντίνου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T1315-08@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T101500Z
 DTEND:20260716T103000Z
 SUMMARY:Σύναξη Ομαδαρχών
-DESCRIPTION:Υπεύθ.: Αρχηγείο
+DESCRIPTION:Αρχηγείο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T1330-09@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T103000Z
 DTEND:20260716T113000Z
 SUMMARY:Γεύμα
@@ -390,46 +390,46 @@ DESCRIPTION:Ομάδα 5
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T1430-10@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T113000Z
 DTEND:20260716T134500Z
 SUMMARY:Ανάπαυση
-DESCRIPTION:Υπεύθυνος πυρογράφου: Πάρης
+DESCRIPTION:Πυρογράφος: Πάρης Παναγή
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T1645-11@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T134500Z
 DTEND:20260716T140000Z
 SUMMARY:Πρόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T1700-12@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T140000Z
 DTEND:20260716T150000Z
 SUMMARY:Δραστηριοτητα 3.3 Survivor (1-10)
-DESCRIPTION:Υπεύθ.: Κ. Μερτζανίδης
+DESCRIPTION:Κωνσταντίνος Μερτζανίδης
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T1800-13@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T150000Z
 DTEND:20260716T160000Z
 SUMMARY:Δραστηριοτητα 3.4 Survivor (1-10)
-DESCRIPTION:Υπεύθ.: Κ. Μερτζανίδης
+DESCRIPTION:Κωνσταντίνος Μερτζανίδης
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T1900-14@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T160000Z
 DTEND:20260716T170000Z
 SUMMARY:Μπάνια
-DESCRIPTION:Υπεύθ.: Τάσος / Γιάννης / Ανδρέας
+DESCRIPTION:Τάσος Ιεροδιακόνου / Ιωάννης Χαραλάμπους / Ανδρέας Βασιλείου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T2000-15@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T170000Z
 DTEND:20260716T173000Z
 SUMMARY:Υποστολή σημαίας
@@ -437,7 +437,7 @@ DESCRIPTION:Ομάδα 3
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T2030-16@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T173000Z
 DTEND:20260716T183000Z
 SUMMARY:Δείπνο
@@ -445,52 +445,52 @@ DESCRIPTION:Ομάδα 7
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T2130-17@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T183000Z
 DTEND:20260716T190000Z
 SUMMARY:Ψυχαγωγία από ομαδάρχες
-DESCRIPTION:Υπεύθ.: Κ. Μερτζανίδης / Αρσένιος / Δ. Μωραίτης / Αδαμάντιος / Νικόλας Καραγιώργης / Τάσος / Φίλιππος / Θεμιστοκλής
+DESCRIPTION:Κωνσταντίνος Μερτζανίδης / Αρσένιος Σαμούτης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου / Νικόλας Καραγιώργης / Τάσος Ιεροδιακόνου / Φίλιππος Κινδύνης / Θεμιστοκλής Σταύρου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T2200-18@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T190000Z
 DTEND:20260716T193000Z
 SUMMARY:Απόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T2230-19@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T193000Z
 DTEND:20260716T203000Z
 SUMMARY:3.5
-DESCRIPTION:Νυκτερινοί Αγώνες (Ομάδες 1-10) / Υπεύθ.: Κ. Μερτζανίδης
+DESCRIPTION:Νυκτερινοί Αγώνες (Ομάδες 1-10)\nΚωνσταντίνος Μερτζανίδης
 END:VEVENT
 BEGIN:VEVENT
 UID:20260716T2330-20@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260716T203000Z
 DTEND:20260716T210000Z
 SUMMARY:Σιωπητήριο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T0730-00@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T043000Z
 DTEND:20260717T050000Z
 SUMMARY:Εγερτήριο
-DESCRIPTION:Υπεύθ.: Αρχηγείο
+DESCRIPTION:Αρχηγείο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T0800-01@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T050000Z
 DTEND:20260717T052000Z
 SUMMARY:Εκκλησιασμός
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T0820-02@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T052000Z
 DTEND:20260717T053000Z
 SUMMARY:Έπαρση σημαίας
@@ -498,7 +498,7 @@ DESCRIPTION:Ομάδα 3
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T0830-03@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T053000Z
 DTEND:20260717T064500Z
 SUMMARY:Πρόγευμα
@@ -506,38 +506,38 @@ DESCRIPTION:Ομάδα 4
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T0945-04@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T064500Z
 DTEND:20260717T071500Z
 SUMMARY:Συγύρισμα σκηνών – καθαριότητες
-DESCRIPTION:Εκκλησία: Ομάδα 9 / Παρεκκλήσι: Ομάδα 10 / Πλακόστρωτο: Ομάδα 1 / Κιόσκι: Ομάδα 2 / Επιθεώρηση / Υπεύθ.: Πέτρος
+DESCRIPTION:Εκκλησία: Ομάδα 9\nΠαρεκκλήσι: Ομάδα 10\nΠλακόστρωτο: Ομάδα 1\nΚιόσκι: Ομάδα 2\nΕπιθεώρηση\nΠέτρος Μιχαήλ
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T1015-05@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T071500Z
 DTEND:20260717T081500Z
 SUMMARY:Δραστηριότητα 4.1
-DESCRIPTION:Ποδόσφαιρο: 6\,7 — διαιτ. Π. Δημήτρης / Φούτσαλ: 1\,3 — διαιτ. Γιάννης Χαραλάμπους / Καλαθόσφαιρα: 8\,10 — διαιτ. Κ. Μερτζανίδης / Πυρογράφος/Καπνιστήρι: 4 — υπ. Θ. Σταύρου / Τοξοβολία: 2 — υπ. Παναγιώτης Χ. Κυριάκου / Μουσική–Χορός: 9 — υπ. Νικόλας Καραγιώργης / Δ. Μωραίτης / Αδαμάντιος / Εξομολόγηση: 5 — υπ. Κώστας
+DESCRIPTION:Ποδόσφαιρο: 6\,7 — διαιτ. π. Δημήτριος Χατζηγαβριήλ\nΦούτσαλ: 1\,3 — διαιτ. Ιωάννης Χαραλάμπους\nΚαλαθόσφαιρα: 8\,10 — διαιτ. Κωνσταντίνος Μερτζανίδης\nΠυρογράφος/Καπνιστήρι: 4 — Θεμιστοκλής Σταύρου\nΤοξοβολία: 2 — Παναγιώτης Χατζηκυριάκου\nΜουσική–Χορός: 9 — Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου\nΕξομολόγηση: 5 — Κώστας Κωνσταντίνου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T1115-06@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T081500Z
 DTEND:20260717T084500Z
 SUMMARY:Δεκατιανό
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T1145-07@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T084500Z
 DTEND:20260717T103000Z
 SUMMARY:Δραστηριότητα 4.2
-DESCRIPTION:Ποδόσφαιρο: 2\,4 — διαιτ. Ανδρέας Βασιλείου / Φούτσαλ: 5\,7 — διαιτ. Άγγελος Καραγιώργης / Γερμανικό: 9\,10 — διαιτ. Θεμιστοκλής / Καλαθόσφαιρα: 1\,3 — διαιτ. Αρσένιος / Μουσική–Χορός: 8 — υπ. Νικόλας Καραγιώργης / Δ. Μωραίτης / Αδαμάντιος / Εξομολόγηση: 6 — υπ. Κώστας
+DESCRIPTION:Ποδόσφαιρο: 2\,4 — διαιτ. Ανδρέας Βασιλείου\nΦούτσαλ: 5\,7 — διαιτ. Άγγελος Καραγιώργης\nΓερμανικό: 9\,10 — διαιτ. Θεμιστοκλής Σταύρου\nΚαλαθόσφαιρα: 1\,3 — διαιτ. Αρσένιος Σαμούτης\nΜουσική–Χορός: 8 — Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου\nΕξομολόγηση: 6 — Κώστας Κωνσταντίνου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T1330-08@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T103000Z
 DTEND:20260717T113000Z
 SUMMARY:Γεύμα
@@ -545,46 +545,46 @@ DESCRIPTION:Ομάδα 6
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T1430-09@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T113000Z
 DTEND:20260717T134500Z
 SUMMARY:Ανάπαυση
-DESCRIPTION:Υπεύθυνος πυρογράφου: Φ. Κινδύνης
+DESCRIPTION:Πυρογράφος: Φίλιππος Κινδύνης
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T1645-10@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T134500Z
 DTEND:20260717T140000Z
 SUMMARY:Πρόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T1700-11@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T140000Z
 DTEND:20260717T150000Z
 SUMMARY:Δραστηριοτητα 4.3 Ομιλία Β: Αγία Πρόθεση (Ομάδες 1-10)
-DESCRIPTION:Υπεύθ.: Π. Μιχαήλ / Π. Δημήτρης
+DESCRIPTION:Πέτρος Μιχαήλ / π. Δημήτριος Χατζηγαβριήλ
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T1800-12@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T150000Z
 DTEND:20260717T160000Z
 SUMMARY:Δραστηριοτητα 4.4
-DESCRIPTION:Ποδόσφαιρο: 6\,8 — διαιτ. Π. Δημήτρης / Καλαθόσφαιρα: 9\,10 — διαιτ. Κ. Μερτζανίδης / Πυρογράφος/Καπνιστήρι: 5 — υπ. Ν. Σταυρινίδης / Τοξοβολία: 3 — υπ. Παναγιώτης Χ. Κυριάκου / Μουσική–Χορός: 1 — υπ. Νικόλας Καραγιώργης / Δ. Μωραίτης / Αδαμάντιος / Παιχνίδι με τον Γιώργο: 2\,4 — υπ. Γ. Νεάρχου / Εξομολόγηση: 7 — υπ. Κώστας
+DESCRIPTION:Ποδόσφαιρο: 6\,8 — διαιτ. π. Δημήτριος Χατζηγαβριήλ\nΚαλαθόσφαιρα: 9\,10 — διαιτ. Κωνσταντίνος Μερτζανίδης\nΠυρογράφος/Καπνιστήρι: 5 — Νικόλας Σταυρινίδης\nΤοξοβολία: 3 — Παναγιώτης Χατζηκυριάκου\nΜουσική–Χορός: 1 — Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου\nΠαιχνίδι με τον Γιώργο: 2\,4 — Γιώργος Νεάρχου\nΕξομολόγηση: 7 — Κώστας Κωνσταντίνου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T1900-13@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T160000Z
 DTEND:20260717T170000Z
 SUMMARY:Μπάνια
-DESCRIPTION:Υπεύθ.: Τάσος / Γιάννης / Ανδρέας
+DESCRIPTION:Τάσος Ιεροδιακόνου / Ιωάννης Χαραλάμπους / Ανδρέας Βασιλείου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T2000-14@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T170000Z
 DTEND:20260717T173000Z
 SUMMARY:Υποστολή σημαίας
@@ -592,7 +592,7 @@ DESCRIPTION:Ομάδα 4
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T2030-15@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T173000Z
 DTEND:20260717T183000Z
 SUMMARY:Δείπνο
@@ -600,44 +600,44 @@ DESCRIPTION:Ομάδα 8
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T2130-16@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T183000Z
 DTEND:20260717T190000Z
 SUMMARY:Μουσική
-DESCRIPTION:Υπεύθ.: Νικόλας Καραγιώργης / Αδαμάντιος / Δ. Μωραίτης
+DESCRIPTION:Νικόλας Καραγιώργης / Αδαμάντιος Χριστοφόρου / Δημήτρης Μωραΐτης
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T2200-17@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T190000Z
 DTEND:20260717T193000Z
 SUMMARY:Απόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260717T2230-18@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260717T193000Z
 DTEND:20260717T200000Z
 SUMMARY:Σιωπητήριο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T0420-00@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T012000Z
 DTEND:20260718T015000Z
 SUMMARY:Εγερτήριο
-DESCRIPTION:Υπεύθ.: Αρχηγείο
+DESCRIPTION:Αρχηγείο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T0450-01@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T015000Z
 DTEND:20260718T063000Z
 SUMMARY:Αναχώρηση για ορειβασία
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T0930-02@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T063000Z
 DTEND:20260718T071500Z
 SUMMARY:Πρόγευμα (για όσους έχουν πάει ορειβασία με τον πάτερ)
@@ -645,31 +645,31 @@ DESCRIPTION:Ομάδα 5
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T1015-03@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T071500Z
 DTEND:20260718T083000Z
 SUMMARY:Δραστηριότητα 5.1
-DESCRIPTION:Ανάπαυση / Ελεύθερο Πρόγραμμα
+DESCRIPTION:Ανάπαυση\nΕλεύθερο Πρόγραμμα
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T1130-04@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T083000Z
 DTEND:20260718T101500Z
 SUMMARY:Δραστηριότητα 5.2
-DESCRIPTION:Φούτσαλ: 9\,10 — διαιτ. Θεμιστοκλής / Γερμανικό: 6\,7 — διαιτ. Γιάννης Χαραλάμπους / Καλαθόσφαιρα: 4\,5 — διαιτ. Αρσένιος / Πυρογράφος/Καπνιστήρι: 2 — υπ. Φίλιππος / Τοξοβολία: 1 — υπ. Ανδρέας Βασιλείου / Μουσική–Χορός: 3 — υπ. Νικόλας Καραγιώργης / Δ. Μωραίτης / Αδαμάντιος / Εξομολόγηση: 8 — υπ. Κώστας
+DESCRIPTION:Φούτσαλ: 9\,10 — διαιτ. Θεμιστοκλής Σταύρου\nΓερμανικό: 6\,7 — διαιτ. Ιωάννης Χαραλάμπους\nΚαλαθόσφαιρα: 4\,5 — διαιτ. Αρσένιος Σαμούτης\nΠυρογράφος/Καπνιστήρι: 2 — Φίλιππος Κινδύνης\nΤοξοβολία: 1 — Ανδρέας Βασιλείου\nΜουσική–Χορός: 3 — Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου\nΕξομολόγηση: 8 — Κώστας Κωνσταντίνου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T1315-05@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T101500Z
 DTEND:20260718T103000Z
 SUMMARY:Σύναξη Ομαδαρχών
-DESCRIPTION:Υπεύθ.: Αρχηγείο
+DESCRIPTION:Αρχηγείο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T1330-06@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T103000Z
 DTEND:20260718T113000Z
 SUMMARY:Γεύμα
@@ -677,46 +677,46 @@ DESCRIPTION:Ομάδα 7
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T1430-07@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T113000Z
 DTEND:20260718T134500Z
 SUMMARY:Ανάπαυση
-DESCRIPTION:Υπεύθυνος πυρογράφου: Θ. Σταύρου
+DESCRIPTION:Πυρογράφος: Θεμιστοκλής Σταύρου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T1645-08@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T134500Z
 DTEND:20260718T140000Z
 SUMMARY:Πρόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T1700-09@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T140000Z
 DTEND:20260718T150000Z
 SUMMARY:Δραστηριοτητα 5.3 Αθλοπαιδιές με τον Γιώργο Νεάρχου (Ομάδες 1-10)
-DESCRIPTION:Υπεύθ.: Γ. Νεάρχου
+DESCRIPTION:Γιώργος Νεάρχου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T1800-10@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T150000Z
 DTEND:20260718T160000Z
 SUMMARY:Δραστηριότητα 5.4 Αθλοπαιδιές με τον Γιώργο Νεάρχου (Ομάδες 1-10)
-DESCRIPTION:Υπεύθ.: Γ. Νεάρχου
+DESCRIPTION:Γιώργος Νεάρχου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T1900-11@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T160000Z
 DTEND:20260718T170000Z
 SUMMARY:Μπάνια
-DESCRIPTION:Υπεύθ.: Τάσος / Γιάννης / Ανδρέας
+DESCRIPTION:Τάσος Ιεροδιακόνου / Ιωάννης Χαραλάμπους / Ανδρέας Βασιλείου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T2000-12@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T170000Z
 DTEND:20260718T173000Z
 SUMMARY:Υποστολή σημαίας
@@ -724,7 +724,7 @@ DESCRIPTION:Ομάδα 5
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T2030-13@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T173000Z
 DTEND:20260718T183000Z
 SUMMARY:Δείπνο
@@ -732,43 +732,43 @@ DESCRIPTION:Ομάδα 9
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T2130-14@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T183000Z
 DTEND:20260718T193000Z
 SUMMARY:Ψυχαγωγία – Βρες τη Λέξη (Γ. Νεάρχου)
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T2230-15@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T193000Z
 DTEND:20260718T200000Z
 SUMMARY:Απόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260718T2300-16@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260718T200000Z
 DTEND:20260718T203000Z
 SUMMARY:Σιωπητήριο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T0730-00@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T043000Z
 DTEND:20260719T050000Z
 SUMMARY:Εγερτήριο
-DESCRIPTION:Υπεύθ.: Αρχηγείο
+DESCRIPTION:Αρχηγείο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T0800-01@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T050000Z
 DTEND:20260719T063000Z
 SUMMARY:Εκκλησιασμός
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T0930-02@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T063000Z
 DTEND:20260719T064500Z
 SUMMARY:Έπαρση σημαίας
@@ -776,7 +776,7 @@ DESCRIPTION:Ομάδα 5
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T0945-03@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T064500Z
 DTEND:20260719T071500Z
 SUMMARY:Πρόγευμα
@@ -784,38 +784,38 @@ DESCRIPTION:Ομάδα 6
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T1015-04@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T071500Z
 DTEND:20260719T074000Z
 SUMMARY:Συγύρισμα σκηνών – καθαριότητες
-DESCRIPTION:Εκκλησία: Ομάδα 1 / Παρεκκλήσι: Ομάδα 2 / Πλακόστρωτο: Ομάδα 3 / Κιόσκι: Ομάδα 4 / Επιθεώρηση / Υπεύθ.: Πέτρος
+DESCRIPTION:Εκκλησία: Ομάδα 1\nΠαρεκκλήσι: Ομάδα 2\nΠλακόστρωτο: Ομάδα 3\nΚιόσκι: Ομάδα 4\nΕπιθεώρηση\nΠέτρος Μιχαήλ
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T1040-05@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T074000Z
 DTEND:20260719T083000Z
 SUMMARY:Δραστηριότητα 6.1
-DESCRIPTION:Ποδόσφαιρο: 9\,10 — διαιτ. Άγγελος Καραγιώργης / Φούτσαλ: 2\,3 — διαιτ. Π. Δημήτρης / Καλαθόσφαιρα: 1\,6 — διαιτ. Κ. Μερτζανίδης / Τοξοβολία: 5 — υπ. Παναγιώτης Χ. Κυριάκου / Μουσική–Χορός: 4 — υπ. Νικόλας Καραγιώργης / Δ. Μωραίτης / Αδαμάντιος / Παιχνίδι με τον Γιώργο: 7\,8 — υπ. Γ. Νεάρχου / Εξομολόγηση: Ομαδάρχες — υπ. Κώστας
+DESCRIPTION:Ποδόσφαιρο: 9\,10 — διαιτ. Άγγελος Καραγιώργης\nΦούτσαλ: 2\,3 — διαιτ. π. Δημήτριος Χατζηγαβριήλ\nΚαλαθόσφαιρα: 1\,6 — διαιτ. Κωνσταντίνος Μερτζανίδης\nΤοξοβολία: 5 — Παναγιώτης Χατζηκυριάκου\nΜουσική–Χορός: 4 — Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου\nΠαιχνίδι με τον Γιώργο: 7\,8 — Γιώργος Νεάρχου\nΕξομολόγηση: Ομαδάρχες — Κώστας Κωνσταντίνου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T1130-06@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T083000Z
 DTEND:20260719T090000Z
 SUMMARY:Δεκατιανό
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T1200-07@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T090000Z
 DTEND:20260719T103000Z
 SUMMARY:Δραστηριότητα 6.2
-DESCRIPTION:Ποδόσφαιρο: 2\,3 — διαιτ. Θεμιστοκλής / Φούτσαλ: 4\,5 — διαιτ. Άγγελος Καραγιώργης / Γερμανικό: 6\,7 — διαιτ. Γιάννης Χαραλάμπους / Καλαθόσφαιρα: 9\,10 — διαιτ. Αρσένιος / Πυρογράφος/Καπνιστήρι: 1 — υπ. Πάρης / Τοξοβολία: 8 — υπ. Ανδρέας Βασιλείου
+DESCRIPTION:Ποδόσφαιρο: 2\,3 — διαιτ. Θεμιστοκλής Σταύρου\nΦούτσαλ: 4\,5 — διαιτ. Άγγελος Καραγιώργης\nΓερμανικό: 6\,7 — διαιτ. Ιωάννης Χαραλάμπους\nΚαλαθόσφαιρα: 9\,10 — διαιτ. Αρσένιος Σαμούτης\nΠυρογράφος/Καπνιστήρι: 1 — Πάρης Παναγή\nΤοξοβολία: 8 — Ανδρέας Βασιλείου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T1330-08@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T103000Z
 DTEND:20260719T113000Z
 SUMMARY:Γεύμα
@@ -823,45 +823,45 @@ DESCRIPTION:Ομάδα 8
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T1430-09@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T113000Z
 DTEND:20260719T134500Z
 SUMMARY:Ανάπαυση
-DESCRIPTION:Υπεύθυνος πυρογράφου: Ν. Σταυρινίδης
+DESCRIPTION:Πυρογράφος: Νικόλας Σταυρινίδης
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T1645-10@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T134500Z
 DTEND:20260719T140000Z
 SUMMARY:Πρόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T1700-11@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T140000Z
 DTEND:20260719T150000Z
 SUMMARY:Δραστηριοτητα 6.3 Ελεύθερη Συζήτηση με τον πάτερ (Ομάδες 1-5) / με τον Αρχηγό (Ομάδες 6-10)
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T1800-12@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T150000Z
 DTEND:20260719T160000Z
 SUMMARY:Δραστηριοτητα 6.4
-DESCRIPTION:Παιχνίδι του Δάσους: 1-10 — υπ. Άγγελος Καραγιώργης
+DESCRIPTION:Παιχνίδι του Δάσους: 1-10 — Άγγελος Καραγιώργης
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T1900-13@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T160000Z
 DTEND:20260719T170000Z
 SUMMARY:Μπάνια
-DESCRIPTION:Υπεύθ.: Τάσος / Γιάννης / Ανδρέας
+DESCRIPTION:Τάσος Ιεροδιακόνου / Ιωάννης Χαραλάμπους / Ανδρέας Βασιλείου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T2000-14@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T170000Z
 DTEND:20260719T173000Z
 SUMMARY:Υποστολή σημαίας
@@ -869,7 +869,7 @@ DESCRIPTION:Ομάδα 6
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T2030-15@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T173000Z
 DTEND:20260719T183000Z
 SUMMARY:Δείπνο
@@ -877,14 +877,14 @@ DESCRIPTION:Ομάδα 10
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T2130-16@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T183000Z
 DTEND:20260719T190000Z
 SUMMARY:Απόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T2200-17@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T190000Z
 DTEND:20260719T200000Z
 SUMMARY:Τελικός Μουντιάλ
@@ -892,29 +892,29 @@ DESCRIPTION:Επιτραπέζια
 END:VEVENT
 BEGIN:VEVENT
 UID:20260719T2300-18@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260719T200000Z
 DTEND:20260719T203000Z
 SUMMARY:Σιωπητήριο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T0730-00@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T043000Z
 DTEND:20260720T050000Z
 SUMMARY:Εγερτήριο
-DESCRIPTION:Υπεύθ.: Αρχηγείο
+DESCRIPTION:Αρχηγείο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T0800-01@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T050000Z
 DTEND:20260720T052000Z
 SUMMARY:Εκκλησιασμός
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T0820-02@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T052000Z
 DTEND:20260720T053000Z
 SUMMARY:Έπαρση σημαίας
@@ -922,7 +922,7 @@ DESCRIPTION:Ομάδα 6
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T0830-03@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T053000Z
 DTEND:20260720T062000Z
 SUMMARY:Πρόγευμα
@@ -930,54 +930,54 @@ DESCRIPTION:Ομάδα 7
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T0920-04@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T062000Z
 DTEND:20260720T064500Z
 SUMMARY:Αγιογραφικό
-DESCRIPTION:Υπεύθ.: Π. Δημήτρης
+DESCRIPTION:π. Δημήτριος Χατζηγαβριήλ
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T0945-05@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T064500Z
 DTEND:20260720T071500Z
 SUMMARY:Συγύρισμα σκηνών – καθαριότητες
-DESCRIPTION:Εκκλησία: Ομάδα 2 / Παρεκκλήσι: Ομάδα 3 / Πλακόστρωτο: Ομάδα 4 / Κιόσκι: Ομάδα 5 / Επιθεώρηση / Υπεύθ.: Πέτρος
+DESCRIPTION:Εκκλησία: Ομάδα 2\nΠαρεκκλήσι: Ομάδα 3\nΠλακόστρωτο: Ομάδα 4\nΚιόσκι: Ομάδα 5\nΕπιθεώρηση\nΠέτρος Μιχαήλ
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T1015-06@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T071500Z
 DTEND:20260720T081500Z
 SUMMARY:Δραστηριότητα 7.1
-DESCRIPTION:Ποδόσφαιρο: 4\,6 — διαιτ. Π. Δημήτρης / Φούτσαλ: 1\,2 — διαιτ. Γιάννης Χαραλάμπους / Γερμανικό: 8\,9 — διαιτ. Κ. Μερτζανίδης / Καλαθόσφαιρα: 5\,7 — διαιτ. Αρσένιος / Πυρογράφος/Καπνιστήρι: 3 — υπ. Φ. Κινδύνης / Μουσική–Χορός: 10 — υπ. Νικόλας Καραγιώργης / Δ. Μωραίτης / Αδαμάντιος
+DESCRIPTION:Ποδόσφαιρο: 4\,6 — διαιτ. π. Δημήτριος Χατζηγαβριήλ\nΦούτσαλ: 1\,2 — διαιτ. Ιωάννης Χαραλάμπους\nΓερμανικό: 8\,9 — διαιτ. Κωνσταντίνος Μερτζανίδης\nΚαλαθόσφαιρα: 5\,7 — διαιτ. Αρσένιος Σαμούτης\nΠυρογράφος/Καπνιστήρι: 3 — Φίλιππος Κινδύνης\nΜουσική–Χορός: 10 — Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T1115-07@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T081500Z
 DTEND:20260720T084500Z
 SUMMARY:Δεκατιανό
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T1145-08@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T084500Z
 DTEND:20260720T101500Z
 SUMMARY:Δραστηριότητα 7.2
-DESCRIPTION:Ποδόσφαιρο: 3\,5 — διαιτ. Ανδρέας Βασιλείου / Φούτσαλ: 8\,10 — διαιτ. Άγγελος Καραγιώργης / Γερμανικό: 1\,2 — διαιτ. Θεμιστοκλής / Καλαθόσφαιρα: 7\,9 — διαιτ. Π. Δημήτρης / Πυρογράφος/Καπνιστήρι: 6 — υπ. Πάρης / Μουσική–Χορός: 4 — υπ. Νικόλας Καραγιώργης / Δ. Μωραίτης / Αδαμάντιος
+DESCRIPTION:Ποδόσφαιρο: 3\,5 — διαιτ. Ανδρέας Βασιλείου\nΦούτσαλ: 8\,10 — διαιτ. Άγγελος Καραγιώργης\nΓερμανικό: 1\,2 — διαιτ. Θεμιστοκλής Σταύρου\nΚαλαθόσφαιρα: 7\,9 — διαιτ. π. Δημήτριος Χατζηγαβριήλ\nΠυρογράφος/Καπνιστήρι: 6 — Πάρης Παναγή\nΜουσική–Χορός: 4 — Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T1315-09@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T101500Z
 DTEND:20260720T103000Z
 SUMMARY:Σύναξη Ομαδαρχών
-DESCRIPTION:Υπεύθ.: Αρχηγείο
+DESCRIPTION:Αρχηγείο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T1330-10@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T103000Z
 DTEND:20260720T113000Z
 SUMMARY:Γεύμα
@@ -985,45 +985,45 @@ DESCRIPTION:Ομάδα 9
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T1430-11@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T113000Z
 DTEND:20260720T134500Z
 SUMMARY:Ανάπαυση
-DESCRIPTION:Υπεύθυνος πυρογράφου: Θεμιστοκλής
+DESCRIPTION:Πυρογράφος: Θεμιστοκλής Σταύρου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T1645-12@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T134500Z
 DTEND:20260720T140000Z
 SUMMARY:Πρόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T1700-13@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T140000Z
 DTEND:20260720T150000Z
 SUMMARY:Δραστηριοτητα 7.3 Ελεύθερη Συζήτηση με τον πάτερ (Ομάδες 6-10) / με τον Αρχηγό (Ομάδες 1-5)
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T1800-14@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T150000Z
 DTEND:20260720T160000Z
 SUMMARY:Δραστηριοτητα 7.4
-DESCRIPTION:Ποδόσφαιρο: 9\,10 — διαιτ. Γιάννης Χαραλάμπους / Γερμανικό: 8 — διαιτ. Κ. Μερτζανίδης / Καλαθόσφαιρα: 3\,4 — διαιτ. Αρσένιος / Handball: 1\,2 — διαιτ. Κόκκινος / Πυρογράφος/Καπνιστήρι: 7 — υπ. Ν. Σταυρινίδης / Παιχνίδι με τον Γιώργο: 5\,6 — υπ. Γ. Νεάρχου
+DESCRIPTION:Ποδόσφαιρο: 9\,10 — διαιτ. Ιωάννης Χαραλάμπους\nΓερμανικό: 8 — διαιτ. Κωνσταντίνος Μερτζανίδης\nΚαλαθόσφαιρα: 3\,4 — διαιτ. Αρσένιος Σαμούτης\nHandball: 1\,2 — διαιτ. Κόκκινος\nΠυρογράφος/Καπνιστήρι: 7 — Νικόλας Σταυρινίδης\nΠαιχνίδι με τον Γιώργο: 5\,6 — Γιώργος Νεάρχου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T1900-15@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T160000Z
 DTEND:20260720T170000Z
 SUMMARY:Μπάνια
-DESCRIPTION:Υπεύθ.: Τάσος / Γιάννης / Ανδρέας
+DESCRIPTION:Τάσος Ιεροδιακόνου / Ιωάννης Χαραλάμπους / Ανδρέας Βασιλείου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T2000-16@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T170000Z
 DTEND:20260720T173000Z
 SUMMARY:Υποστολή σημαίας
@@ -1031,7 +1031,7 @@ DESCRIPTION:Ομάδα 7
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T2030-17@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T173000Z
 DTEND:20260720T183000Z
 SUMMARY:Δείπνο
@@ -1039,44 +1039,44 @@ DESCRIPTION:Ομάδα 1
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T2130-18@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T183000Z
 DTEND:20260720T200000Z
 SUMMARY:Πάρτι με τους Φιλανιώτες μουσικούς
-DESCRIPTION:Υπεύθ.: Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου
+DESCRIPTION:Νικόλας Καραγιώργης / Δημήτρης Μωραΐτης / Αδαμάντιος Χριστοφόρου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T2300-19@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T200000Z
 DTEND:20260720T203000Z
 SUMMARY:Απόδειπνο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260720T2330-20@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260720T203000Z
 DTEND:20260720T210000Z
 SUMMARY:Σιωπητήριο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T0730-00@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T043000Z
 DTEND:20260721T050000Z
 SUMMARY:Εγερτήριο
-DESCRIPTION:Υπεύθ.: Αρχηγείο
+DESCRIPTION:Αρχηγείο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T0800-01@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T050000Z
 DTEND:20260721T052000Z
 SUMMARY:Εκκλησιασμός
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T0820-02@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T052000Z
 DTEND:20260721T053000Z
 SUMMARY:Έπαρση σημαίας
@@ -1084,7 +1084,7 @@ DESCRIPTION:Ομάδα 7
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T0830-03@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T053000Z
 DTEND:20260721T064500Z
 SUMMARY:Πρόγευμα
@@ -1092,53 +1092,53 @@ DESCRIPTION:Ομάδα 8
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T0945-04@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T064500Z
 DTEND:20260721T073000Z
 SUMMARY:Εργασίες για κλείσιμο της κατασκήνωσης
-DESCRIPTION:Υπεύθ.: Πέτρος / Χρυσόστομος
+DESCRIPTION:Πέτρος Μιχαήλ / Χρυσόστομος Παπαδόπουλος
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T1030-05@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T073000Z
 DTEND:20260721T080000Z
 SUMMARY:Επιθεώρηση
-DESCRIPTION:Υπεύθ.: Πέτρος
+DESCRIPTION:Πέτρος Μιχαήλ
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T1100-06@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T080000Z
 DTEND:20260721T083000Z
 SUMMARY:Δραστηριότητα 8.1
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T1130-07@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T083000Z
 DTEND:20260721T084500Z
 SUMMARY:Δεκατιανό
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T1145-08@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T084500Z
 DTEND:20260721T101500Z
 SUMMARY:Δραστηριότητα 8.2
-DESCRIPTION:Ποδόσφαιρο: 2\,5 — διαιτ. Ανδρέας Βασιλείου / Φούτσαλ: 7\,9 — διαιτ. Άγγελος Καραγιώργης / Γερμανικό: 4\,6 — διαιτ. Θεμιστοκλής / Καλαθόσφαιρα: 1\,3 — διαιτ. Π. Δημήτρης / Πυρογράφος/Καπνιστήρι: 8 — υπ. Φίλιππος / Τοξοβολία: 10 — υπ. Παναγιώτης Χ. Κυριάκου
+DESCRIPTION:Ποδόσφαιρο: 2\,5 — διαιτ. Ανδρέας Βασιλείου\nΦούτσαλ: 7\,9 — διαιτ. Άγγελος Καραγιώργης\nΓερμανικό: 4\,6 — διαιτ. Θεμιστοκλής Σταύρου\nΚαλαθόσφαιρα: 1\,3 — διαιτ. π. Δημήτριος Χατζηγαβριήλ\nΠυρογράφος/Καπνιστήρι: 8 — Φίλιππος Κινδύνης\nΤοξοβολία: 10 — Παναγιώτης Χατζηκυριάκου
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T1315-09@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T101500Z
 DTEND:20260721T103000Z
 SUMMARY:Σύναξη Ομαδαρχών
-DESCRIPTION:Υπεύθ.: Αρχηγείο
+DESCRIPTION:Αρχηγείο
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T1330-10@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T103000Z
 DTEND:20260721T113000Z
 SUMMARY:Γεύμα
@@ -1146,15 +1146,15 @@ DESCRIPTION:Ομάδα 10
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T1430-11@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T113000Z
 DTEND:20260721T134500Z
 SUMMARY:Ανάπαυση
-DESCRIPTION:Υπεύθυνος πυρογράφου: Φίλιππος
+DESCRIPTION:Πυρογράφος: Φίλιππος Κινδύνης
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T1645-12@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T134500Z
 DTEND:20260721T173000Z
 SUMMARY:Πρόδειπνο
@@ -1162,7 +1162,7 @@ DESCRIPTION:Γιορτή
 END:VEVENT
 BEGIN:VEVENT
 UID:20260721T2030-13@circl3.tech
-DTSTAMP:20260706T102955Z
+DTSTAMP:20260706T103836Z
 DTSTART:20260721T173000Z
 DTEND:20260721T180000Z
 SUMMARY:Αποχώρηση
