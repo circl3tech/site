@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Angela Panayiotou — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+:root{--ink:#16130f;--mid:#6b6259;--line:#e2ddd5;--bg:#fbf9f6;--accent:#8a6a3c}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);
+ font:400 16px/1.6 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+ -webkit-font-smoothing:antialiased}
+.masthead{padding:72px 24px 34px;text-align:center;border-bottom:1px solid var(--line)}
+.masthead h1{font:300 clamp(34px,7vw,66px)/1.05 "Cormorant Garamond",Georgia,serif;
+ letter-spacing:.10em;text-transform:uppercase;margin:0}
+.rule{width:52px;height:1px;background:var(--accent);margin:22px auto}
+.roles{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mid);
+ margin:0;display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center}
+nav{position:sticky;top:0;z-index:40;background:rgba(251,249,246,.94);
+ backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+ display:flex;gap:6px;justify-content:center;flex-wrap:wrap;padding:12px 14px}
+.tab{background:none;border:0;cursor:pointer;color:var(--mid);padding:9px 16px;border-radius:2px;
+ font:500 11px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;
+ transition:color .2s,background .2s}
+.tab:hover{color:var(--ink);background:rgba(138,106,60,.07)}
+.tab[aria-selected=true]{color:#fff;background:var(--ink)}
+.panel{display:none;max-width:1280px;margin:0 auto;padding:44px 22px 90px}
+.panel.on{display:block}
+.album-head{display:flex;gap:26px;align-items:center;margin-bottom:38px;
+ padding-bottom:26px;border-bottom:1px solid var(--line)}
+.cover{width:132px;height:auto;border-radius:2px;box-shadow:0 3px 18px rgba(0,0,0,.13)}
+.album-head h2{font:300 clamp(24px,4vw,40px)/1.1 "Cormorant Garamond",Georgia,serif;
+ letter-spacing:.05em;margin:0}
+.count{margin:7px 0 0;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mid)}
+.cat-group+.cat-group{margin-top:8px}
+.cat{font:400 clamp(19px,2.6vw,26px)/1.25 "Cormorant Garamond",Georgia,serif;
+ letter-spacing:.03em;color:var(--ink);margin:46px 0 3px;padding-bottom:9px;
+ border-bottom:1px solid var(--line)}
+.cat-group:first-child .cat{margin-top:6px}
+.cat-n{margin:0 0 20px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mid)}
+.grid{columns:3 300px;column-gap:22px}
+@media(max-width:640px){.grid{columns:1}}
+.ph{break-inside:avoid;margin:0 0 22px;cursor:zoom-in;background:#fff;
+ border:1px solid var(--line);border-radius:2px;overflow:hidden;
+ transition:box-shadow .25s,transform .25s}
+.ph:hover{box-shadow:0 10px 30px rgba(0,0,0,.14);transform:translateY(-3px)}
+.ph img{display:block;width:100%;height:auto;background:#efeae3}
+figcaption{padding:13px 15px 15px;font-size:12.5px;line-height:1.5;color:var(--mid);
+ white-space:pre-line;border-top:1px solid var(--line)}
+.social-wrap{max-width:680px;margin:26px auto;text-align:center}
+.social-wrap h2{font:300 clamp(28px,5vw,46px)/1.1 "Cormorant Garamond",Georgia,serif;
+ letter-spacing:.05em;margin:0 0 10px}
+.lede{color:var(--mid);font-size:14px;margin:0 0 40px}
+.socs{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.soc{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px;
+ padding:26px 16px;background:#fff;border:1px solid var(--line);border-radius:2px;
+ text-decoration:none;color:var(--ink);transition:border-color .2s,transform .2s,box-shadow .2s}
+.soc:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.soc svg{width:26px;height:26px;display:block;transition:transform .2s}
+.soc:hover svg{transform:scale(1.12)}
+.soc-n{font:500 11px/1 Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+.soc-u{font-size:11.5px;color:var(--mid);max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (prefers-reduced-motion:reduce){.soc,.soc svg{transition:none}.soc:hover,.soc:hover svg{transform:none}}
+.yt-wrap{max-width:880px;margin:26px auto;text-align:center}
+.yt-wrap h2{font:300 clamp(28px,5vw,46px)/1.1 "Cormorant Garamond",Georgia,serif;
+ letter-spacing:.05em;margin:0 0 10px}
+.yt-link{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;background:#fff;
+ border:1px solid var(--line);border-radius:2px;text-decoration:none;color:var(--ink);
+ font:500 11px/1 Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;
+ transition:border-color .2s,transform .2s,box-shadow .2s}
+.yt-link:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.yt-link svg{width:19px;height:19px;display:block}
+@media (prefers-reduced-motion:reduce){.yt-link{transition:none}.yt-link:hover{transform:none}}
+.yt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:20px;margin:0 0 30px}
+.yt-card{text-align:left}
+.yt-thumb{position:relative;aspect-ratio:16/9;background:#0b0b0b;border:1px solid var(--line);
+ border-radius:2px;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+.yt-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.yt-card iframe{width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:2px;display:block}
+.yt-play{position:absolute;inset:0;width:100%;height:100%;background:none;border:0;cursor:pointer;
+ display:grid;place-items:center}
+.yt-play::before{content:"";width:54px;height:38px;border-radius:9px;background:rgba(0,0,0,.68);
+ transition:background .2s}
+.yt-play::after{content:"";position:absolute;border-style:solid;border-width:9px 0 9px 15px;
+ border-color:transparent transparent transparent #fff}
+.yt-card:hover .yt-thumb{border-color:var(--accent);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.yt-card:hover .yt-play::before,.yt-play:focus-visible::before{background:#FF0000}
+.yt-title{margin:11px 0 0;font-size:13px;line-height:1.45;color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.yt-thumb,.yt-play::before{transition:none}}
+footer{border-top:1px solid var(--line);padding:32px 20px;text-align:center;
+ font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mid)}
+#lb{position:fixed;inset:0;background:rgba(14,12,10,.97);z-index:100;display:none;
+ flex-direction:column;align-items:center;justify-content:center;padding:20px}
+#lb.on{display:flex}
+#lb img{max-width:94vw;max-height:79vh;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+#lbcap{color:#e8e2d8;font-size:13.5px;line-height:1.6;margin-top:20px;max-width:760px;
+ text-align:center;white-space:pre-line}
+#lbn{color:#8d857a;font-size:11px;letter-spacing:.2em;margin-top:12px}
+.nav-btn,#lbx{position:fixed;background:rgba(255,255,255,.1);border:0;color:#fff;
+ cursor:pointer;border-radius:50%;width:50px;height:50px;font-size:22px;line-height:1;
+ display:grid;place-items:center;transition:background .2s}
+.nav-btn:hover,#lbx:hover{background:rgba(255,255,255,.24)}
+#lbp{left:20px;top:50%;transform:translateY(-50%)}
+#lbnx{right:20px;top:50%;transform:translateY(-50%)}
+#lbx{top:20px;right:20px}
+@media(max-width:640px){#lbp{left:8px}#lbnx{right:8px}}
+</style>
+</head>
+<body>
+<div class="masthead">
+  <h1>Angela Panayiotou</h1>
+  <div class="rule"></div>
+  <p class="roles"><span>Spokesperson</span><span>Presenter</span><span>Speechwriter</span><span>Media Relations</span><span>Event Organizer</span><span>Social Media Management</span></p>
+</div>
+<nav><button class="tab" data-t="2016-2022">2016 — 2022</button><button class="tab" data-t="2022-2024">2022 — 2024</button><button class="tab" data-t="youtube">YouTube</button><button class="tab" data-t="social">Social Media</button></nav>
+
+<section class="panel" id="p-2016-2022">
+  <header class="album-head">
+    <img class="cover" src="photos/2016-2022/thumb/s001_0.jpg" alt="">
+    <div><h2>2016 — 2022</h2><p class="count">199 photographs</p></div>
+  </header>
+  <div class="grid"><figure class="ph" data-full="photos/2016-2022/full/s002_0.jpg" data-w="1600" data-h="1200" data-cap=""><img src="photos/2016-2022/thumb/s002_0.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s002_1.jpg" data-w="3024" data-h="4032" data-cap="European Commission 1st Award 2019 - IDEA, Helsinki, Finland
+European Enterprise Promotion Awards
+Investing in Entrepreneurial Skills 2019-11-26"><img src="photos/2016-2022/thumb/s002_1.jpg" width="570" height="760" loading="lazy" decoding="async" alt="European Commission 1st Award 2019 - IDEA, Helsinki, Finland
+European Enterprise Promotion Awards
+Investing in Entrepren"><figcaption>European Commission 1st Award 2019 - IDEA, Helsinki, Finland
+European Enterprise Promotion Awards
+Investing in Entrepreneurial Skills 2019-11-26</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s003_0.jpg" data-w="940" data-h="788" data-cap=""><img src="photos/2016-2022/thumb/s003_0.jpg" width="760" height="637" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s003_1.jpg" data-w="5760" data-h="3840" data-cap="Madame Figaro Award 
+Woman of the Year - Professional-Businesswoman 2021"><img src="photos/2016-2022/thumb/s003_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Madame Figaro Award 
+Woman of the Year - Professional-Businesswoman 2021"><figcaption>Madame Figaro Award 
+Woman of the Year - Professional-Businesswoman 2021</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s004_0.jpg" data-w="416" data-h="629" data-cap=""><img src="photos/2016-2022/thumb/s004_0.jpg" width="416" height="629" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s004_1.jpg" data-w="748" data-h="420" data-cap=""><img src="photos/2016-2022/thumb/s004_1.jpg" width="748" height="420" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s005_0.jpg" data-w="1288" data-h="718" data-cap="Live on TV, Innovation &amp; Entrepreneurship, 
+Alpha Tv 2020-02-14"><img src="photos/2016-2022/thumb/s005_0.jpg" width="760" height="424" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship, 
+Alpha Tv 2020-02-14"><figcaption>Live on TV, Innovation &amp; Entrepreneurship, 
+Alpha Tv 2020-02-14</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s005_1.jpg" data-w="1752" data-h="954" data-cap="Live on TV, Innovation &amp; Entrepreneurship,
+Ant1 TV, 2020-02-26"><img src="photos/2016-2022/thumb/s005_1.jpg" width="760" height="414" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship,
+Ant1 TV, 2020-02-26"><figcaption>Live on TV, Innovation &amp; Entrepreneurship,
+Ant1 TV, 2020-02-26</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s006_0.jpg" data-w="1741" data-h="962" data-cap="Live on TV, Innovation &amp; Entrepreneurship, 
+Sigmalive TV, 2019-02-08"><img src="photos/2016-2022/thumb/s006_0.jpg" width="760" height="420" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship, 
+Sigmalive TV, 2019-02-08"><figcaption>Live on TV, Innovation &amp; Entrepreneurship, 
+Sigmalive TV, 2019-02-08</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s006_1.jpg" data-w="1773" data-h="977" data-cap="Live on TV, Innovation &amp; Entrepreneurship,
+Omega Tv 2019-02-07"><img src="photos/2016-2022/thumb/s006_1.jpg" width="760" height="419" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship,
+Omega Tv 2019-02-07"><figcaption>Live on TV, Innovation &amp; Entrepreneurship,
+Omega Tv 2019-02-07</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s007_0.jpg" data-w="2001" data-h="1125" data-cap="Live on TV, Innovation &amp; Entrepreneurship, 
+Ant1  2018-02"><img src="photos/2016-2022/thumb/s007_0.jpg" width="760" height="427" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship, 
+Ant1  2018-02"><figcaption>Live on TV, Innovation &amp; Entrepreneurship, 
+Ant1  2018-02</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s007_1.jpg" data-w="3952" data-h="2573" data-cap="Live on TV, Innovation &amp; Entrepreneurship,
+CYBC 2018-03-23"><img src="photos/2016-2022/thumb/s007_1.jpg" width="760" height="495" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship,
+CYBC 2018-03-23"><figcaption>Live on TV, Innovation &amp; Entrepreneurship,
+CYBC 2018-03-23</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s008_0.jpg" data-w="1024" data-h="576" data-cap="Live on TV, Innovation &amp; Entrepreneurship, 
+EU4U TV program, CYBC TV, 2020-03-17"><img src="photos/2016-2022/thumb/s008_0.jpg" width="760" height="428" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship, 
+EU4U TV program, CYBC TV, 2020-03-17"><figcaption>Live on TV, Innovation &amp; Entrepreneurship, 
+EU4U TV program, CYBC TV, 2020-03-17</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s008_1.jpg" data-w="1621" data-h="862" data-cap="Live on TV, Innovation &amp; Entrepreneurship,
+Omega TV 2020-02-13"><img src="photos/2016-2022/thumb/s008_1.jpg" width="760" height="404" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship,
+Omega TV 2020-02-13"><figcaption>Live on TV, Innovation &amp; Entrepreneurship,
+Omega TV 2020-02-13</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s009_0.jpg" data-w="1740" data-h="921" data-cap="Live on TV, Innovation &amp; Entrepreneurship, 
+Omega TV 2021-02-04"><img src="photos/2016-2022/thumb/s009_0.jpg" width="760" height="402" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship, 
+Omega TV 2021-02-04"><figcaption>Live on TV, Innovation &amp; Entrepreneurship, 
+Omega TV 2021-02-04</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s009_1.jpg" data-w="1738" data-h="972" data-cap="Live on TV, Innovation &amp; Entrepreneurship,
+Sigma TV 2021"><img src="photos/2016-2022/thumb/s009_1.jpg" width="760" height="425" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship,
+Sigma TV 2021"><figcaption>Live on TV, Innovation &amp; Entrepreneurship,
+Sigma TV 2021</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s010_0.jpg" data-w="1024" data-h="576" data-cap="Live on TV, Innovation &amp; Entrepreneurship, 
+EU4U program, CYBC TV, 2021-02-09"><img src="photos/2016-2022/thumb/s010_0.jpg" width="760" height="428" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship, 
+EU4U program, CYBC TV, 2021-02-09"><figcaption>Live on TV, Innovation &amp; Entrepreneurship, 
+EU4U program, CYBC TV, 2021-02-09</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s010_1.jpg" data-w="4032" data-h="3024" data-cap="Live on TV, Innovation &amp; Entrepreneurship,
+Economic echo, CYBC TV, 2021-11-03"><img src="photos/2016-2022/thumb/s010_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship,
+Economic echo, CYBC TV, 2021-11-03"><figcaption>Live on TV, Innovation &amp; Entrepreneurship,
+Economic echo, CYBC TV, 2021-11-03</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s011_0.jpg" data-w="1537" data-h="867" data-cap="Live on TV, Innovation &amp; Entrepreneurship,
+Economic echo, CYBC TV, 2021-11-03"><img src="photos/2016-2022/thumb/s011_0.jpg" width="760" height="429" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship,
+Economic echo, CYBC TV, 2021-11-03"><figcaption>Live on TV, Innovation &amp; Entrepreneurship,
+Economic echo, CYBC TV, 2021-11-03</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s011_1.jpg" data-w="714" data-h="628" data-cap="Live on TV, Innovation &amp; Entrepreneurship, 
+Alpha TV, 2019"><img src="photos/2016-2022/thumb/s011_1.jpg" width="714" height="628" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship, 
+Alpha TV, 2019"><figcaption>Live on TV, Innovation &amp; Entrepreneurship, 
+Alpha TV, 2019</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s012_0.jpg" data-w="2943" data-h="1961" data-cap="Live on TV, Innovation &amp; Entrepreneurship, 
+CYBC TV, 2017-11-29"><img src="photos/2016-2022/thumb/s012_0.jpg" width="760" height="506" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship, 
+CYBC TV, 2017-11-29"><figcaption>Live on TV, Innovation &amp; Entrepreneurship, 
+CYBC TV, 2017-11-29</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s012_1.jpg" data-w="4032" data-h="3024" data-cap="Live on TV, Innovation &amp; Entrepreneurship,
+TVOne ,2017-11-30"><img src="photos/2016-2022/thumb/s012_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship,
+TVOne ,2017-11-30"><figcaption>Live on TV, Innovation &amp; Entrepreneurship,
+TVOne ,2017-11-30</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s013_0.jpg" data-w="1747" data-h="872" data-cap="Live on TV, Innovation &amp; Entrepreneurship, 
+Alpha Enimerosi, Alpha TV, 20221-12-16"><img src="photos/2016-2022/thumb/s013_0.jpg" width="760" height="379" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship, 
+Alpha Enimerosi, Alpha TV, 20221-12-16"><figcaption>Live on TV, Innovation &amp; Entrepreneurship, 
+Alpha Enimerosi, Alpha TV, 20221-12-16</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s013_1.jpg" data-w="1818" data-h="992" data-cap="Live on TV, Innovation &amp; Entrepreneurship,
+Ant1 TV, 2021-01-28"><img src="photos/2016-2022/thumb/s013_1.jpg" width="760" height="415" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship,
+Ant1 TV, 2021-01-28"><figcaption>Live on TV, Innovation &amp; Entrepreneurship,
+Ant1 TV, 2021-01-28</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s014_0.jpg" data-w="1709" data-h="960" data-cap="Live on TV, Innovation &amp; Entrepreneurship, 
+Alpha TV, 2021-01-26"><img src="photos/2016-2022/thumb/s014_0.jpg" width="760" height="427" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship, 
+Alpha TV, 2021-01-26"><figcaption>Live on TV, Innovation &amp; Entrepreneurship, 
+Alpha TV, 2021-01-26</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s014_1.jpg" data-w="2030" data-h="1170" data-cap="Live on TV, Innovation &amp; Entrepreneurship,
+Ant1 TV, 2022-01-19"><img src="photos/2016-2022/thumb/s014_1.jpg" width="760" height="438" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship,
+Ant1 TV, 2022-01-19"><figcaption>Live on TV, Innovation &amp; Entrepreneurship,
+Ant1 TV, 2022-01-19</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s015_0.jpg" data-w="1775" data-h="989" data-cap="Live on TV, Innovation &amp; Entrepreneurship, 
+Sigma tv 2022-01-13"><img src="photos/2016-2022/thumb/s015_0.jpg" width="760" height="423" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship, 
+Sigma tv 2022-01-13"><figcaption>Live on TV, Innovation &amp; Entrepreneurship, 
+Sigma tv 2022-01-13</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s015_1.jpg" data-w="1747" data-h="974" data-cap="Live on TV, Innovation &amp; Entrepreneurship,
+Digital TV Business Hour, 2022-01-10"><img src="photos/2016-2022/thumb/s015_1.jpg" width="760" height="424" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship,
+Digital TV Business Hour, 2022-01-10"><figcaption>Live on TV, Innovation &amp; Entrepreneurship,
+Digital TV Business Hour, 2022-01-10</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s016_0.jpg" data-w="1270" data-h="736" data-cap="Live interview at Future talks, Digital TV, 2021-12-21"><img src="photos/2016-2022/thumb/s016_0.jpg" width="760" height="440" loading="lazy" decoding="async" alt="Live interview at Future talks, Digital TV, 2021-12-21"><figcaption>Live interview at Future talks, Digital TV, 2021-12-21</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s016_1.jpg" data-w="1733" data-h="959" data-cap="Live on TV, Innovation &amp; Entrepreneurship,
+Sigma TV 2020-02-17"><img src="photos/2016-2022/thumb/s016_1.jpg" width="760" height="421" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship,
+Sigma TV 2020-02-17"><figcaption>Live on TV, Innovation &amp; Entrepreneurship,
+Sigma TV 2020-02-17</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s017_0.jpg" data-w="3024" data-h="4032" data-cap="Interview to Youth Board of Cyprus, program ‘Towards Collaborative Practice Community’, 2020-09-30"><img src="photos/2016-2022/thumb/s017_0.jpg" width="570" height="760" loading="lazy" decoding="async" alt="Interview to Youth Board of Cyprus, program ‘Towards Collaborative Practice Community’, 2020-09-30"><figcaption>Interview to Youth Board of Cyprus, program ‘Towards Collaborative Practice Community’, 2020-09-30</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s017_1.jpg" data-w="4032" data-h="3024" data-cap="Live on Radio, Innovation &amp; Entrepreneurship,
+Politis Radio 2020-02-17"><img src="photos/2016-2022/thumb/s017_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Live on Radio, Innovation &amp; Entrepreneurship,
+Politis Radio 2020-02-17"><figcaption>Live on Radio, Innovation &amp; Entrepreneurship,
+Politis Radio 2020-02-17</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s018_0.jpg" data-w="2532" data-h="1170" data-cap="Live on TV, Innovation &amp; Entrepreneurship, 
+Omega TV, 2022-02-07"><img src="photos/2016-2022/thumb/s018_0.jpg" width="760" height="351" loading="lazy" decoding="async" alt="Live on TV, Innovation &amp; Entrepreneurship, 
+Omega TV, 2022-02-07"><figcaption>Live on TV, Innovation &amp; Entrepreneurship, 
+Omega TV, 2022-02-07</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s018_1.jpg" data-w="2256" data-h="1504" data-cap="Corporate Video, IDEA Innovation Centre, 2021"><img src="photos/2016-2022/thumb/s018_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Corporate Video, IDEA Innovation Centre, 2021"><figcaption>Corporate Video, IDEA Innovation Centre, 2021</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s019_0.jpg" data-w="659" data-h="904" data-cap="Interview to Economy Today Magazine, June 2022"><img src="photos/2016-2022/thumb/s019_0.jpg" width="554" height="760" loading="lazy" decoding="async" alt="Interview to Economy Today Magazine, June 2022"><figcaption>Interview to Economy Today Magazine, June 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s019_1.jpg" data-w="703" data-h="925" data-cap=""><img src="photos/2016-2022/thumb/s019_1.jpg" width="578" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s020_0.jpg" data-w="664" data-h="874" data-cap="Interview to Goldnews Magazine 2018"><img src="photos/2016-2022/thumb/s020_0.jpg" width="577" height="760" loading="lazy" decoding="async" alt="Interview to Goldnews Magazine 2018"><figcaption>Interview to Goldnews Magazine 2018</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s021_0.jpg" data-w="693" data-h="868" data-cap="Interview to Capital Today Magazine 2020"><img src="photos/2016-2022/thumb/s021_0.jpg" width="607" height="760" loading="lazy" decoding="async" alt="Interview to Capital Today Magazine 2020"><figcaption>Interview to Capital Today Magazine 2020</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s022_0.jpg" data-w="649" data-h="866" data-cap="Interview to Goldnews Magazine July 2020"><img src="photos/2016-2022/thumb/s022_0.jpg" width="570" height="760" loading="lazy" decoding="async" alt="Interview to Goldnews Magazine July 2020"><figcaption>Interview to Goldnews Magazine July 2020</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s023_0.jpg" data-w="688" data-h="871" data-cap="Interview to Economy Today Magazine 2021"><img src="photos/2016-2022/thumb/s023_0.jpg" width="600" height="760" loading="lazy" decoding="async" alt="Interview to Economy Today Magazine 2021"><figcaption>Interview to Economy Today Magazine 2021</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s024_0.jpg" data-w="670" data-h="857" data-cap="Interview to Economy Today Magazine, Feb 2021"><img src="photos/2016-2022/thumb/s024_0.jpg" width="594" height="760" loading="lazy" decoding="async" alt="Interview to Economy Today Magazine, Feb 2021"><figcaption>Interview to Economy Today Magazine, Feb 2021</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s025_0.jpg" data-w="651" data-h="853" data-cap="Interview to Economy Today Magazine Jan 2022"><img src="photos/2016-2022/thumb/s025_0.jpg" width="580" height="760" loading="lazy" decoding="async" alt="Interview to Economy Today Magazine Jan 2022"><figcaption>Interview to Economy Today Magazine Jan 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s026_0.jpg" data-w="614" data-h="894" data-cap="Interview to Brief Magazine 2021-12-01"><img src="photos/2016-2022/thumb/s026_0.jpg" width="522" height="760" loading="lazy" decoding="async" alt="Interview to Brief Magazine 2021-12-01"><figcaption>Interview to Brief Magazine 2021-12-01</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s027_0.jpg" data-w="675" data-h="874" data-cap="Interview to Inbusiness Magazine Jan 2021"><img src="photos/2016-2022/thumb/s027_0.jpg" width="587" height="760" loading="lazy" decoding="async" alt="Interview to Inbusiness Magazine Jan 2021"><figcaption>Interview to Inbusiness Magazine Jan 2021</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s028_0.jpg" data-w="655" data-h="863" data-cap=""><img src="photos/2016-2022/thumb/s028_0.jpg" width="577" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s028_1.jpg" data-w="631" data-h="858" data-cap="Interview to Techisland Magazine Nov 2021"><img src="photos/2016-2022/thumb/s028_1.jpg" width="559" height="760" loading="lazy" decoding="async" alt="Interview to Techisland Magazine Nov 2021"><figcaption>Interview to Techisland Magazine Nov 2021</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s029_1.jpg" data-w="2736" data-h="1824" data-cap="Beautiful People Magazine, 2017"><img src="photos/2016-2022/thumb/s029_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Beautiful People Magazine, 2017"><figcaption>Beautiful People Magazine, 2017</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s030_0.jpg" data-w="1800" data-h="1249" data-cap="Signing of Memorandum with Invest Cyprus 
+2020-07-16"><img src="photos/2016-2022/thumb/s030_0.jpg" width="760" height="527" loading="lazy" decoding="async" alt="Signing of Memorandum with Invest Cyprus 
+2020-07-16"><figcaption>Signing of Memorandum with Invest Cyprus 
+2020-07-16</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s030_1.jpg" data-w="4496" data-h="3000" data-cap="Signing of Memorandum with Chief Scientist &amp; Minister of Innovation, 2021-04-13"><img src="photos/2016-2022/thumb/s030_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Signing of Memorandum with Chief Scientist &amp; Minister of Innovation, 2021-04-13"><figcaption>Signing of Memorandum with Chief Scientist &amp; Minister of Innovation, 2021-04-13</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s031_0.jpg" data-w="3035" data-h="2024" data-cap="Signing of Memorandum with Cyprus Employers &amp; Industrialists Federation 2019-05-17"><img src="photos/2016-2022/thumb/s031_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Signing of Memorandum with Cyprus Employers &amp; Industrialists Federation 2019-05-17"><figcaption>Signing of Memorandum with Cyprus Employers &amp; Industrialists Federation 2019-05-17</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s031_1.jpg" data-w="5184" data-h="3456" data-cap="Panellist, Press Conference for 1st Cybersecurity-Cyberdefence Hackathon, with Minister of Education, Minister of Defence, Chief of Army, Ambassador Israel &amp; DCEO of BOC, 2020-01-09"><img src="photos/2016-2022/thumb/s031_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Panellist, Press Conference for 1st Cybersecurity-Cyberdefence Hackathon, with Minister of Education, Minister of Defenc"><figcaption>Panellist, Press Conference for 1st Cybersecurity-Cyberdefence Hackathon, with Minister of Education, Minister of Defence, Chief of Army, Ambassador Israel &amp; DCEO of BOC, 2020-01-09</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s032_0.jpg" data-w="1488" data-h="992" data-cap="Panellist, Research, Innovation &amp; Entrepreneurship Event, University of Cyprus, with Minister of Innovation, Chairman of CCCI, Professor of UCY, General Manager of RIF &amp; Israeli tech personalities, 2019-06-05"><img src="photos/2016-2022/thumb/s032_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Panellist, Research, Innovation &amp; Entrepreneurship Event, University of Cyprus, with Minister of Innovation, Chairman of"><figcaption>Panellist, Research, Innovation &amp; Entrepreneurship Event, University of Cyprus, with Minister of Innovation, Chairman of CCCI, Professor of UCY, General Manager of RIF &amp; Israeli tech personalities, 2019-06-05</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s032_1.jpg" data-w="5616" data-h="3744" data-cap="Panellist, ‘Scaling in USA’ Event with Kinisis Ventures &amp; CUT Professors 2018-10-09"><img src="photos/2016-2022/thumb/s032_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Panellist, ‘Scaling in USA’ Event with Kinisis Ventures &amp; CUT Professors 2018-10-09"><figcaption>Panellist, ‘Scaling in USA’ Event with Kinisis Ventures &amp; CUT Professors 2018-10-09</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s033_0.jpg" data-w="5568" data-h="3712" data-cap="Master of Ceremony
+IDEA Graduation Event, 2017-18-19"><img src="photos/2016-2022/thumb/s033_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Master of Ceremony
+IDEA Graduation Event, 2017-18-19"><figcaption>Master of Ceremony
+IDEA Graduation Event, 2017-18-19</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s033_1.jpg" data-w="3424" data-h="2283" data-cap=""><img src="photos/2016-2022/thumb/s033_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s034_0.jpg" data-w="1536" data-h="2048" data-cap="Speaker,
+Junior Chamber of Industry JCI Event on Entrepreneurship
+June 2022"><img src="photos/2016-2022/thumb/s034_0.jpg" width="570" height="760" loading="lazy" decoding="async" alt="Speaker,
+Junior Chamber of Industry JCI Event on Entrepreneurship
+June 2022"><figcaption>Speaker,
+Junior Chamber of Industry JCI Event on Entrepreneurship
+June 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s034_1.jpg" data-w="2048" data-h="1363" data-cap="Panelist,
+Press Conference for Government Agreement for startups co-funding
+June 2022"><img src="photos/2016-2022/thumb/s034_1.jpg" width="760" height="506" loading="lazy" decoding="async" alt="Panelist,
+Press Conference for Government Agreement for startups co-funding
+June 2022"><figcaption>Panelist,
+Press Conference for Government Agreement for startups co-funding
+June 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s035_0.jpg" data-w="5472" data-h="3648" data-cap="Moderator &amp; Organiser, IDEA Graduation Event, 2017"><img src="photos/2016-2022/thumb/s035_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Moderator &amp; Organiser, IDEA Graduation Event, 2017"><figcaption>Moderator &amp; Organiser, IDEA Graduation Event, 2017</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s035_1.jpg" data-w="1365" data-h="2048" data-cap="Speaker"><img src="photos/2016-2022/thumb/s035_1.jpg" width="507" height="760" loading="lazy" decoding="async" alt="Speaker"><figcaption>Speaker</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s036_0.jpg" data-w="1024" data-h="790" data-cap="Moderator, ESG &amp; Sustainability Conference IMH, 2022"><img src="photos/2016-2022/thumb/s036_0.jpg" width="760" height="586" loading="lazy" decoding="async" alt="Moderator, ESG &amp; Sustainability Conference IMH, 2022"><figcaption>Moderator, ESG &amp; Sustainability Conference IMH, 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s036_1.jpg" data-w="4176" data-h="2784" data-cap="Speaker"><img src="photos/2016-2022/thumb/s036_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Speaker"><figcaption>Speaker</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s037_0.jpg" data-w="5616" data-h="3744" data-cap="Panellist, Scaling in USA event, 2018-10-09"><img src="photos/2016-2022/thumb/s037_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Panellist, Scaling in USA event, 2018-10-09"><figcaption>Panellist, Scaling in USA event, 2018-10-09</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s037_1.jpg" data-w="4608" data-h="3456" data-cap="Speaker, Green Entrepreneurship Event, Microsoft Innovation Centre, European University, 2018-11-12"><img src="photos/2016-2022/thumb/s037_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Speaker, Green Entrepreneurship Event, Microsoft Innovation Centre, European University, 2018-11-12"><figcaption>Speaker, Green Entrepreneurship Event, Microsoft Innovation Centre, European University, 2018-11-12</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s038_0.jpg" data-w="1500" data-h="996" data-cap="Key speaker at Cyprus Telecommunications Authority, Hackathon event 2018-02-25"><img src="photos/2016-2022/thumb/s038_0.jpg" width="760" height="505" loading="lazy" decoding="async" alt="Key speaker at Cyprus Telecommunications Authority, Hackathon event 2018-02-25"><figcaption>Key speaker at Cyprus Telecommunications Authority, Hackathon event 2018-02-25</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s038_1.jpg" data-w="1258" data-h="839" data-cap="Key speaker at Global Shapers Event 2017"><img src="photos/2016-2022/thumb/s038_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Key speaker at Global Shapers Event 2017"><figcaption>Key speaker at Global Shapers Event 2017</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s039_0.jpg" data-w="2048" data-h="1365" data-cap="Speaker at Startups &amp; Agile Event, Cyprus Technological University CUT, 2019-01-31"><img src="photos/2016-2022/thumb/s039_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Speaker at Startups &amp; Agile Event, Cyprus Technological University CUT, 2019-01-31"><figcaption>Speaker at Startups &amp; Agile Event, Cyprus Technological University CUT, 2019-01-31</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s039_1.jpg" data-w="640" data-h="427" data-cap="Speaker, Cyprus Business Show, 2018"><img src="photos/2016-2022/thumb/s039_1.jpg" width="640" height="427" loading="lazy" decoding="async" alt="Speaker, Cyprus Business Show, 2018"><figcaption>Speaker, Cyprus Business Show, 2018</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s040_0.jpg" data-w="3543" data-h="2398" data-cap="Speaker, SWEEBAN seminar concluding event, 
+2018-09-28"><img src="photos/2016-2022/thumb/s040_0.jpg" width="760" height="514" loading="lazy" decoding="async" alt="Speaker, SWEEBAN seminar concluding event, 
+2018-09-28"><figcaption>Speaker, SWEEBAN seminar concluding event, 
+2018-09-28</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s040_1.jpg" data-w="2048" data-h="1152" data-cap="Panellist, Youth in Entrepreneurship,
+European Youth Parliament meeting 2016"><img src="photos/2016-2022/thumb/s040_1.jpg" width="760" height="428" loading="lazy" decoding="async" alt="Panellist, Youth in Entrepreneurship,
+European Youth Parliament meeting 2016"><figcaption>Panellist, Youth in Entrepreneurship,
+European Youth Parliament meeting 2016</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s041_0.jpg" data-w="1284" data-h="612" data-cap="Panellist, Investment Opportunities in Cyprus for international investors, by Y. Georgiades Law Office, July 2022"><img src="photos/2016-2022/thumb/s041_0.jpg" width="760" height="362" loading="lazy" decoding="async" alt="Panellist, Investment Opportunities in Cyprus for international investors, by Y. Georgiades Law Office, July 2022"><figcaption>Panellist, Investment Opportunities in Cyprus for international investors, by Y. Georgiades Law Office, July 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s041_1.jpg" data-w="1284" data-h="962" data-cap=""><img src="photos/2016-2022/thumb/s041_1.jpg" width="760" height="569" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s042_0.jpg" data-w="6000" data-h="4000" data-cap="Speaker at ‘Women in Leadership &amp; Politics’ seminar, Embassy of Poland &amp; Polish Institute, 2021-05-25"><img src="photos/2016-2022/thumb/s042_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Speaker at ‘Women in Leadership &amp; Politics’ seminar, Embassy of Poland &amp; Polish Institute, 2021-05-25"><figcaption>Speaker at ‘Women in Leadership &amp; Politics’ seminar, Embassy of Poland &amp; Polish Institute, 2021-05-25</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s042_1.jpg" data-w="640" data-h="480" data-cap="Judge, Disrupt Cyprus - Greece Competition,
+2017-11-08"><img src="photos/2016-2022/thumb/s042_1.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Judge, Disrupt Cyprus - Greece Competition,
+2017-11-08"><figcaption>Judge, Disrupt Cyprus - Greece Competition,
+2017-11-08</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s043_0.jpg" data-w="1740" data-h="969" data-cap="Spaker, Press Conference, Ablebook Launching
+2021-09-17"><img src="photos/2016-2022/thumb/s043_0.jpg" width="760" height="423" loading="lazy" decoding="async" alt="Spaker, Press Conference, Ablebook Launching
+2021-09-17"><figcaption>Spaker, Press Conference, Ablebook Launching
+2021-09-17</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s043_1.jpg" data-w="2460" data-h="1640" data-cap=""><img src="photos/2016-2022/thumb/s043_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s044_0.jpg" data-w="2992" data-h="2000" data-cap="Speaker"><img src="photos/2016-2022/thumb/s044_0.jpg" width="760" height="508" loading="lazy" decoding="async" alt="Speaker"><figcaption>Speaker</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s044_1.jpg" data-w="1920" data-h="1080" data-cap="Speaker, Invest Cyprus and Tech EU event 2021-06-16"><img src="photos/2016-2022/thumb/s044_1.jpg" width="760" height="428" loading="lazy" decoding="async" alt="Speaker, Invest Cyprus and Tech EU event 2021-06-16"><figcaption>Speaker, Invest Cyprus and Tech EU event 2021-06-16</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s045_0.jpg" data-w="4032" data-h="3024" data-cap="Judge at Cyprus University of Technology Elevator Pitch Competition, 2018-04-18"><img src="photos/2016-2022/thumb/s045_0.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Judge at Cyprus University of Technology Elevator Pitch Competition, 2018-04-18"><figcaption>Judge at Cyprus University of Technology Elevator Pitch Competition, 2018-04-18</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s045_1.jpg" data-w="1500" data-h="1000" data-cap="Judge at Impossible Pitch ‘Dragons’ Den’ competition, 2017"><img src="photos/2016-2022/thumb/s045_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Judge at Impossible Pitch ‘Dragons’ Den’ competition, 2017"><figcaption>Judge at Impossible Pitch ‘Dragons’ Den’ competition, 2017</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s046_0.jpg" data-w="1472" data-h="828" data-cap="Panellist, ‘Paphos 2040 &amp; Technology’, with Minister of Innovation Cyprus, Minister of Digital Governance Greece, Mayor of Paphos &amp; Professor. 2021-02-25"><img src="photos/2016-2022/thumb/s046_0.jpg" width="760" height="428" loading="lazy" decoding="async" alt="Panellist, ‘Paphos 2040 &amp; Technology’, with Minister of Innovation Cyprus, Minister of Digital Governance Greece, Mayor "><figcaption>Panellist, ‘Paphos 2040 &amp; Technology’, with Minister of Innovation Cyprus, Minister of Digital Governance Greece, Mayor of Paphos &amp; Professor. 2021-02-25</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s046_1.jpg" data-w="2003" data-h="1137" data-cap="Judge, 2021 Student Innovators Competition – SINN, UCY 2021-04-14"><img src="photos/2016-2022/thumb/s046_1.jpg" width="760" height="431" loading="lazy" decoding="async" alt="Judge, 2021 Student Innovators Competition – SINN, UCY 2021-04-14"><figcaption>Judge, 2021 Student Innovators Competition – SINN, UCY 2021-04-14</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s047_0.jpg" data-w="1920" data-h="1080" data-cap="Panellist, “How big corporations can benefit from the Cyprus Ecosystem”, by Tech.eu &amp; CIPA, 2021 June"><img src="photos/2016-2022/thumb/s047_0.jpg" width="760" height="428" loading="lazy" decoding="async" alt="Panellist, “How big corporations can benefit from the Cyprus Ecosystem”, by Tech.eu &amp; CIPA, 2021 June"><figcaption>Panellist, “How big corporations can benefit from the Cyprus Ecosystem”, by Tech.eu &amp; CIPA, 2021 June</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s047_1.jpg" data-w="1366" data-h="768" data-cap="Speaker &amp; Judge, ‘Bridges of Solidarity Hackathon’ between Cyprus-Lebanon, by Youth Board of Cyprus, 2020-10-25"><img src="photos/2016-2022/thumb/s047_1.jpg" width="760" height="427" loading="lazy" decoding="async" alt="Speaker &amp; Judge, ‘Bridges of Solidarity Hackathon’ between Cyprus-Lebanon, by Youth Board of Cyprus, 2020-10-25"><figcaption>Speaker &amp; Judge, ‘Bridges of Solidarity Hackathon’ between Cyprus-Lebanon, by Youth Board of Cyprus, 2020-10-25</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s048_1.jpg" data-w="1592" data-h="705" data-cap="Judge, Cyprus Startup virtual Competition hosted by Invest Cyprus &amp; Ministry of Economy of United Arab Emirates, 2020-07-29"><img src="photos/2016-2022/thumb/s048_1.jpg" width="760" height="337" loading="lazy" decoding="async" alt="Judge, Cyprus Startup virtual Competition hosted by Invest Cyprus &amp; Ministry of Economy of United Arab Emirates, 2020-07"><figcaption>Judge, Cyprus Startup virtual Competition hosted by Invest Cyprus &amp; Ministry of Economy of United Arab Emirates, 2020-07-29</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s049_0.jpg" data-w="4032" data-h="3024" data-cap="Speker, ‘Startups as an Investment Gateway to Bankers, 2017-11-27"><img src="photos/2016-2022/thumb/s049_0.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Speker, ‘Startups as an Investment Gateway to Bankers, 2017-11-27"><figcaption>Speker, ‘Startups as an Investment Gateway to Bankers, 2017-11-27</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s049_1.jpg" data-w="3000" data-h="2000" data-cap="Speaker, PEAK Competition, European University of Cyprus, 2018-06-16"><img src="photos/2016-2022/thumb/s049_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Speaker, PEAK Competition, European University of Cyprus, 2018-06-16"><figcaption>Speaker, PEAK Competition, European University of Cyprus, 2018-06-16</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s050_0.jpg" data-w="3543" data-h="2398" data-cap="Speaker &amp; Judge at SWEEBAN female entrepreneurship competition, 2018-09-28"><img src="photos/2016-2022/thumb/s050_0.jpg" width="760" height="514" loading="lazy" decoding="async" alt="Speaker &amp; Judge at SWEEBAN female entrepreneurship competition, 2018-09-28"><figcaption>Speaker &amp; Judge at SWEEBAN female entrepreneurship competition, 2018-09-28</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s050_1.jpg" data-w="6000" data-h="4000" data-cap="Judge, Students final innovation contest of Cyprus Mathematical Company CMS, 2019-06-08"><img src="photos/2016-2022/thumb/s050_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Judge, Students final innovation contest of Cyprus Mathematical Company CMS, 2019-06-08"><figcaption>Judge, Students final innovation contest of Cyprus Mathematical Company CMS, 2019-06-08</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s051_0.jpg" data-w="960" data-h="576" data-cap="Speaker, symposium “Organisational Innovation Theory, Practise &amp; Policy” at Cyprus University of Technology 2021-11-19"><img src="photos/2016-2022/thumb/s051_0.jpg" width="760" height="456" loading="lazy" decoding="async" alt="Speaker, symposium “Organisational Innovation Theory, Practise &amp; Policy” at Cyprus University of Technology 2021-11-19"><figcaption>Speaker, symposium “Organisational Innovation Theory, Practise &amp; Policy” at Cyprus University of Technology 2021-11-19</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s051_1.jpg" data-w="4032" data-h="3024" data-cap="Speaker &amp; Trainer, Training the citizens on entrepreneurship, Municipality of Nicosia 2018-06-14"><img src="photos/2016-2022/thumb/s051_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Speaker &amp; Trainer, Training the citizens on entrepreneurship, Municipality of Nicosia 2018-06-14"><figcaption>Speaker &amp; Trainer, Training the citizens on entrepreneurship, Municipality of Nicosia 2018-06-14</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s052_0.jpg" data-w="3648" data-h="2736" data-cap="Speaker &amp; Judge, Ultimate Pitch event at Cyprus University of Technology CUT, 2020-02-13"><img src="photos/2016-2022/thumb/s052_0.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Speaker &amp; Judge, Ultimate Pitch event at Cyprus University of Technology CUT, 2020-02-13"><figcaption>Speaker &amp; Judge, Ultimate Pitch event at Cyprus University of Technology CUT, 2020-02-13</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s052_1.jpg" data-w="6000" data-h="4000" data-cap="Trainer, conference “How to start your business in 7 days” by Nicosia Municipality 2019-06-20"><img src="photos/2016-2022/thumb/s052_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Trainer, conference “How to start your business in 7 days” by Nicosia Municipality 2019-06-20"><figcaption>Trainer, conference “How to start your business in 7 days” by Nicosia Municipality 2019-06-20</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s053_0.jpg" data-w="3648" data-h="2736" data-cap="Speaker, Frederick University 2019-02-05"><img src="photos/2016-2022/thumb/s053_0.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Speaker, Frederick University 2019-02-05"><figcaption>Speaker, Frederick University 2019-02-05</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s053_1.jpg" data-w="3648" data-h="2736" data-cap="Speaker, MBA class, European University of Cyprus 2019-02-19"><img src="photos/2016-2022/thumb/s053_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Speaker, MBA class, European University of Cyprus 2019-02-19"><figcaption>Speaker, MBA class, European University of Cyprus 2019-02-19</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s054_0.jpg" data-w="3993" data-h="2541" data-cap="Speaker, Youth Entrepreneurship, High School students – Aglantzia, 2018-01-23"><img src="photos/2016-2022/thumb/s054_0.jpg" width="760" height="484" loading="lazy" decoding="async" alt="Speaker, Youth Entrepreneurship, High School students – Aglantzia, 2018-01-23"><figcaption>Speaker, Youth Entrepreneurship, High School students – Aglantzia, 2018-01-23</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s054_1.jpg" data-w="3648" data-h="2736" data-cap="Speaker, Student Entrepreneurs,
+University of Cyprus 2019-02-13"><img src="photos/2016-2022/thumb/s054_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Speaker, Student Entrepreneurs,
+University of Cyprus 2019-02-13"><figcaption>Speaker, Student Entrepreneurs,
+University of Cyprus 2019-02-13</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s055_0.jpg" data-w="1125" data-h="2001" data-cap=""><img src="photos/2016-2022/thumb/s055_0.jpg" width="427" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s055_1.jpg" data-w="3936" data-h="2624" data-cap="Trusted &amp; Empowered"><img src="photos/2016-2022/thumb/s055_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Trusted &amp; Empowered"><figcaption>Trusted &amp; Empowered</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s056_0.jpg" data-w="5184" data-h="3456" data-cap=""><img src="photos/2016-2022/thumb/s056_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s056_1.jpg" data-w="5184" data-h="3456" data-cap="Working with Minister of Foreign Affairs &amp; Diplomats, for Economic &amp; Cultural Diplomacy
+2021-06-15"><img src="photos/2016-2022/thumb/s056_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Working with Minister of Foreign Affairs &amp; Diplomats, for Economic &amp; Cultural Diplomacy
+2021-06-15"><figcaption>Working with Minister of Foreign Affairs &amp; Diplomats, for Economic &amp; Cultural Diplomacy
+2021-06-15</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s057_0.jpg" data-w="3120" data-h="2080" data-cap="Working with Minister of Finance &amp; Deputy CEO of Bank of Cyprus, for co-funding schemdes, 2021-09-03"><img src="photos/2016-2022/thumb/s057_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Working with Minister of Finance &amp; Deputy CEO of Bank of Cyprus, for co-funding schemdes, 2021-09-03"><figcaption>Working with Minister of Finance &amp; Deputy CEO of Bank of Cyprus, for co-funding schemdes, 2021-09-03</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s057_1.jpg" data-w="3120" data-h="2081" data-cap=""><img src="photos/2016-2022/thumb/s057_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s058_0.jpg" data-w="2992" data-h="2000" data-cap="Working with Minister of Defence &amp; BOC Executives  for CyberSecurity – CyberDefence,  2021-06-15"><img src="photos/2016-2022/thumb/s058_0.jpg" width="760" height="508" loading="lazy" decoding="async" alt="Working with Minister of Defence &amp; BOC Executives  for CyberSecurity – CyberDefence,  2021-06-15"><figcaption>Working with Minister of Defence &amp; BOC Executives  for CyberSecurity – CyberDefence,  2021-06-15</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s058_1.jpg" data-w="6000" data-h="4000" data-cap="Working with Minister of Transport, Communications &amp; Works, 2019-03-08"><img src="photos/2016-2022/thumb/s058_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Working with Minister of Transport, Communications &amp; Works, 2019-03-08"><figcaption>Working with Minister of Transport, Communications &amp; Works, 2019-03-08</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s059_0.jpg" data-w="2048" data-h="1363" data-cap="Press conference for State co-funding of Start-ups,
+with CEO &amp; DCEO of Bank of Cyprus, Minister of Innovation, General Manager of Ministry of Innovation
+June 2022"><img src="photos/2016-2022/thumb/s059_0.jpg" width="760" height="506" loading="lazy" decoding="async" alt="Press conference for State co-funding of Start-ups,
+with CEO &amp; DCEO of Bank of Cyprus, Minister of Innovation, General M"><figcaption>Press conference for State co-funding of Start-ups,
+with CEO &amp; DCEO of Bank of Cyprus, Minister of Innovation, General Manager of Ministry of Innovation
+June 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s059_1.jpg" data-w="2048" data-h="1363" data-cap=""><img src="photos/2016-2022/thumb/s059_1.jpg" width="760" height="506" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s060_0.jpg" data-w="2016" data-h="1512" data-cap="Networking cocktail, at Embassy of Cyprus in Lisbon-Portugal, with ex Prime Minister of Greece, Mr George Papandreou, &amp; Ambassador of Cyprus and Nov. 2019"><img src="photos/2016-2022/thumb/s060_0.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Networking cocktail, at Embassy of Cyprus in Lisbon-Portugal, with ex Prime Minister of Greece, Mr George Papandreou, &amp; "><figcaption>Networking cocktail, at Embassy of Cyprus in Lisbon-Portugal, with ex Prime Minister of Greece, Mr George Papandreou, &amp; Ambassador of Cyprus and Nov. 2019</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s060_1.jpg" data-w="2992" data-h="2000" data-cap="Working lunch with Minister of Innovation, DCEO of BOC and other Businesspeople &amp; Executives, June 2021"><img src="photos/2016-2022/thumb/s060_1.jpg" width="760" height="508" loading="lazy" decoding="async" alt="Working lunch with Minister of Innovation, DCEO of BOC and other Businesspeople &amp; Executives, June 2021"><figcaption>Working lunch with Minister of Innovation, DCEO of BOC and other Businesspeople &amp; Executives, June 2021</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s061_0.jpg" data-w="640" data-h="480" data-cap="Working with the State Chief Scientist
+2018-11-17"><img src="photos/2016-2022/thumb/s061_0.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Working with the State Chief Scientist
+2018-11-17"><figcaption>Working with the State Chief Scientist
+2018-11-17</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s061_1.jpg" data-w="5184" data-h="3456" data-cap="Working with Minister of Education &amp; DCEO of BOC,
+1st Cybersecurity Hackathon, 2020-01-09"><img src="photos/2016-2022/thumb/s061_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Working with Minister of Education &amp; DCEO of BOC,
+1st Cybersecurity Hackathon, 2020-01-09"><figcaption>Working with Minister of Education &amp; DCEO of BOC,
+1st Cybersecurity Hackathon, 2020-01-09</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s062_0.jpg" data-w="960" data-h="656" data-cap="With President of Cyprus &amp; Mayor of Paphos,
+Paphos Innovation Institute Openings, 2020-10-30"><img src="photos/2016-2022/thumb/s062_0.jpg" width="760" height="519" loading="lazy" decoding="async" alt="With President of Cyprus &amp; Mayor of Paphos,
+Paphos Innovation Institute Openings, 2020-10-30"><figcaption>With President of Cyprus &amp; Mayor of Paphos,
+Paphos Innovation Institute Openings, 2020-10-30</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s062_1.jpg" data-w="2460" data-h="1640" data-cap="Press Conference of Ablebook startup launch with Minister of Energy, Mayor of Nicosia &amp; President of Parliament, 2022"><img src="photos/2016-2022/thumb/s062_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Press Conference of Ablebook startup launch with Minister of Energy, Mayor of Nicosia &amp; President of Parliament, 2022"><figcaption>Press Conference of Ablebook startup launch with Minister of Energy, Mayor of Nicosia &amp; President of Parliament, 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s063_0.jpg" data-w="5472" data-h="3648" data-cap="Working with the Minister of Foreign Affairs,
+200th Anniversary of 200 from Greek Revolution of 1821"><img src="photos/2016-2022/thumb/s063_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Working with the Minister of Foreign Affairs,
+200th Anniversary of 200 from Greek Revolution of 1821"><figcaption>Working with the Minister of Foreign Affairs,
+200th Anniversary of 200 from Greek Revolution of 1821</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s063_1.jpg" data-w="2447" data-h="1640" data-cap="With Minister of Energy, Commerce &amp; Industry,
+Ablebook Launch Event, 2021-09-17"><img src="photos/2016-2022/thumb/s063_1.jpg" width="760" height="509" loading="lazy" decoding="async" alt="With Minister of Energy, Commerce &amp; Industry,
+Ablebook Launch Event, 2021-09-17"><figcaption>With Minister of Energy, Commerce &amp; Industry,
+Ablebook Launch Event, 2021-09-17</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s064_0.jpg" data-w="4496" data-h="3000" data-cap="Working with Ambassador of USA &amp; DCEO of BOC and other Executives, 2020-10-05"><img src="photos/2016-2022/thumb/s064_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Working with Ambassador of USA &amp; DCEO of BOC and other Executives, 2020-10-05"><figcaption>Working with Ambassador of USA &amp; DCEO of BOC and other Executives, 2020-10-05</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s064_1.jpg" data-w="4496" data-h="3000" data-cap="Working with Ambassador  of USA, 2020-10-05"><img src="photos/2016-2022/thumb/s064_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Working with Ambassador  of USA, 2020-10-05"><figcaption>Working with Ambassador  of USA, 2020-10-05</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s065_0.jpg" data-w="2366" data-h="1632" data-cap="Guest of US Embassy for 4th of July celebrations, with Ambassador USA &amp; female personalities, 2020"><img src="photos/2016-2022/thumb/s065_0.jpg" width="760" height="524" loading="lazy" decoding="async" alt="Guest of US Embassy for 4th of July celebrations, with Ambassador USA &amp; female personalities, 2020"><figcaption>Guest of US Embassy for 4th of July celebrations, with Ambassador USA &amp; female personalities, 2020</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s065_1.jpg" data-w="4032" data-h="3024" data-cap="Working with Ambassador of Finland, 2018-01-31"><img src="photos/2016-2022/thumb/s065_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Working with Ambassador of Finland, 2018-01-31"><figcaption>Working with Ambassador of Finland, 2018-01-31</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s066_0.jpg" data-w="2436" data-h="2000" data-cap="Working with Ambassador of Israel in Cyprus 
+&amp; young entrepreneurs, 2019-08-30"><img src="photos/2016-2022/thumb/s066_0.jpg" width="760" height="624" loading="lazy" decoding="async" alt="Working with Ambassador of Israel in Cyprus 
+&amp; young entrepreneurs, 2019-08-30"><figcaption>Working with Ambassador of Israel in Cyprus 
+&amp; young entrepreneurs, 2019-08-30</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s066_1.jpg" data-w="4422" data-h="2948" data-cap="Working with Ambassador of Israel in Cyprus, DCEO of BOC &amp; Executives, 2018-06-27"><img src="photos/2016-2022/thumb/s066_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Working with Ambassador of Israel in Cyprus, DCEO of BOC &amp; Executives, 2018-06-27"><figcaption>Working with Ambassador of Israel in Cyprus, DCEO of BOC &amp; Executives, 2018-06-27</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s067_0.jpg" data-w="4032" data-h="3024" data-cap="Working with Deputy Chief of Mission of Israel in Cyprus, 2018-10-22"><img src="photos/2016-2022/thumb/s067_0.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Working with Deputy Chief of Mission of Israel in Cyprus, 2018-10-22"><figcaption>Working with Deputy Chief of Mission of Israel in Cyprus, 2018-10-22</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s067_1.jpg" data-w="2992" data-h="2000" data-cap="Working with Ambassador of Israel in Cyprus, 2019-08-30"><img src="photos/2016-2022/thumb/s067_1.jpg" width="760" height="508" loading="lazy" decoding="async" alt="Working with Ambassador of Israel in Cyprus, 2019-08-30"><figcaption>Working with Ambassador of Israel in Cyprus, 2019-08-30</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s068_0.jpg" data-w="2992" data-h="2000" data-cap="Working with Ambassador of Poland, 2020-01-22"><img src="photos/2016-2022/thumb/s068_0.jpg" width="760" height="508" loading="lazy" decoding="async" alt="Working with Ambassador of Poland, 2020-01-22"><figcaption>Working with Ambassador of Poland, 2020-01-22</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s068_1.jpg" data-w="5184" data-h="3456" data-cap="Working with Ambassador of Portugal, 2018-10-30"><img src="photos/2016-2022/thumb/s068_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Working with Ambassador of Portugal, 2018-10-30"><figcaption>Working with Ambassador of Portugal, 2018-10-30</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s069_0.jpg" data-w="698" data-h="523" data-cap="Guest at the Residence of the Ambassador of Portugal, 
+Nov. 2019"><img src="photos/2016-2022/thumb/s069_0.jpg" width="698" height="523" loading="lazy" decoding="async" alt="Guest at the Residence of the Ambassador of Portugal, 
+Nov. 2019"><figcaption>Guest at the Residence of the Ambassador of Portugal, 
+Nov. 2019</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s069_1.jpg" data-w="5616" data-h="3744" data-cap="Discussion with Ambassador of USA in ‘Scale in USA’ Event 2018-10-09"><img src="photos/2016-2022/thumb/s069_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Discussion with Ambassador of USA in ‘Scale in USA’ Event 2018-10-09"><figcaption>Discussion with Ambassador of USA in ‘Scale in USA’ Event 2018-10-09</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s070_0.jpg" data-w="600" data-h="516" data-cap="Working with Ambassador of Poland on survey “Impact of covid19 on Women in Cyprus &amp; Poland”,  2021-11-09"><img src="photos/2016-2022/thumb/s070_0.jpg" width="600" height="516" loading="lazy" decoding="async" alt="Working with Ambassador of Poland on survey “Impact of covid19 on Women in Cyprus &amp; Poland”,  2021-11-09"><figcaption>Working with Ambassador of Poland on survey “Impact of covid19 on Women in Cyprus &amp; Poland”,  2021-11-09</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s070_1.jpg" data-w="5456" data-h="3608" data-cap="Receiving the 1st European Commission Award, with  Ambassador of Cyprus in Finland on behalf of the Republic of Cyprus"><img src="photos/2016-2022/thumb/s070_1.jpg" width="760" height="503" loading="lazy" decoding="async" alt="Receiving the 1st European Commission Award, with  Ambassador of Cyprus in Finland on behalf of the Republic of Cyprus"><figcaption>Receiving the 1st European Commission Award, with  Ambassador of Cyprus in Finland on behalf of the Republic of Cyprus</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s071_0.jpg" data-w="750" data-h="1071" data-cap=""><img src="photos/2016-2022/thumb/s071_0.jpg" width="532" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s071_1.jpg" data-w="2302" data-h="1749" data-cap="Working with Ambassador of Israel in Cyprus 
+
+June 2022"><img src="photos/2016-2022/thumb/s071_1.jpg" width="760" height="577" loading="lazy" decoding="async" alt="Working with Ambassador of Israel in Cyprus 
+
+June 2022"><figcaption>Working with Ambassador of Israel in Cyprus 
+
+June 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s072_0.jpg" data-w="1536" data-h="2048" data-cap="Ambassador &amp; Politicians Network:
+Ambassador Slovak Republic, Switzerland, Australia, Commissioner, BoD Invest Cyprus"><img src="photos/2016-2022/thumb/s072_0.jpg" width="570" height="760" loading="lazy" decoding="async" alt="Ambassador &amp; Politicians Network:
+Ambassador Slovak Republic, Switzerland, Australia, Commissioner, BoD Invest Cyprus"><figcaption>Ambassador &amp; Politicians Network:
+Ambassador Slovak Republic, Switzerland, Australia, Commissioner, BoD Invest Cyprus</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s072_1.jpg" data-w="1536" data-h="2048" data-cap=""><img src="photos/2016-2022/thumb/s072_1.jpg" width="570" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s072_2.jpg" data-w="1536" data-h="2048" data-cap=""><img src="photos/2016-2022/thumb/s072_2.jpg" width="570" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s072_3.jpg" data-w="2048" data-h="1536" data-cap=""><img src="photos/2016-2022/thumb/s072_3.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s072_4.jpg" data-w="2000" data-h="2048" data-cap=""><img src="photos/2016-2022/thumb/s072_4.jpg" width="742" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s072_5.jpg" data-w="2048" data-h="1532" data-cap=""><img src="photos/2016-2022/thumb/s072_5.jpg" width="760" height="569" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s073_0.jpg" data-w="2048" data-h="1676" data-cap=""><img src="photos/2016-2022/thumb/s073_0.jpg" width="760" height="622" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s073_1.jpg" data-w="1440" data-h="1440" data-cap=""><img src="photos/2016-2022/thumb/s073_1.jpg" width="760" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s073_2.jpg" data-w="1080" data-h="853" data-cap="Ambassador &amp; Foreign Politicians Network:
+Ambassador Poland, UK, Slovak Republic, Australia, Israel, Netherlands, Israeli Politicians &amp; Parliamentarisms"><img src="photos/2016-2022/thumb/s073_2.jpg" width="760" height="600" loading="lazy" decoding="async" alt="Ambassador &amp; Foreign Politicians Network:
+Ambassador Poland, UK, Slovak Republic, Australia, Israel, Netherlands, Israel"><figcaption>Ambassador &amp; Foreign Politicians Network:
+Ambassador Poland, UK, Slovak Republic, Australia, Israel, Netherlands, Israeli Politicians &amp; Parliamentarisms</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s073_3.jpg" data-w="2048" data-h="1536" data-cap=""><img src="photos/2016-2022/thumb/s073_3.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s073_4.jpg" data-w="2048" data-h="1932" data-cap=""><img src="photos/2016-2022/thumb/s073_4.jpg" width="760" height="717" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s074_0.jpg" data-w="2048" data-h="1660" data-cap=""><img src="photos/2016-2022/thumb/s074_0.jpg" width="760" height="616" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s074_1.jpg" data-w="1357" data-h="1850" data-cap="Ambassador &amp; Politicians Network
+Ambassador USA, Poland, Hungary, Japan
+President of Parliament"><img src="photos/2016-2022/thumb/s074_1.jpg" width="557" height="760" loading="lazy" decoding="async" alt="Ambassador &amp; Politicians Network
+Ambassador USA, Poland, Hungary, Japan
+President of Parliament"><figcaption>Ambassador &amp; Politicians Network
+Ambassador USA, Poland, Hungary, Japan
+President of Parliament</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s074_2.jpg" data-w="2048" data-h="1400" data-cap=""><img src="photos/2016-2022/thumb/s074_2.jpg" width="760" height="520" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s074_3.jpg" data-w="960" data-h="720" data-cap=""><img src="photos/2016-2022/thumb/s074_3.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s075_0.jpg" data-w="4032" data-h="3024" data-cap="Participant at discussion with British High Commissioner at Ministry of Foreign Affairs, 2018-09-12"><img src="photos/2016-2022/thumb/s075_0.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Participant at discussion with British High Commissioner at Ministry of Foreign Affairs, 2018-09-12"><figcaption>Participant at discussion with British High Commissioner at Ministry of Foreign Affairs, 2018-09-12</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s075_1.jpg" data-w="4032" data-h="3024" data-cap="Participant at roundtable discussion at US Embassy Chief of Mission – Residence, 2017-11-27"><img src="photos/2016-2022/thumb/s075_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Participant at roundtable discussion at US Embassy Chief of Mission – Residence, 2017-11-27"><figcaption>Participant at roundtable discussion at US Embassy Chief of Mission – Residence, 2017-11-27</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s076_0.jpg" data-w="2969" data-h="1745" data-cap="Participated in meeting by Ministry of Foreign Affairs with Saul Singer &amp; Ambassador of Israel in Cyprus 
+2018-05-15"><img src="photos/2016-2022/thumb/s076_0.jpg" width="760" height="447" loading="lazy" decoding="async" alt="Participated in meeting by Ministry of Foreign Affairs with Saul Singer &amp; Ambassador of Israel in Cyprus 
+2018-05-15"><figcaption>Participated in meeting by Ministry of Foreign Affairs with Saul Singer &amp; Ambassador of Israel in Cyprus 
+2018-05-15</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s076_1.jpg" data-w="4032" data-h="3024" data-cap="Participated in meeting by Ministry of Foreign Affairs with Ambassador of Hong Kong, 2018-03-22"><img src="photos/2016-2022/thumb/s076_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Participated in meeting by Ministry of Foreign Affairs with Ambassador of Hong Kong, 2018-03-22"><figcaption>Participated in meeting by Ministry of Foreign Affairs with Ambassador of Hong Kong, 2018-03-22</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s077_0.jpg" data-w="2791" data-h="1903" data-cap="Participated in meeting by Ministry of Foreign Affairs with Ambassador of Netherlands, 2017-11-15"><img src="photos/2016-2022/thumb/s077_0.jpg" width="760" height="518" loading="lazy" decoding="async" alt="Participated in meeting by Ministry of Foreign Affairs with Ambassador of Netherlands, 2017-11-15"><figcaption>Participated in meeting by Ministry of Foreign Affairs with Ambassador of Netherlands, 2017-11-15</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s078_0.jpg" data-w="4176" data-h="2784" data-cap="Gold Award for ‘Excellence in Cooperation – Private-Public Partnership’, Cyprus Responsible Business Awards, 2019"><img src="photos/2016-2022/thumb/s078_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Gold Award for ‘Excellence in Cooperation – Private-Public Partnership’, Cyprus Responsible Business Awards, 2019"><figcaption>Gold Award for ‘Excellence in Cooperation – Private-Public Partnership’, Cyprus Responsible Business Awards, 2019</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s078_1.jpg" data-w="4176" data-h="2784" data-cap="Silver Award for ‘Cause Advocacy’,
+Cyprus Responsible Business Awards 2019"><img src="photos/2016-2022/thumb/s078_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Silver Award for ‘Cause Advocacy’,
+Cyprus Responsible Business Awards 2019"><figcaption>Silver Award for ‘Cause Advocacy’,
+Cyprus Responsible Business Awards 2019</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s079_0.jpg" data-w="5114" data-h="3409" data-cap="National Winner Cyprus, European Commission, European Enterprise Promotion Awards: ‘Promoting the Entrepreneurial Spirit’ 2018-11-20"><img src="photos/2016-2022/thumb/s079_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="National Winner Cyprus, European Commission, European Enterprise Promotion Awards: ‘Promoting the Entrepreneurial Spirit"><figcaption>National Winner Cyprus, European Commission, European Enterprise Promotion Awards: ‘Promoting the Entrepreneurial Spirit’ 2018-11-20</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s079_1.jpg" data-w="5393" data-h="3391" data-cap="‘Good practices 1st Award’ for Corporate Social Responsibility &amp; Sustainability, CSR Cyprus, 2021-05-27"><img src="photos/2016-2022/thumb/s079_1.jpg" width="760" height="478" loading="lazy" decoding="async" alt="‘Good practices 1st Award’ for Corporate Social Responsibility &amp; Sustainability, CSR Cyprus, 2021-05-27"><figcaption>‘Good practices 1st Award’ for Corporate Social Responsibility &amp; Sustainability, CSR Cyprus, 2021-05-27</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s080_0.jpg" data-w="1430" data-h="640" data-cap="Invited by the US State Department &amp; US Embassy in Cyprus in the 4-week International Leadership Program in 4 US States, 2019-03-18"><img src="photos/2016-2022/thumb/s080_0.jpg" width="760" height="340" loading="lazy" decoding="async" alt="Invited by the US State Department &amp; US Embassy in Cyprus in the 4-week International Leadership Program in 4 US States,"><figcaption>Invited by the US State Department &amp; US Embassy in Cyprus in the 4-week International Leadership Program in 4 US States, 2019-03-18</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s080_1.jpg" data-w="3024" data-h="4032" data-cap="Invited By the EU-India Innovation Partnership in New Delhi, India. Here with Ambassador of Cyprus in New Delhi,
+Leela Hotel, 2019-11-10"><img src="photos/2016-2022/thumb/s080_1.jpg" width="570" height="760" loading="lazy" decoding="async" alt="Invited By the EU-India Innovation Partnership in New Delhi, India. Here with Ambassador of Cyprus in New Delhi,
+Leela H"><figcaption>Invited By the EU-India Innovation Partnership in New Delhi, India. Here with Ambassador of Cyprus in New Delhi,
+Leela Hotel, 2019-11-10</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s080_2.jpg" data-w="1280" data-h="674" data-cap=""><img src="photos/2016-2022/thumb/s080_2.jpg" width="760" height="400" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s080_3.jpg" data-w="800" data-h="534" data-cap=""><img src="photos/2016-2022/thumb/s080_3.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s081_0.jpg" data-w="2048" data-h="1365" data-cap="Leader of CY delegation to Tel Aviv DLD Innovation Festival, 2017"><img src="photos/2016-2022/thumb/s081_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Leader of CY delegation to Tel Aviv DLD Innovation Festival, 2017"><figcaption>Leader of CY delegation to Tel Aviv DLD Innovation Festival, 2017</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s081_1.jpg" data-w="4032" data-h="3024" data-cap="Leader of CY delegation to Tel Aviv DLD Innovation Festival, 2018-09-03"><img src="photos/2016-2022/thumb/s081_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Leader of CY delegation to Tel Aviv DLD Innovation Festival, 2018-09-03"><figcaption>Leader of CY delegation to Tel Aviv DLD Innovation Festival, 2018-09-03</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s082_0.jpg" data-w="2992" data-h="2000" data-cap="Leader of CY delegation to Tel Aviv DLD Innovation Festival, 2019-09-16"><img src="photos/2016-2022/thumb/s082_0.jpg" width="760" height="508" loading="lazy" decoding="async" alt="Leader of CY delegation to Tel Aviv DLD Innovation Festival, 2019-09-16"><figcaption>Leader of CY delegation to Tel Aviv DLD Innovation Festival, 2019-09-16</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s082_1.jpg" data-w="960" data-h="720" data-cap="Leader of CY delegation to Websummit Technology Conference, Lisbon, Portugal, 2018"><img src="photos/2016-2022/thumb/s082_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Leader of CY delegation to Websummit Technology Conference, Lisbon, Portugal, 2018"><figcaption>Leader of CY delegation to Websummit Technology Conference, Lisbon, Portugal, 2018</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s083_0.jpg" data-w="2992" data-h="2000" data-cap="Working with Ambassador of Cyprus in Tel Aviv, Israel, 2019"><img src="photos/2016-2022/thumb/s083_0.jpg" width="760" height="508" loading="lazy" decoding="async" alt="Working with Ambassador of Cyprus in Tel Aviv, Israel, 2019"><figcaption>Working with Ambassador of Cyprus in Tel Aviv, Israel, 2019</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s083_1.jpg" data-w="723" data-h="414" data-cap="Speaker in German Conference: Invited to present ‘Nicosia as a Startup-city’, MeConvention, SXSW, Frankfurt 2019"><img src="photos/2016-2022/thumb/s083_1.jpg" width="723" height="414" loading="lazy" decoding="async" alt="Speaker in German Conference: Invited to present ‘Nicosia as a Startup-city’, MeConvention, SXSW, Frankfurt 2019"><figcaption>Speaker in German Conference: Invited to present ‘Nicosia as a Startup-city’, MeConvention, SXSW, Frankfurt 2019</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s084_0.jpg" data-w="960" data-h="540" data-cap="Participant in CY delegation in Websummit, Lisbon-Portugal with Government &amp; Entrepreneurs, 2018 &amp;  2019"><img src="photos/2016-2022/thumb/s084_0.jpg" width="760" height="428" loading="lazy" decoding="async" alt="Participant in CY delegation in Websummit, Lisbon-Portugal with Government &amp; Entrepreneurs, 2018 &amp;  2019"><figcaption>Participant in CY delegation in Websummit, Lisbon-Portugal with Government &amp; Entrepreneurs, 2018 &amp;  2019</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s084_1.jpg" data-w="960" data-h="742" data-cap="Participant, US State Department IVLP 4-week program,
+USA, 2019"><img src="photos/2016-2022/thumb/s084_1.jpg" width="760" height="587" loading="lazy" decoding="async" alt="Participant, US State Department IVLP 4-week program,
+USA, 2019"><figcaption>Participant, US State Department IVLP 4-week program,
+USA, 2019</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s085_0.jpg" data-w="743" data-h="1046" data-cap="Moderator,
+ESG &amp; Sustainability Conference,
+July 2022"><img src="photos/2016-2022/thumb/s085_0.jpg" width="540" height="760" loading="lazy" decoding="async" alt="Moderator,
+ESG &amp; Sustainability Conference,
+July 2022"><figcaption>Moderator,
+ESG &amp; Sustainability Conference,
+July 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s085_1.jpg" data-w="6868" data-h="8760" data-cap="Speaker Representing Cyprus,
+Forward Global Women (USA) Convention,
+‘Women in MENA region – challenges &amp; gender violence’
+Athens, September 2022"><img src="photos/2016-2022/thumb/s085_1.jpg" width="596" height="760" loading="lazy" decoding="async" alt="Speaker Representing Cyprus,
+Forward Global Women (USA) Convention,
+‘Women in MENA region – challenges &amp; gender violence"><figcaption>Speaker Representing Cyprus,
+Forward Global Women (USA) Convention,
+‘Women in MENA region – challenges &amp; gender violence’
+Athens, September 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s086_0.jpg" data-w="2581" data-h="2017" data-cap="Opening the exhibition of BOC Cultural Foundation with Chairman of Board Of Directors of Bank of Cyprus, the CEO &amp; the DCEO, October 2021"><img src="photos/2016-2022/thumb/s086_0.jpg" width="760" height="594" loading="lazy" decoding="async" alt="Opening the exhibition of BOC Cultural Foundation with Chairman of Board Of Directors of Bank of Cyprus, the CEO &amp; the D"><figcaption>Opening the exhibition of BOC Cultural Foundation with Chairman of Board Of Directors of Bank of Cyprus, the CEO &amp; the DCEO, October 2021</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s086_1.jpg" data-w="698" data-h="468" data-cap="Moderator, Launch of Cybersecurity Hackathon, with Minister of Defence,  DCEO of Bank of Cyprus &amp; Executives,
+2020-01-09"><img src="photos/2016-2022/thumb/s086_1.jpg" width="698" height="468" loading="lazy" decoding="async" alt="Moderator, Launch of Cybersecurity Hackathon, with Minister of Defence,  DCEO of Bank of Cyprus &amp; Executives,
+2020-01-09"><figcaption>Moderator, Launch of Cybersecurity Hackathon, with Minister of Defence,  DCEO of Bank of Cyprus &amp; Executives,
+2020-01-09</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s087_0.jpg" data-w="6000" data-h="4000" data-cap="Moderator of IDEA Graduation Ceremony 2019: Discussing with Chief Scientist of Israel &amp; Ambassador of Israel"><img src="photos/2016-2022/thumb/s087_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Moderator of IDEA Graduation Ceremony 2019: Discussing with Chief Scientist of Israel &amp; Ambassador of Israel"><figcaption>Moderator of IDEA Graduation Ceremony 2019: Discussing with Chief Scientist of Israel &amp; Ambassador of Israel</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s087_1.jpg" data-w="6000" data-h="4000" data-cap="Moderator of IDEA Graduation Ceremony 2019: Discussing with CEO of Bank of Cyprus and DCEO"><img src="photos/2016-2022/thumb/s087_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Moderator of IDEA Graduation Ceremony 2019: Discussing with CEO of Bank of Cyprus and DCEO"><figcaption>Moderator of IDEA Graduation Ceremony 2019: Discussing with CEO of Bank of Cyprus and DCEO</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s088_0.jpg" data-w="5184" data-h="3456" data-cap="Working for CyberDefence Hackathon, with Minister of Defence, Minister of Education, Ambassador Israel &amp; Chief Commander of Army, Feb 2020"><img src="photos/2016-2022/thumb/s088_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Working for CyberDefence Hackathon, with Minister of Defence, Minister of Education, Ambassador Israel &amp; Chief Commander"><figcaption>Working for CyberDefence Hackathon, with Minister of Defence, Minister of Education, Ambassador Israel &amp; Chief Commander of Army, Feb 2020</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s088_1.jpg" data-w="5472" data-h="3648" data-cap="Moderator &amp; Organiser, IDEA Graduation Ceremony 2017, 
+with ex First Lady Mrs Androulla Vassiliou and John Hourican CEO of Bank of Cyprus"><img src="photos/2016-2022/thumb/s088_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Moderator &amp; Organiser, IDEA Graduation Ceremony 2017, 
+with ex First Lady Mrs Androulla Vassiliou and John Hourican CEO "><figcaption>Moderator &amp; Organiser, IDEA Graduation Ceremony 2017, 
+with ex First Lady Mrs Androulla Vassiliou and John Hourican CEO of Bank of Cyprus</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s089_0.jpg" data-w="2518" data-h="1599" data-cap="Moderator &amp; Organiser, IDEA Graduation Ceremony, 2017"><img src="photos/2016-2022/thumb/s089_0.jpg" width="760" height="483" loading="lazy" decoding="async" alt="Moderator &amp; Organiser, IDEA Graduation Ceremony, 2017"><figcaption>Moderator &amp; Organiser, IDEA Graduation Ceremony, 2017</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s089_1.jpg" data-w="1108" data-h="781" data-cap="Panellist, “Women Entrepreneurs” event, Embassy of Poland, 2021-05-25"><img src="photos/2016-2022/thumb/s089_1.jpg" width="760" height="536" loading="lazy" decoding="async" alt="Panellist, “Women Entrepreneurs” event, Embassy of Poland, 2021-05-25"><figcaption>Panellist, “Women Entrepreneurs” event, Embassy of Poland, 2021-05-25</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s090_0.jpg" data-w="5279" data-h="3136" data-cap="Moderator &amp; Organiser, IDEA Graduation Ceremony 2018"><img src="photos/2016-2022/thumb/s090_0.jpg" width="760" height="451" loading="lazy" decoding="async" alt="Moderator &amp; Organiser, IDEA Graduation Ceremony 2018"><figcaption>Moderator &amp; Organiser, IDEA Graduation Ceremony 2018</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s090_1.jpg" data-w="6000" data-h="4000" data-cap="Moderator &amp; Organiser, IDEA Graduation Ceremony 2019"><img src="photos/2016-2022/thumb/s090_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Moderator &amp; Organiser, IDEA Graduation Ceremony 2019"><figcaption>Moderator &amp; Organiser, IDEA Graduation Ceremony 2019</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s091_0.jpg" data-w="5616" data-h="3744" data-cap="At Kinisis Ventures event 2018-10-09"><img src="photos/2016-2022/thumb/s091_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="At Kinisis Ventures event 2018-10-09"><figcaption>At Kinisis Ventures event 2018-10-09</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s091_1.jpg" data-w="4816" data-h="3211" data-cap="Hosted Fintech Hackathon 2018-10-28"><img src="photos/2016-2022/thumb/s091_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Hosted Fintech Hackathon 2018-10-28"><figcaption>Hosted Fintech Hackathon 2018-10-28</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s092_0.jpg" data-w="640" data-h="480" data-cap="Hosted lean start meeting 2016"><img src="photos/2016-2022/thumb/s092_0.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Hosted lean start meeting 2016"><figcaption>Hosted lean start meeting 2016</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s092_1.jpg" data-w="4032" data-h="3024" data-cap="Hosted kids from Platy Secondary School 2017-11-02"><img src="photos/2016-2022/thumb/s092_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Hosted kids from Platy Secondary School 2017-11-02"><figcaption>Hosted kids from Platy Secondary School 2017-11-02</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s093_0.jpg" data-w="5800" data-h="3867" data-cap="Working for the environment – with the Cyprus University of Technology Climate CIC event 
+2019-07-02"><img src="photos/2016-2022/thumb/s093_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Working for the environment – with the Cyprus University of Technology Climate CIC event 
+2019-07-02"><figcaption>Working for the environment – with the Cyprus University of Technology Climate CIC event 
+2019-07-02</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s093_1.jpg" data-w="4032" data-h="3024" data-cap="Presenting Entrepreneurship to new recruits of Bank of Cyprus 2017-11-02"><img src="photos/2016-2022/thumb/s093_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Presenting Entrepreneurship to new recruits of Bank of Cyprus 2017-11-02"><figcaption>Presenting Entrepreneurship to new recruits of Bank of Cyprus 2017-11-02</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s094_0.jpg" data-w="2048" data-h="1365" data-cap="Working with the youth"><img src="photos/2016-2022/thumb/s094_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Working with the youth"><figcaption>Working with the youth</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s094_1.jpg" data-w="3648" data-h="2736" data-cap=""><img src="photos/2016-2022/thumb/s094_1.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s094_2.jpg" data-w="960" data-h="572" data-cap=""><img src="photos/2016-2022/thumb/s094_2.jpg" width="760" height="453" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s094_3.jpg" data-w="5760" data-h="3840" data-cap=""><img src="photos/2016-2022/thumb/s094_3.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s095_0.jpg" data-w="4032" data-h="3024" data-cap=""><img src="photos/2016-2022/thumb/s095_0.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s095_1.jpg" data-w="6000" data-h="4000" data-cap=""><img src="photos/2016-2022/thumb/s095_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s095_2.jpg" data-w="2992" data-h="2000" data-cap=""><img src="photos/2016-2022/thumb/s095_2.jpg" width="760" height="508" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s095_3.jpg" data-w="4032" data-h="3024" data-cap=""><img src="photos/2016-2022/thumb/s095_3.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s095_4.jpg" data-w="6000" data-h="4000" data-cap=""><img src="photos/2016-2022/thumb/s095_4.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s095_5.jpg" data-w="4740" data-h="3133" data-cap=""><img src="photos/2016-2022/thumb/s095_5.jpg" width="760" height="502" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s095_6.jpg" data-w="7844" data-h="5229" data-cap="Working with startups"><img src="photos/2016-2022/thumb/s095_6.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Working with startups"><figcaption>Working with startups</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s095_7.jpg" data-w="4032" data-h="3024" data-cap=""><img src="photos/2016-2022/thumb/s095_7.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s096_0.jpg" data-w="6000" data-h="4000" data-cap="Youth Power!"><img src="photos/2016-2022/thumb/s096_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Youth Power!"><figcaption>Youth Power!</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s096_1.jpg" data-w="2992" data-h="2000" data-cap="Team Power!"><img src="photos/2016-2022/thumb/s096_1.jpg" width="760" height="508" loading="lazy" decoding="async" alt="Team Power!"><figcaption>Team Power!</figcaption></figure>
+<figure class="ph" data-full="photos/2016-2022/full/s097_0.jpg" data-w="5472" data-h="3648" data-cap="Angela Panayiotou
+
+2016 - 2022"><img src="photos/2016-2022/thumb/s097_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Angela Panayiotou
+
+2016 - 2022"><figcaption>Angela Panayiotou
+
+2016 - 2022</figcaption></figure></div>
+</section>
+<section class="panel" id="p-2022-2024">
+  <header class="album-head">
+    <img class="cover" src="photos/2022-2024/thumb/s001_0.jpg" alt="">
+    <div><h2>2022 — 2024</h2><p class="count">71 photographs</p></div>
+  </header>
+<div class="cat-group"><h3 class="cat">Spokesperson</h3><p class="cat-n">4 photographs</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s002_0.jpg" data-w="2256" data-h="1504" data-cap="January – April 2023"><img src="photos/2022-2024/thumb/s002_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="January – April 2023"><figcaption>January – April 2023</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s002_1.jpg" data-w="602" data-h="338" data-cap=""><img src="photos/2022-2024/thumb/s002_1.jpg" width="602" height="338" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s003_0.jpg" data-w="2256" data-h="1504" data-cap="March 2023"><img src="photos/2022-2024/thumb/s003_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="March 2023"><figcaption>March 2023</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s003_1.jpg" data-w="1447" data-h="1059" data-cap="June 2024"><img src="photos/2022-2024/thumb/s003_1.jpg" width="760" height="556" loading="lazy" decoding="async" alt="June 2024"><figcaption>June 2024</figcaption></figure></div></div>
+<div class="cat-group"><h3 class="cat">Spokesperson &amp; Representative, John Christodoulou &amp; YCF</h3><p class="cat-n">9 photographs</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s004_0.jpg" data-w="1280" data-h="854" data-cap="Spokesperson &amp; Representing,
+John Christodoulou &amp; YCF"><img src="photos/2022-2024/thumb/s004_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Spokesperson &amp; Representing,
+John Christodoulou &amp; YCF"><figcaption>Spokesperson &amp; Representing,
+John Christodoulou &amp; YCF</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s004_1.jpg" data-w="774" data-h="814" data-cap="Receiving Award - representing  John Christodoulou &amp; YCF at Cyprus Diaspora Forum, March 2024"><img src="photos/2022-2024/thumb/s004_1.jpg" width="723" height="760" loading="lazy" decoding="async" alt="Receiving Award - representing  John Christodoulou &amp; YCF at Cyprus Diaspora Forum, March 2024"><figcaption>Receiving Award - representing  John Christodoulou &amp; YCF at Cyprus Diaspora Forum, March 2024</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s005_0.jpg" data-w="526" data-h="589" data-cap="March 2024"><img src="photos/2022-2024/thumb/s005_0.jpg" width="526" height="589" loading="lazy" decoding="async" alt="March 2024"><figcaption>March 2024</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s005_1.jpg" data-w="2048" data-h="1366" data-cap="Spokesperson &amp; Representative,
+John Christodoulou &amp; YCF"><img src="photos/2022-2024/thumb/s005_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Spokesperson &amp; Representative,
+John Christodoulou &amp; YCF"><figcaption>Spokesperson &amp; Representative,
+John Christodoulou &amp; YCF</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s005_2.jpg" data-w="717" data-h="721" data-cap=""><img src="photos/2022-2024/thumb/s005_2.jpg" width="717" height="721" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s006_0.jpg" data-w="5098" data-h="3307" data-cap="Spokesperson &amp; Representing,
+John Christodoulou &amp; YCF"><img src="photos/2022-2024/thumb/s006_0.jpg" width="760" height="493" loading="lazy" decoding="async" alt="Spokesperson &amp; Representing,
+John Christodoulou &amp; YCF"><figcaption>Spokesperson &amp; Representing,
+John Christodoulou &amp; YCF</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s006_1.jpg" data-w="871" data-h="1158" data-cap="Presidential Palace:
+Receiving the Telethon Honorable Award"><img src="photos/2022-2024/thumb/s006_1.jpg" width="572" height="760" loading="lazy" decoding="async" alt="Presidential Palace:
+Receiving the Telethon Honorable Award"><figcaption>Presidential Palace:
+Receiving the Telethon Honorable Award</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s010_0.jpg" data-w="1600" data-h="900" data-cap="Being awarded for my contribution as a representative &amp; spokesperson of John Christodoulou &amp; Yianis Christodoulou Foundation, by the Community of Sysklipos"><img src="photos/2022-2024/thumb/s010_0.jpg" width="760" height="428" loading="lazy" decoding="async" alt="Being awarded for my contribution as a representative &amp; spokesperson of John Christodoulou &amp; Yianis Christodoulou Founda"><figcaption>Being awarded for my contribution as a representative &amp; spokesperson of John Christodoulou &amp; Yianis Christodoulou Foundation, by the Community of Sysklipos</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s010_1.jpg" data-w="960" data-h="1280" data-cap="Presenting on TV
+the Yianis Christodoulou Foundation
+2024"><img src="photos/2022-2024/thumb/s010_1.jpg" width="570" height="760" loading="lazy" decoding="async" alt="Presenting on TV
+the Yianis Christodoulou Foundation
+2024"><figcaption>Presenting on TV
+the Yianis Christodoulou Foundation
+2024</figcaption></figure></div></div>
+<div class="cat-group"><h3 class="cat">Speechwriter for John Christodoulou</h3><p class="cat-n">2 photographs</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s007_0.jpg" data-w="2157" data-h="1161" data-cap=""><img src="photos/2022-2024/thumb/s007_0.jpg" width="760" height="409" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s007_1.jpg" data-w="1330" data-h="1137" data-cap="Speech writer
+for John Christodoulou"><img src="photos/2022-2024/thumb/s007_1.jpg" width="760" height="650" loading="lazy" decoding="async" alt="Speech writer
+for John Christodoulou"><figcaption>Speech writer
+for John Christodoulou</figcaption></figure></div></div>
+<div class="cat-group"><h3 class="cat">Organizer of Large Events</h3><p class="cat-n">6 photographs</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s008_0.jpg" data-w="2207" data-h="1273" data-cap="Organizer of very large events
+Achieving Guinness World Record
+4500 participants"><img src="photos/2022-2024/thumb/s008_0.jpg" width="760" height="438" loading="lazy" decoding="async" alt="Organizer of very large events
+Achieving Guinness World Record
+4500 participants"><figcaption>Organizer of very large events
+Achieving Guinness World Record
+4500 participants</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s008_1.jpg" data-w="2236" data-h="1280" data-cap="June 2024"><img src="photos/2022-2024/thumb/s008_1.jpg" width="760" height="435" loading="lazy" decoding="async" alt="June 2024"><figcaption>June 2024</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s009_0.jpg" data-w="2126" data-h="1417" data-cap=""><img src="photos/2022-2024/thumb/s009_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s009_1.jpg" data-w="571" data-h="381" data-cap=""><img src="photos/2022-2024/thumb/s009_1.jpg" width="571" height="381" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s009_2.jpg" data-w="1280" data-h="851" data-cap=""><img src="photos/2022-2024/thumb/s009_2.jpg" width="760" height="505" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s009_3.jpg" data-w="1280" data-h="965" data-cap="Organizer of very Large Events, Student Competitions &amp; Concerts with VIP, Celebrities &amp; 2500 Students, April 2023"><img src="photos/2022-2024/thumb/s009_3.jpg" width="760" height="573" loading="lazy" decoding="async" alt="Organizer of very Large Events, Student Competitions &amp; Concerts with VIP, Celebrities &amp; 2500 Students, April 2023"><figcaption>Organizer of very Large Events, Student Competitions &amp; Concerts with VIP, Celebrities &amp; 2500 Students, April 2023</figcaption></figure></div></div>
+<div class="cat-group"><h3 class="cat">Accompanying &amp; Advising John Christodoulou</h3><p class="cat-n">5 photographs</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s011_0.jpg" data-w="914" data-h="632" data-cap="Accompany &amp; advise John Christodoulou in all meetings in Cyprus"><img src="photos/2022-2024/thumb/s011_0.jpg" width="760" height="526" loading="lazy" decoding="async" alt="Accompany &amp; advise John Christodoulou in all meetings in Cyprus"><figcaption>Accompany &amp; advise John Christodoulou in all meetings in Cyprus</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s011_1.jpg" data-w="6000" data-h="3376" data-cap=""><img src="photos/2022-2024/thumb/s011_1.jpg" width="760" height="428" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s011_2.jpg" data-w="4032" data-h="3024" data-cap=""><img src="photos/2022-2024/thumb/s011_2.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s011_3.jpg" data-w="1125" data-h="2436" data-cap=""><img src="photos/2022-2024/thumb/s011_3.jpg" width="351" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s011_4.jpg" data-w="960" data-h="1280" data-cap=""><img src="photos/2022-2024/thumb/s011_4.jpg" width="570" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure></div></div>
+<div class="cat-group"><h3 class="cat">Author, Media Interviews &amp; Articles</h3><p class="cat-n">3 photographs</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s012_0.jpg" data-w="838" data-h="1089" data-cap="October 2022"><img src="photos/2022-2024/thumb/s012_0.jpg" width="585" height="760" loading="lazy" decoding="async" alt="October 2022"><figcaption>October 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s013_0.jpg" data-w="668" data-h="767" data-cap=""><img src="photos/2022-2024/thumb/s013_0.jpg" width="662" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s013_1.jpg" data-w="2048" data-h="2756" data-cap=""><img src="photos/2022-2024/thumb/s013_1.jpg" width="565" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure></div></div>
+<div class="cat-group"><h3 class="cat">Master of Ceremony &amp; Presenter</h3><p class="cat-n">1 photograph</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s014_1.jpg" data-w="1600" data-h="930" data-cap="The ESG Conference, July 2022"><img src="photos/2022-2024/thumb/s014_1.jpg" width="760" height="442" loading="lazy" decoding="async" alt="The ESG Conference, July 2022"><figcaption>The ESG Conference, July 2022</figcaption></figure></div></div>
+<div class="cat-group"><h3 class="cat">Media, Celebrity &amp; Diplomat Network</h3><p class="cat-n">5 photographs</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s015_0.jpg" data-w="591" data-h="1280" data-cap="With Constantinos Argyros"><img src="photos/2022-2024/thumb/s015_0.jpg" width="351" height="760" loading="lazy" decoding="async" alt="With Constantinos Argyros"><figcaption>With Constantinos Argyros</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s015_2.jpg" data-w="517" data-h="690" data-cap="With Prince Albert II of Monaco"><img src="photos/2022-2024/thumb/s015_2.jpg" width="517" height="690" loading="lazy" decoding="async" alt="With Prince Albert II of Monaco"><figcaption>With Prince Albert II of Monaco</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s015_4.jpg" data-w="727" data-h="1091" data-cap="With all women Ambassadors in Cyprus"><img src="photos/2022-2024/thumb/s015_4.jpg" width="506" height="760" loading="lazy" decoding="async" alt="With all women Ambassadors in Cyprus"><figcaption>With all women Ambassadors in Cyprus</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s015_5.jpg" data-w="571" data-h="381" data-cap="With Anna Vissi"><img src="photos/2022-2024/thumb/s015_5.jpg" width="571" height="381" loading="lazy" decoding="async" alt="With Anna Vissi"><figcaption>With Anna Vissi</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s015_6.jpg" data-w="702" data-h="827" data-cap="With Marianna Latsi, Greece"><img src="photos/2022-2024/thumb/s015_6.jpg" width="645" height="760" loading="lazy" decoding="async" alt="With Marianna Latsi, Greece"><figcaption>With Marianna Latsi, Greece</figcaption></figure></div></div>
+<div class="cat-group"><h3 class="cat">Representing Invest Cyprus</h3><p class="cat-n">9 photographs</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s016_0.jpg" data-w="5167" data-h="3222" data-cap="Representing Invest Cyprus – Board of Directors, Speaker &amp; Panelist"><img src="photos/2022-2024/thumb/s016_0.jpg" width="760" height="474" loading="lazy" decoding="async" alt="Representing Invest Cyprus – Board of Directors, Speaker &amp; Panelist"><figcaption>Representing Invest Cyprus – Board of Directors, Speaker &amp; Panelist</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s016_1.jpg" data-w="1511" data-h="899" data-cap=""><img src="photos/2022-2024/thumb/s016_1.jpg" width="760" height="452" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s017_0.jpg" data-w="2048" data-h="1366" data-cap=""><img src="photos/2022-2024/thumb/s017_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s017_1.jpg" data-w="2048" data-h="1366" data-cap="Representing Invest Cyprus – Investment Funds &amp; Fundraising in Cyprus, October 2022"><img src="photos/2022-2024/thumb/s017_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Representing Invest Cyprus – Investment Funds &amp; Fundraising in Cyprus, October 2022"><figcaption>Representing Invest Cyprus – Investment Funds &amp; Fundraising in Cyprus, October 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s018_0.jpg" data-w="2400" data-h="3600" data-cap="Funding for Startups in Cyprus
+Reflet Festival, Jun 2024"><img src="photos/2022-2024/thumb/s018_0.jpg" width="507" height="760" loading="lazy" decoding="async" alt="Funding for Startups in Cyprus
+Reflet Festival, Jun 2024"><figcaption>Funding for Startups in Cyprus
+Reflet Festival, Jun 2024</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s018_1.jpg" data-w="1200" data-h="1200" data-cap=""><img src="photos/2022-2024/thumb/s018_1.jpg" width="760" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s022_0.jpg" data-w="1200" data-h="1200" data-cap="Representing Invest Cyprus – Berlin, Attracting Investment Funds in Cyprus, November 2022"><img src="photos/2022-2024/thumb/s022_0.jpg" width="760" height="760" loading="lazy" decoding="async" alt="Representing Invest Cyprus – Berlin, Attracting Investment Funds in Cyprus, November 2022"><figcaption>Representing Invest Cyprus – Berlin, Attracting Investment Funds in Cyprus, November 2022</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s022_1.jpg" data-w="2048" data-h="1365" data-cap=""><img src="photos/2022-2024/thumb/s022_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s022_2.jpg" data-w="2048" data-h="1365" data-cap=""><img src="photos/2022-2024/thumb/s022_2.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure></div></div>
+<div class="cat-group"><h3 class="cat">Inspirational Speaker</h3><p class="cat-n">3 photographs</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s019_0.jpg" data-w="1203" data-h="1084" data-cap="Inspirational Speaker, European University Cyprus &amp;
+University of Cyprus,
+September 2023"><img src="photos/2022-2024/thumb/s019_0.jpg" width="760" height="685" loading="lazy" decoding="async" alt="Inspirational Speaker, European University Cyprus &amp;
+University of Cyprus,
+September 2023"><figcaption>Inspirational Speaker, European University Cyprus &amp;
+University of Cyprus,
+September 2023</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s019_1.jpg" data-w="1870" data-h="954" data-cap="Panelist, Startup competition – January 2023"><img src="photos/2022-2024/thumb/s019_1.jpg" width="760" height="388" loading="lazy" decoding="async" alt="Panelist, Startup competition – January 2023"><figcaption>Panelist, Startup competition – January 2023</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s019_2.jpg" data-w="1280" data-h="960" data-cap=""><img src="photos/2022-2024/thumb/s019_2.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure></div></div>
+<div class="cat-group"><h3 class="cat">Representing Cyprus</h3><p class="cat-n">4 photographs</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s020_0.jpg" data-w="2048" data-h="1365" data-cap="Representing Cyprus on behalf of Cyprus Chamber of Commerce &amp; Industry"><img src="photos/2022-2024/thumb/s020_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Representing Cyprus on behalf of Cyprus Chamber of Commerce &amp; Industry"><figcaption>Representing Cyprus on behalf of Cyprus Chamber of Commerce &amp; Industry</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s020_1.jpg" data-w="2048" data-h="1365" data-cap="Bi-communal startup competition Startups4Peace"><img src="photos/2022-2024/thumb/s020_1.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Bi-communal startup competition Startups4Peace"><figcaption>Bi-communal startup competition Startups4Peace</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s021_0.jpg" data-w="6868" data-h="8760" data-cap="Representing Cyprus – on behalf of Ministry of Innovation"><img src="photos/2022-2024/thumb/s021_0.jpg" width="596" height="760" loading="lazy" decoding="async" alt="Representing Cyprus – on behalf of Ministry of Innovation"><figcaption>Representing Cyprus – on behalf of Ministry of Innovation</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s021_1.jpg" data-w="1200" data-h="1200" data-cap=""><img src="photos/2022-2024/thumb/s021_1.jpg" width="760" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure></div></div>
+<div class="cat-group"><h3 class="cat">Social Media Content &amp; Marketing Design</h3><p class="cat-n">4 photographs</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s023_0.jpg" data-w="580" data-h="935" data-cap=""><img src="photos/2022-2024/thumb/s023_0.jpg" width="471" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s023_1.jpg" data-w="592" data-h="707" data-cap=""><img src="photos/2022-2024/thumb/s023_1.jpg" width="592" height="707" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s023_2.jpg" data-w="601" data-h="795" data-cap="Social Media Content writer &amp; Marketing Material Design"><img src="photos/2022-2024/thumb/s023_2.jpg" width="575" height="760" loading="lazy" decoding="async" alt="Social Media Content writer &amp; Marketing Material Design"><figcaption>Social Media Content writer &amp; Marketing Material Design</figcaption></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s023_3.jpg" data-w="589" data-h="757" data-cap=""><img src="photos/2022-2024/thumb/s023_3.jpg" width="589" height="757" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure></div></div>
+<div class="cat-group"><h3 class="cat">Press Release &amp; Article Writer</h3><p class="cat-n">15 photographs</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s024_0.jpg" data-w="837" data-h="1087" data-cap=""><img src="photos/2022-2024/thumb/s024_0.jpg" width="585" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s024_1.jpg" data-w="910" data-h="1237" data-cap=""><img src="photos/2022-2024/thumb/s024_1.jpg" width="559" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s024_2.jpg" data-w="1034" data-h="1201" data-cap=""><img src="photos/2022-2024/thumb/s024_2.jpg" width="654" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s024_3.jpg" data-w="787" data-h="1160" data-cap=""><img src="photos/2022-2024/thumb/s024_3.jpg" width="516" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s025_0.jpg" data-w="776" data-h="1082" data-cap=""><img src="photos/2022-2024/thumb/s025_0.jpg" width="545" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s025_1.jpg" data-w="696" data-h="1181" data-cap=""><img src="photos/2022-2024/thumb/s025_1.jpg" width="448" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s025_2.jpg" data-w="769" data-h="1118" data-cap=""><img src="photos/2022-2024/thumb/s025_2.jpg" width="523" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s025_3.jpg" data-w="773" data-h="1229" data-cap=""><img src="photos/2022-2024/thumb/s025_3.jpg" width="478" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s026_0.jpg" data-w="868" data-h="1206" data-cap=""><img src="photos/2022-2024/thumb/s026_0.jpg" width="547" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s026_1.jpg" data-w="737" data-h="989" data-cap=""><img src="photos/2022-2024/thumb/s026_1.jpg" width="566" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s026_2.jpg" data-w="1079" data-h="1249" data-cap=""><img src="photos/2022-2024/thumb/s026_2.jpg" width="657" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s026_3.jpg" data-w="735" data-h="1253" data-cap=""><img src="photos/2022-2024/thumb/s026_3.jpg" width="446" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s027_0.jpg" data-w="844" data-h="1160" data-cap=""><img src="photos/2022-2024/thumb/s027_0.jpg" width="553" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s027_1.jpg" data-w="520" data-h="927" data-cap=""><img src="photos/2022-2024/thumb/s027_1.jpg" width="426" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure>
+<figure class="ph" data-full="photos/2022-2024/full/s027_2.jpg" data-w="806" data-h="1129" data-cap=""><img src="photos/2022-2024/thumb/s027_2.jpg" width="543" height="760" loading="lazy" decoding="async" alt="Angela Panayiotou"></figure></div></div>
+<div class="cat-group"><h3 class="cat">Award</h3><p class="cat-n">1 photograph</p><div class="grid"><figure class="ph" data-full="photos/2022-2024/full/s028_0.jpg" data-w="5760" data-h="3840" data-cap="Madame Figaro Award Professional - Businesswoman of the Year
+October 2021"><img src="photos/2022-2024/thumb/s028_0.jpg" width="760" height="507" loading="lazy" decoding="async" alt="Madame Figaro Award Professional - Businesswoman of the Year
+October 2021"><figcaption>Madame Figaro Award Professional - Businesswoman of the Year
+October 2021</figcaption></figure></div></div>
+</section>
+<section class="panel" id="p-youtube">
+  <div class="yt-wrap">
+    <h2>YouTube</h2>
+    <p class="lede">Watch on Angela's channel.</p>
+    <div class="yt-grid"><div class="yt-card"><div class="yt-thumb"><img src="https://i.ytimg.com/vi/6TZN7Mpo0b8/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><button class="yt-play" data-v="6TZN7Mpo0b8" aria-label="Play: The reflection"></button></div><p class="yt-title">The reflection</p></div><div class="yt-card"><div class="yt-thumb"><img src="https://i.ytimg.com/vi/4oK_f8UZrFo/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><button class="yt-play" data-v="4oK_f8UZrFo" aria-label="Play: EEPA European Award Winning Moment"></button></div><p class="yt-title">EEPA European Award Winning Moment</p></div><div class="yt-card"><div class="yt-thumb"><img src="https://i.ytimg.com/vi/UqAPjKg3ibQ/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><button class="yt-play" data-v="UqAPjKg3ibQ" aria-label="Play: 03 IDEA CORPORATE 2021 v4"></button></div><p class="yt-title">03 IDEA CORPORATE 2021 v4</p></div><div class="yt-card"><div class="yt-thumb"><img src="https://i.ytimg.com/vi/023Hyx9lhHM/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><button class="yt-play" data-v="023Hyx9lhHM" aria-label="Play: Students Competition - Yianis Christodoulou Foundation - Ant1 TV - 16/02/2023"></button></div><p class="yt-title">Students Competition - Yianis Christodoulou Foundation - Ant1 TV - 16/02/2023</p></div><div class="yt-card"><div class="yt-thumb"><img src="https://i.ytimg.com/vi/wZB3tN3n2Z0/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><button class="yt-play" data-v="wZB3tN3n2Z0" aria-label="Play: Student Competition - Yianis  Christodoulou Foundation - OMEGA TV - 17/02/2023"></button></div><p class="yt-title">Student Competition - Yianis  Christodoulou Foundation - OMEGA TV - 17/02/2023</p></div></div>
+    <a class="yt-link" href="https://www.youtube.com/channel/UC9o1zVCyYxuTAUtU7PCYWtw" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="#FF0000" aria-hidden="true" focusable="false"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg><span>Open the channel</span></a>
+  </div>
+</section>
+<section class="panel" id="p-social">
+  <div class="social-wrap">
+    <h2>Follow Angela</h2>
+    <p class="lede">Across broadcast, press and social media.</p>
+    <div class="socs"><a class="soc" href="https://www.linkedin.com/in/angela-panayiotou-9b0a0069/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><span class="soc-n">LinkedIn</span><span class="soc-u">Angela Panayiotou</span></a><a class="soc" href="https://www.instagram.com/angela.panayiotou_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="#E4405F" aria-hidden="true" focusable="false"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg><span class="soc-n">Instagram</span><span class="soc-u">@angela.panayiotou_</span></a><a class="soc" href="https://www.facebook.com/angela.panayiotou.5" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true" focusable="false"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg><span class="soc-n">Facebook</span><span class="soc-u">angela.panayiotou.5</span></a><a class="soc" href="https://x.com/AngelaPanayiot1" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" fill="#0F1419" aria-hidden="true" focusable="false"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg><span class="soc-n">X</span><span class="soc-u">@AngelaPanayiot1</span></a><a class="soc" href="https://www.tiktok.com/@angelapanayiotou?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="#111111" aria-hidden="true" focusable="false"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg><span class="soc-n">TikTok</span><span class="soc-u">@angelapanayiotou</span></a></div>
+  </div>
+</section>
+<footer>Angela Panayiotou &nbsp;·&nbsp; Portfolio</footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <img id="lbi" alt="">
+  <div id="lbcap"></div><div id="lbn"></div>
+  <button class="nav-btn" id="lbp" aria-label="Previous">&#8249;</button>
+  <button class="nav-btn" id="lbnx" aria-label="Next">&#8250;</button>
+  <button id="lbx" aria-label="Close">&times;</button>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function show(id){
+    document.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('on',p.id==='p-'+id)});
+    tabs.forEach(function(t){t.setAttribute('aria-selected', t.dataset.t===id)});
+    try{history.replaceState(null,'','#'+id)}catch(e){}
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  tabs.forEach(function(t){t.onclick=function(){show(t.dataset.t)}});
+  [].slice.call(document.querySelectorAll('.yt-play')).forEach(function(b){
+    b.onclick=function(){
+      var thumb=b.parentNode, f=document.createElement('iframe');
+      f.src='https://www.youtube.com/embed/'+b.dataset.v+'?autoplay=1&rel=0';
+      f.title=b.getAttribute('aria-label').replace(/^Play: /,'');
+      f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share';
+      f.referrerPolicy='strict-origin-when-cross-origin'; f.allowFullscreen=true;
+      thumb.parentNode.replaceChild(f, thumb);
+    };
+  });
+  var start=(location.hash||'').replace('#','');
+  show(tabs.some(function(t){return t.dataset.t===start})?start:tabs[0].dataset.t);
+
+  var lb=document.getElementById('lb'),lbi=document.getElementById('lbi'),
+      lbcap=document.getElementById('lbcap'),lbn=document.getElementById('lbn'),cur=[],idx=0;
+  function open(list,i){cur=list;idx=i;paint();lb.classList.add('on');document.body.style.overflow='hidden'}
+  function paint(){
+    var f=cur[idx];
+    lbi.src=f.dataset.full; lbi.alt=f.dataset.cap||'';
+    lbcap.textContent=f.dataset.cap||'';
+    lbn.textContent=(idx+1)+' / '+cur.length;
+    [-1,1].forEach(function(d){var n=cur[idx+d]; if(n){var p=new Image();p.src=n.dataset.full}});
+  }
+  function close(){lb.classList.remove('on');lbi.src='';document.body.style.overflow=''}
+  function step(d){idx=(idx+d+cur.length)%cur.length;paint()}
+  document.querySelectorAll('.panel').forEach(function(p){
+    var list=[].slice.call(p.querySelectorAll('.ph'));
+    list.forEach(function(f,i){f.onclick=function(){open(list,i)}});
+  });
+  document.getElementById('lbx').onclick=close;
+  document.getElementById('lbp').onclick=function(e){e.stopPropagation();step(-1)};
+  document.getElementById('lbnx').onclick=function(e){e.stopPropagation();step(1)};
+  lb.onclick=function(e){if(e.target===lb||e.target===lbcap)close()};
+  document.onkeydown=function(e){
+    if(!lb.classList.contains('on'))return;
+    if(e.key==='Escape')close();
+    if(e.key==='ArrowLeft')step(-1);
+    if(e.key==='ArrowRight')step(1);
+  };
+})();
+</script>
+</body>
+</html>
